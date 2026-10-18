@@ -2,1323 +2,1964 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Ритуал-Память — изготовление памятников в Батайске под ключ</title>
-<meta name="description" content="Изготовление и установка памятников в Батайске. Собственный карьер в Карелии, 1200+ образцов гранита и мрамора. Гарантия 30 лет. Рейтинг 5,0 на Яндекс Картах.">
-<!-- Open Graph -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Спецодежда в Батайске — магазин «Профессионалы» | ул. Речная, 11/95</title>
+<meta name="description" content="Продажа спецодежды, спецобуви, камуфляжа и СИЗ в Батайске. Прямые поставки, сертификация ГОСТ, розница с примеркой и комплексное снабжение организаций.">
+<meta name="author" content="Константин">
+
+<meta property="og:title" content="Магазин спецодежды «Профессионалы» в Батайске">
+<meta property="og:description" content="Спецодежда, спецобувь, СИЗ. Ул. Речная, 11/95.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Ритуал-Память — памятники в Батайске">
-<meta property="og:description" content="Собственный карьер в Карелии, 1200+ образцов гранита и мрамора. Гарантия 30 лет, установка по РФ.">
-<meta property="og:image" content="https://energiekost.github.io/ritual/logo.png">
-<meta property="og:url" content="https://energiekost.github.io/ritual/">
-<meta name="twitter:card" content="summary_large_image">
-<!-- Favicon -->
-<link rel="icon" type="image/png" href="logo.png">
-<!-- Шрифт Open Sans -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<meta property="og:locale" content="ru_RU">
+
+<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+<meta name="theme-color" content="#0F3460">
+
 <style>
-:root{
-  --bg:#14161a;--bg2:#1b1e24;--card:#232730;--card2:#2a2f3a;
-  --gold:#d4a94e;--gold2:#e8c47a;--text:#e8e6e1;--muted:#a7a9ad;
-  --green:#25d366;--maxc:#8778ff;
-  --ff:'Georgia',serif;
-  --fs:'Open Sans', system-ui, sans-serif; 
-  --radius:16px;
+:root {
+    --primary: #FF6B35;
+    --primary-hover: #E85520;
+    --secondary: #0F3460;
+    --dark: #1A1D21;
+    --text: #2C3038;
+    --muted: #6B7280;
+    --soft: #F5F7FA;
+    --border: #E5E8EC;
+    --white: #FFFFFF;
+    --radius-sm: 8px;
+    --radius: 14px;
+    --radius-lg: 20px;
+    --shadow-sm: 0 1px 3px rgba(15, 52, 96, 0.04);
+    --shadow: 0 4px 16px rgba(15, 52, 96, 0.06);
+    --shadow-lg: 0 12px 32px rgba(15, 52, 96, 0.10);
+    --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
 }
-*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
-html{scroll-behavior:smooth; overflow-x:hidden;}
-body{background:var(--bg);color:var(--text);font-family:var(--fs);line-height:1.6;overflow-x:hidden; width:100%;}
-.container{max-width:1240px;margin:0 auto;padding:0 24px; width:100%;}
-h1,h2,h3{font-family:var(--ff);font-weight:600; word-wrap:break-word;}
-.section{padding:84px 0}
-.section.alt{background:var(--bg2)}
-.section-title{text-align:center;font-size:clamp(26px,4vw,42px);margin-bottom:14px;color:#fff; line-height:1.2;}
-.section-sub{text-align:center;color:var(--muted);max-width:660px;margin:0 auto 48px;font-size:clamp(15px, 1.5vw, 17px); line-height: 1.5;}
-.gold{color:var(--gold)}
-#progress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--gold),var(--gold2));z-index:1001;transition:width .1s linear}
 
-/* Курсор для кликабельных элементов */
-.g-card, .cat, .gcard, .pcard, .btn, summary, .modal-tab { cursor: pointer; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
-/* Кнопки */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 26px;border-radius:10px;font-size:15px;font-weight:600;cursor:pointer;border:none;text-decoration:none;transition:transform .2s,box-shadow .2s;white-space:nowrap}
-.btn:active{transform:scale(.97)}
-.btn-gold{background:linear-gradient(135deg,var(--gold),#b8860b);color:#1a1a1a}
-.btn-gold:hover{box-shadow:0 6px 24px rgba(212,169,78,.4);transform:translateY(-2px)}
-.btn-outline{background:transparent;color:var(--gold);border:1.5px solid var(--gold)}
-.btn-outline:hover{background:rgba(212,169,78,.12)}
+html { scroll-behavior: smooth; scroll-padding-top: 88px; }
 
-/* Шапка */
-header{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(20,22,26,.92);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid rgba(212,169,78,.25)}
-.nav-wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
-.logo{display:flex;align-items:center;gap:12px;font-family:var(--ff);font-size:19px;letter-spacing:1.5px;color:#fff;text-decoration:none;white-space:nowrap; flex-shrink: 0;}
-.logo img { height: 36px; width: auto; }
-nav.desktop{display:flex;gap:22px; flex: 1; justify-content: center;}
-nav.desktop a{color:var(--text);text-decoration:none;font-size:15px;position:relative;padding:6px 0;white-space:nowrap}
-nav.desktop a::after{content:'';position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--gold);transition:width .3s}
-nav.desktop a:hover::after,nav.desktop a.active::after{width:100%}
-.nav-actions{display:flex;gap:10px;align-items:center; flex-shrink: 0;}
-.burger{display:none;background:none;border:none;color:var(--gold);font-size:24px;cursor:pointer;padding:8px}
-
-/* Мобильное меню - ШТОРКА СПРАВА */
-.mobile-menu{
-  position:fixed; top:0; right:-100%; width:320px; max-width: 85%; height:100vh; background:var(--bg2); z-index:2000;
-  padding:70px 24px 30px; display:flex; flex-direction:column; align-items:flex-start;
-  transition: right 0.45s cubic-bezier(0.4, 0, 0.2, 1);
-  overflow-y: auto; -webkit-overflow-scrolling: touch; box-shadow: -5px 0 30px rgba(0,0,0,0.5);
+body {
+    font-family: var(--font);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--white);
+    padding-top: 72px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
-.mobile-menu.open { right:0; }
-.menu-close{ position:absolute; top:20px; right:20px; background:none; border:none; color:var(--gold); font-size:32px; cursor:pointer; padding: 10px; transition: 0.3s;}
-.menu-close:hover { transform: rotate(90deg); }
 
-.mobile-logo { margin-bottom: 30px; display: flex; align-items: center; gap: 10px; width: 100%;}
-.mobile-logo img { height: 32px; }
-.mobile-logo span { color: #fff; font-family: var(--ff); font-size: 16px; letter-spacing: 1px;}
+a { color: inherit; text-decoration: none; transition: color var(--transition); }
+ul { list-style: none; }
+img, svg { display: block; max-width: 100%; }
+button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
 
-.mobile-nav { display:flex; flex-direction:column; align-items:flex-start; width:100%; gap:18px; margin-bottom: auto;}
-.mobile-nav a { color:#fff; text-decoration:none; font-size:18px; font-family:var(--fs); font-weight:600; transition: color 0.2s, padding-left 0.2s;}
-.mobile-nav a:hover { color: var(--gold); padding-left: 5px;}
+:focus-visible { outline: 3px solid var(--primary); outline-offset: 2px; border-radius: 4px; }
 
-.mobile-menu-bottom { 
-  margin-top: 40px; display:flex; flex-direction:column; align-items:flex-start; width:100%; gap:16px; 
-  padding-top:20px; border-top: 1px solid rgba(212,169,78,.2);
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }
-.mobile-phone { color:var(--gold); font-size:18px; font-weight:700; text-decoration:none; display: flex; align-items:center; gap:10px;}
-.mobile-mess { display: flex; gap: 10px; width: 100%; }
-.mobile-mess a { 
-  flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px; 
-  padding: 12px; border-radius: 8px; font-weight: 600; text-decoration: none; color: #fff; font-size: 14px;
-  transition: 0.3s;
+
+.container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+/* ПРАВКА 4: курсор-указатель на интерактивных плитках */
+.cat-card,
+.trust__item,
+.step,
+.opt-card { cursor: pointer; }
+
+/* ===== ИКОНКИ ===== */
+.icon {
+    width: 20px; height: 20px;
+    fill: none; stroke: currentColor;
+    stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
+    flex-shrink: 0;
 }
-.btn-mob-max { background: var(--maxc); }
-.btn-mob-wa { background: var(--green); }
 
-/* Оверлей для меню */
-.menu-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.6); opacity: 0; pointer-events: none; transition: opacity 0.4s; z-index: 1999; }
-.menu-overlay.open { opacity: 1; pointer-events: auto; }
+/* ===== КНОПКИ ===== */
+.btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    gap: 10px; padding: 14px 28px;
+    font-size: 15px; font-weight: 600;
+    border-radius: var(--radius-sm);
+    border: 2px solid transparent;
+    transition: all var(--transition);
+    white-space: nowrap; cursor: pointer;
+}
+.btn--primary { background: var(--primary); color: var(--white); border-color: var(--primary); }
+.btn--primary:hover {
+    background: var(--primary-hover); border-color: var(--primary-hover);
+    transform: translateY(-2px); box-shadow: 0 8px 24px rgba(255, 107, 53, 0.28);
+}
+.btn--ghost { background: transparent; color: var(--white); border-color: rgba(255, 255, 255, 0.3); }
+.btn--ghost:hover { background: rgba(255, 255, 255, 0.1); border-color: rgba(255, 255, 255, 0.6); }
 
-/* HERO */
-.hero{
-  padding: 140px 0 60px;
-  position: relative;
-  background: url('shop.jpg') no-repeat center center;
-  background-size: cover;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+/* ===== ПОЛОСА ПРОГРЕССА ===== */
+.scroll-progress {
+    position: fixed; top: 0; left: 0; height: 3px; width: 0;
+    background: linear-gradient(90deg, var(--primary), #FF9A6B);
+    z-index: 10000; transition: width 0.08s linear;
+    pointer-events: none;
+}
+@media (max-width: 500px) { .scroll-progress { height: 2px; } }
+
+/* ===== ШАПКА ===== */
+.header {
+    position: fixed; top: 0; left: 0; right: 0; height: 72px;
+    background: var(--white); border-bottom: 1px solid var(--border); z-index: 1000;
+}
+.header__inner {
+    display: flex; align-items: center; justify-content: space-between;
+    height: 100%; gap: 24px;
+}
+.logo { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+.logo__icon { width: 42px; height: 42px; object-fit: contain; flex-shrink: 0; }
+.logo__text { display: flex; flex-direction: column; line-height: 1.1; }
+.logo__name { font-size: 15px; font-weight: 800; color: var(--secondary); letter-spacing: 0.3px; }
+.logo__sub { font-size: 9px; font-weight: 600; color: var(--primary); letter-spacing: 1.1px; margin-top: 2px; }
+
+.burger {
+    display: none; flex-direction: column; justify-content: center;
+    gap: 5px; width: 44px; height: 44px; padding: 10px;
+    border-radius: var(--radius-sm);
+}
+.burger span {
+    display: block; height: 2px; width: 100%;
+    background: var(--secondary); border-radius: 2px;
+    transition: transform var(--transition), opacity var(--transition);
+}
+.burger[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.burger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.burger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.nav__list { display: flex; align-items: center; gap: 4px; }
+.nav__link {
+    position: relative; display: inline-block;
+    padding: 10px 14px; font-size: 15px; font-weight: 500;
+    color: var(--secondary); transition: color var(--transition);
+}
+.nav__link::after {
+    content: ''; position: absolute; bottom: 4px; left: 50%;
+    width: calc(100% - 28px); height: 2px;
+    background: var(--primary); border-radius: 2px;
+    transform: translateX(-50%) scaleX(0); transform-origin: center;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav__link:hover { color: var(--primary); }
+.nav__link:hover::after, .nav__link:focus-visible::after { transform: translateX(-50%) scaleX(1); }
+
+/* ПРАВКА 7: блок контактов в шапке с двумя телефонами */
+.header__contacts {
+    display: flex; flex-direction: column; align-items: flex-end;
+    gap: 2px; white-space: nowrap;
+}
+.header__phones {
+    display: flex; align-items: center; gap: 8px;
+}
+.header__phone-number {
+    font-size: 15px; font-weight: 700; color: var(--secondary);
+    line-height: 1.2; transition: color var(--transition);
+}
+.header__phone-number:hover { color: var(--primary); }
+.header__phone-sep { color: var(--border); }
+.header__phone-number--second {
+    font-weight: 600; font-size: 13.5px; color: var(--muted);
+}
+.header__phone-number--second:hover { color: var(--primary); }
+.header__phone-hours {
+    font-size: 11px; font-weight: 500; color: var(--muted);
+    line-height: 1.2; letter-spacing: 0.2px;
+}
+
+/* Скрываем второй телефон на узких экранах */
+@media (max-width: 1280px) {
+    .header__phone-sep,
+    .header__phone-number--second { display: none; }
+}
+
+/* Меню чуть компактнее на планшетах — из-за нового пункта "О магазине" */
+@media (min-width: 901px) and (max-width: 1280px) {
+    .nav__link { padding: 10px 10px; font-size: 14px; }
+}
+
+.nav-mobile-block { display: none; }
+
+/* ===== HERO ===== */
+.hero {
+    position: relative; padding: 100px 0 110px;
+    background:
+        radial-gradient(ellipse at top right, rgba(255, 107, 53, 0.18), transparent 55%),
+        linear-gradient(135deg, #0F3460 0%, #1A1D21 100%);
+    color: var(--white); overflow: hidden;
 }
 .hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(90deg, rgba(18,20,24,0.96) 0%, rgba(18,20,24,0.82) 100%);
-  z-index: 0;
+    content: ''; position: absolute; inset: 0;
+    background-image:
+        radial-gradient(circle at 15% 80%, rgba(255, 107, 53, 0.15), transparent 40%),
+        radial-gradient(circle at 85% 20%, rgba(255, 107, 53, 0.10), transparent 45%);
+    pointer-events: none;
 }
-.hero .container { position: relative; z-index: 1; }
-.hero-text { max-width: 800px; }
-.hero h1{font-size:clamp(30px,4.5vw,52px);line-height:1.15;color:#fff;margin:16px 0 16px}
-.hero p{color:var(--muted);font-size:clamp(15px,1.5vw,18px);max-width:620px;margin-bottom:30px; min-height: 54px;}
-.hero-badge{display:inline-flex;align-items:center;gap:10px;background:rgba(212,169,78,.15);border:1px solid rgba(212,169,78,.45);border-radius:50px;padding:10px 24px;color:var(--gold2);font-size:15px;font-weight:600; box-shadow: 0 0 15px rgba(212,169,78,0.2); animation: pulse-gold 2s infinite;}
-@keyframes pulse-gold { 0% { box-shadow: 0 0 0 0 rgba(212,169,78, 0.4); } 70% { box-shadow: 0 0 0 10px rgba(212,169,78, 0); } 100% { box-shadow: 0 0 0 0 rgba(212,169,78, 0); } }
-.hero-badge a{color:var(--gold2);text-decoration:none}
-
-.hero-actions-wrap {
-  display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 30px; align-items: center;
+.hero__inner { position: relative; max-width: 880px; text-align: center; margin: 0 auto; }
+.hero__badge {
+    display: inline-block; padding: 8px 18px;
+    font-size: 13px; font-weight: 500; color: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 100px; margin-bottom: 28px; letter-spacing: 0.2px;
 }
-.btn-hero {
-  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
-  padding: 15px 32px; border-radius: 10px; font-size: 16px; font-weight: 600;
-  text-decoration: none; transition: transform 0.2s, box-shadow 0.2s;
+.hero__title {
+    font-size: clamp(28px, 5vw, 52px); font-weight: 900;
+    line-height: 1.15; letter-spacing: -0.02em;
+    margin-bottom: 24px; min-height: 130px;
 }
-.btn-hero-quiz {
-  background: linear-gradient(135deg, var(--gold), #b8860b);
-  color: #1a1a1a;
-  width: 100%; max-width: 340px;
+.text-rotator {
+    color: var(--primary); display: inline-block;
+    min-width: 420px; text-align: center; white-space: nowrap;
+    transition: opacity 0.35s ease, transform 0.35s ease;
+    opacity: 1; transform: translateY(0);
 }
-.btn-hero-quiz:hover { box-shadow: 0 6px 24px rgba(212,169,78,.4); transform: translateY(-2px);}
-
-/* Статистика в Hero */
-.hero-stats{display:flex;gap:clamp(24px,5vw,80px);flex-wrap:wrap;border-top:1px solid rgba(212,169,78,.3);padding-top:24px; margin-top: 20px;}
-.stat b{display:block;font-family:var(--fs);font-variant-numeric:tabular-nums;font-size:clamp(24px,3.2vw,36px);color:var(--gold);font-weight:700}
-.stat span{color:var(--muted);font-size:14px}
-.scroll-hint{position:absolute;bottom:15px;left:50%;transform:translateX(-50%);color:var(--muted);font-size:13px;animation:bounce 2s infinite; z-index:1; text-align: center; width: 100%;}
-@keyframes bounce{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,10px)}}
-
-/* Ротатор */
-.hero-rotator { display: block; }
-.hero-rotator .hr-item { display: none; }
-.hero-rotator .hr-item.active { display: inline-block; animation: hrIn 0.45s ease both; }
-@keyframes hrIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
-
-/* Квиз */
-.quiz{background:linear-gradient(rgba(13,14,17,.90), rgba(13,14,17,.95)), url('bg_photo_kviz.png') center/cover no-repeat}
-.quiz-card{max-width:760px;margin:0 auto;background:var(--card);border:1px solid rgba(212,169,78,.2);border-radius:20px;padding:clamp(24px,4vw,48px);box-shadow:0 20px 60px rgba(0,0,0,.35)}
-.quiz-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;color:var(--muted);font-size:14px}
-.quiz-progress{height:6px;background:var(--bg);border-radius:6px;margin-bottom:34px;overflow:hidden}
-.quiz-progress div{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold2));border-radius:6px;transition:width .4s ease}
-.q-title{font-family:var(--ff);font-size:clamp(20px,2.6vw,27px);color:#fff;margin-bottom:8px; line-height: 1.3;}
-.q-hint{color:var(--muted);font-size:14px;margin-bottom:26px}
-.q-opts{display:flex;flex-direction:column;gap:12px}
-.q-opt{display:flex;align-items:center;gap:16px;padding:16px 20px;background:var(--bg);border:1.5px solid transparent;border-radius:12px;cursor:pointer;transition:all .2s;width:100%;color:var(--text);font-size:15px;font-family:var(--fs);text-align:left; line-height: 1.4;}
-.q-opt i{color:var(--gold);font-size:20px;width:26px;text-align:center;flex-shrink:0; transition: transform 0.3s;}
-.q-opt:hover i { transform: scale(1.2); }
-.q-opt:hover{border-color:rgba(212,169,78,.5);background:var(--card2)}
-.q-opt.sel{border-color:var(--gold);background:rgba(212,169,78,.12)}
-.q-opt.sel i{color:var(--gold2)}
-.q-error{color:#ff8a8a;font-size:14px;margin-top:16px;display:none}
-.q-error.show{display:block;animation:shake .4s}
-@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
-.q-nav{display:flex;justify-content:space-between;gap:12px;margin-top:28px;flex-wrap:wrap}
-.q-nav .btn{padding:12px 28px}
-.quiz-step{display:none}
-.quiz-step.active{display:block;animation:fadeIn .35s ease}
-@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
-.q-input{width:100%;padding:15px 18px;background:var(--bg);border:1.5px solid rgba(212,169,78,.3);border-radius:12px;color:var(--text);font-size:16px;margin-bottom:6px;outline:none;transition:border .2s;font-family:var(--fs)}
-.q-input:focus{border-color:var(--gold)}
-.q-input.err{border-color:#ff8a8a}
-.q-label{color:var(--muted);font-size:13px;margin:10px 0 6px;display:block}
-.consent{display:flex;gap:10px;align-items:flex-start;margin:16px 0 6px;font-size:13.5px;color:var(--muted)}
-.consent input{margin-top:4px;accent-color:var(--gold);width:17px;height:17px; flex-shrink: 0;}
-.consent a{color:var(--gold)}
-.mess-choice{display:flex;gap:12px;margin:18px 0 4px;flex-wrap:wrap}
-.mess-choice .q-opt{flex:1 1 220px;justify-content:center;font-weight:600;padding:15px}
-.mess-choice .q-opt.wa.sel{border-color:var(--green);background:rgba(37,211,102,.12)}
-.mess-choice .q-opt.wa i{color:var(--green)}
-.mess-choice .q-opt.max.sel{border-color:var(--maxc);background:rgba(135,120,255,.12)}
-.mess-choice .q-opt.max i{color:var(--maxc)}
-.q-privacy{color:var(--muted);font-size:12.5px;text-align:center;margin-top:18px}
-
-/* Сетки */
-.g-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.g-card{background:var(--card);border:1px solid rgba(212,169,78,.15);border-radius:var(--radius);overflow:hidden;transition:transform .3s,box-shadow .3s, border-color .3s; display: flex; flex-direction: column;}
-.g-card:hover{transform:translateY(-8px) scale(1.02); box-shadow:0 20px 40px rgba(0,0,0,.4); border-color: rgba(212,169,78,.4);}
-.g-ph{height:210px;display:flex;align-items:center;justify-content:center;font-size:52px;color:var(--gold);background:linear-gradient(140deg,#2e323b,#20242c 55%,#3a3020);position:relative; overflow: hidden;}
-.g-ph::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(0,0,0,.45));pointer-events:none; z-index: 1;}
-.g-ph img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; z-index: 0;}
-.g-card:hover .g-ph img { transform: scale(1.1); }
-.g-body{padding:22px; display: flex; flex-direction: column; flex-grow: 1; z-index: 2; background: var(--card); position: relative;}
-.g-body h3{font-size:19px;margin-bottom:8px;color:#fff}
-.g-body p{color:var(--muted);font-size:14px}
-.g-note{margin-top:36px;text-align:center;background:rgba(212,169,78,.08);border:1px dashed rgba(212,169,78,.4);border-radius:12px;padding:18px 24px;color:var(--muted);font-size:14.5px; transition: 0.3s;}
-.g-note:hover { background: rgba(212,169,78,.15); }
-.g-note i{color:var(--gold);margin-right:8px}
-.g-note a{color:var(--gold2)}
-
-/* Каталог */
-.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
-.cat{
-  background:var(--card); border:1px solid rgba(212,169,78,.15); border-radius:var(--radius); padding:30px 24px;
-  display:flex; flex-direction:column; transition:transform .3s, box-shadow .3s, border-color .3s;
-  position: relative; overflow: hidden; padding-bottom: 100px; 
+.text-rotator.is-fading { opacity: 0; transform: translateY(6px); }
+.hero__text {
+    font-size: 17px; line-height: 1.65; color: rgba(255, 255, 255, 0.75);
+    max-width: 640px; margin: 0 auto 40px;
 }
-.cat:hover{transform:translateY(-8px); box-shadow:0 15px 35px rgba(0,0,0,.4); border-color:rgba(212,169,78,.5);}
+.hero__actions { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
 
-/* Новые иконки в каталоге (в кружочках) */
-.cat-icon {
-  width: 48px; height: 48px; border-radius: 50%;
-  background: rgba(212,169,78,0.1); border: 1px solid rgba(212,169,78,0.3);
-  display: flex; align-items: center; justify-content: center;
-  margin-bottom: 20px; transition: transform 0.3s, background-color 0.3s;
+/* ===== ПРОМО-БАННЕР ===== */
+.promo {
+    background: var(--primary); color: var(--white);
+    padding: 24px 0; position: relative; overflow: hidden;
 }
-.cat-icon i { font-size: 22px; color: var(--gold); }
-.cat:hover .cat-icon { transform: scale(1.1); background: rgba(212,169,78,0.2); }
-
-.cat h3{font-size:20px;margin-bottom:12px;color:#fff; min-height: 54px; line-height: 1.3;}
-.cat p{color:var(--muted);font-size:14px; flex-grow: 1;}
-.cat .price{font-family:var(--ff);font-size:24px;color:var(--gold);margin:16px 0 4px}
-.cat .term{color:var(--muted);font-size:13px;margin-bottom:0;}
-
-.cat-buttons { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; width: 100%; }
-.btn-wa-msg, .btn-max-msg {
-  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
-  padding: 12px 8px; border-radius: 8px; font-size: 13px; font-weight: 600;
-  text-decoration: none; transition: 0.3s; border: 1px solid transparent;
+.promo::before {
+    content: ''; position: absolute; top: -50%; right: -10%;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.12), transparent 70%);
+    pointer-events: none;
 }
-.btn-wa-msg { background: rgba(37, 211, 102, 0.1); color: #25d366; border-color: rgba(37, 211, 102, 0.3); }
-.btn-wa-msg:hover { background: #25d366; color: #fff; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); transform: scale(1.05);}
-.btn-max-msg { background: rgba(135, 120, 255, 0.1); color: #8778ff; border-color: rgba(135, 120, 255, 0.3); }
-.btn-max-msg:hover { background: #8778ff; color: #fff; box-shadow: 0 4px 15px rgba(135, 120, 255, 0.4); transform: scale(1.05);}
-
-@media (min-width: 901px) {
-  .cat-action {
-    position: absolute; bottom: 0; left: 0; width: 100%; padding: 20px 24px 24px;
-    background: linear-gradient(to top, rgba(35,39,48,1) 0%, rgba(35,39,48,0.95) 60%, rgba(35,39,48,0) 100%);
-    opacity: 0; transform: translateY(20px); transition: opacity 0.3s ease, transform 0.3s ease; pointer-events: none;
-  }
-  .cat:hover .cat-action { opacity: 1; transform: translateY(0); pointer-events: auto; }
+.promo__inner {
+    position: relative; display: flex; align-items: center;
+    gap: 24px; flex-wrap: wrap;
 }
+.promo__tag {
+    display: inline-block; padding: 6px 14px;
+    font-size: 12px; font-weight: 700; letter-spacing: 1.2px;
+    text-transform: uppercase; background: rgba(255, 255, 255, 0.2);
+    border-radius: 100px;
+}
+.promo__content { flex: 1; min-width: 240px; }
+.promo__title { font-size: 22px; font-weight: 800; letter-spacing: -0.01em; margin-bottom: 2px; }
+.promo__title span {
+    display: inline-block; padding: 0 8px;
+    background: var(--white); color: var(--primary); border-radius: 4px;
+}
+.promo__text { font-size: 14px; opacity: 0.9; }
+.promo__btn {
+    padding: 12px 24px; font-size: 14px; font-weight: 700;
+    color: var(--primary); background: var(--white);
+    border-radius: var(--radius-sm); transition: all var(--transition);
+    white-space: nowrap;
+}
+.promo__btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); }
+
+/* ===== СЕКЦИИ ===== */
+.section { padding: 96px 0; }
+.section--soft { background: var(--soft); }
+.section__head { max-width: 680px; margin: 0 auto 56px; text-align: center; }
+.section__title {
+    font-size: clamp(24px, 3.5vw, 36px); font-weight: 800;
+    color: var(--secondary); letter-spacing: -0.02em;
+    line-height: 1.2; margin-bottom: 12px;
+}
+.section__sub { font-size: 16px; color: var(--muted); line-height: 1.6; }
+
+/* ===== СЕТКИ ===== */
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+
+/* ===== КАРТОЧКИ АССОРТИМЕНТА ===== */
+.cat-card {
+    display: flex; flex-direction: column;
+    background: var(--white); border: 1px solid var(--border);
+    border-radius: var(--radius-lg); overflow: hidden;
+    transition: all var(--transition);
+}
+@media (hover: hover) {
+    .cat-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); border-color: transparent; }
+}
+.cat-card__visual {
+    position: relative; height: 180px;
+    display: flex; align-items: center; justify-content: center;
+    background:
+        radial-gradient(circle at 30% 20%, rgba(255, 107, 53, 0.08), transparent 60%),
+        linear-gradient(135deg, #F5F7FA 0%, #E9EDF3 100%);
+    border-bottom: 1px solid var(--border);
+}
+.cat-card__icon {
+    width: 92px; height: 92px; fill: none;
+    stroke: var(--secondary); stroke-width: 2;
+    stroke-linecap: round; stroke-linejoin: round;
+    transition: all var(--transition);
+}
+.cat-card:hover .cat-card__icon { stroke: var(--primary); transform: scale(1.06); }
+.cat-card__body { display: flex; flex-direction: column; flex: 1; padding: 28px 26px 26px; }
+.cat-card__title {
+    font-size: 22px; font-weight: 800; color: var(--secondary);
+    letter-spacing: -0.01em; margin-bottom: 16px;
+}
+.cat-card__list { flex: 1; margin-bottom: 20px; }
+.cat-card__list li {
+    position: relative; padding-left: 20px; padding-bottom: 8px;
+    font-size: 15px; color: var(--text); line-height: 1.5;
+}
+.cat-card__list li::before {
+    content: ''; position: absolute; left: 0; top: 9px;
+    width: 8px; height: 8px; border-radius: 50%; background: var(--primary);
+}
+.cat-card__btn {
+    display: block; padding: 14px 20px; text-align: center;
+    font-size: 15px; font-weight: 700; color: var(--secondary);
+    background: var(--soft); border-radius: var(--radius-sm);
+    transition: all var(--transition);
+}
+.cat-card:hover .cat-card__btn { background: var(--primary); color: var(--white); }
+
+/* ПРАВКА 2: на устройствах с наведением кнопка появляется только при hover */
+@media (hover: hover) and (min-width: 769px) {
+    .cat-card__btn {
+        opacity: 0;
+        transform: translateY(6px);
+        pointer-events: none;
+        transition: opacity 0.3s ease, transform 0.3s ease,
+                    background var(--transition), color var(--transition);
+    }
+    .cat-card:hover .cat-card__btn,
+    .cat-card:focus-within .cat-card__btn {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+}
+
+/* ===== ГОСТ ===== */
+.gost { background: var(--secondary); color: var(--white); padding: 26px 0; }
+.gost__inner {
+    display: flex; align-items: center; justify-content: center;
+    gap: 18px; text-align: center; flex-wrap: wrap;
+}
+.gost__icon {
+    width: 36px; height: 36px; fill: none;
+    stroke: var(--primary); stroke-width: 1.8;
+    stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0;
+}
+.gost__text { font-size: 16px; color: rgba(255, 255, 255, 0.9); }
+.gost__text strong { color: var(--white); font-weight: 700; }
+
+/* ===== МЕДАЛЬОНЫ ===== */
+.trust { display: grid; grid-template-columns: repeat(5, 1fr); gap: 24px 16px; align-items: start; }
+.trust__item {
+    display: flex; flex-direction: column; align-items: center;
+    text-align: center; gap: 14px;
+}
+.trust__medal {
+    width: 110px; height: 110px;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 50%;
+    background:
+        radial-gradient(circle at 30% 25%, rgba(255, 107, 53, 0.06), transparent 60%),
+        var(--white);
+    border: 2px solid var(--border);
+    transition: all var(--transition); flex-shrink: 0;
+}
+.trust__medal svg {
+    width: 62px; height: 62px; fill: none;
+    stroke: var(--secondary); stroke-width: 2;
+    stroke-linecap: round; stroke-linejoin: round;
+    transition: all var(--transition);
+}
+@media (hover: hover) {
+    .trust__item:hover .trust__medal {
+        border-color: var(--primary); transform: translateY(-4px);
+        box-shadow: 0 8px 24px rgba(255, 107, 53, 0.12);
+    }
+    .trust__item:hover .trust__medal svg { stroke: var(--primary); }
+}
+.trust__text { font-size: 14px; font-weight: 600; line-height: 1.35; color: var(--secondary); }
+
+/* ===== ШАГИ (ПРАВКА 6: с иконками) ===== */
+.step {
+    position: relative; padding: 36px 32px;
+    background: var(--white); border: 1px solid var(--border);
+    border-radius: var(--radius-lg); transition: all var(--transition);
+}
+@media (hover: hover) {
+    .step:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-color: transparent; }
+}
+.step__icon {
+    position: relative;
+    width: 72px; height: 72px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #FFF1EA 0%, #FFE1D2 100%);
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 24px;
+    transition: all var(--transition);
+}
+.step__icon svg {
+    width: 36px; height: 36px;
+    fill: none; stroke: var(--primary);
+    stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+    transition: stroke var(--transition);
+}
+.step__num {
+    position: absolute;
+    top: -10px; right: -10px;
+    min-width: 30px; height: 30px;
+    padding: 0 8px;
+    display: inline-flex; align-items: center; justify-content: center;
+    background: var(--secondary); color: var(--white);
+    border-radius: 100px;
+    font-size: 12px; font-weight: 800;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 10px rgba(15, 52, 96, 0.2);
+    transition: background var(--transition);
+}
+.step:hover .step__icon {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-hover) 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 107, 53, 0.28);
+}
+.step:hover .step__icon svg { stroke: var(--white); }
+.step:hover .step__num { background: var(--primary); }
+.step__title {
+    font-size: 19px; font-weight: 700; color: var(--secondary);
+    margin-bottom: 10px; letter-spacing: -0.01em;
+}
+.step__text { font-size: 15px; color: var(--muted); line-height: 1.6; }
+
+/* ===== О МАГАЗИНЕ ===== */
+.about { max-width: 780px; margin: 0 auto; text-align: center; }
+.about__text { font-size: 16px; line-height: 1.7; color: var(--text); margin-bottom: 18px; }
+
+/* ===== ОТЗЫВЫ ===== */
+.reviews__frame {
+    max-width: 1000px; margin: 0 auto;
+    border-radius: var(--radius-lg); overflow: hidden;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow); background: var(--white);
+}
+.reviews__frame iframe {
+    display: block; width: 100%; height: 600px; border: none;
+}
+@media (max-width: 768px) { .reviews__frame iframe { height: 480px; } }
+@media (max-width: 480px) { .reviews__frame iframe { height: 420px; } }
+
+/* ===== КОНТАКТЫ ===== */
+.contacts-wrap { display: grid; grid-template-columns: 1fr 1.1fr; gap: 40px; align-items: stretch; }
+.contacts-left { display: flex; flex-direction: column; gap: 24px; }
+.contact-list { display: flex; flex-direction: column; gap: 14px; }
+.contact-card {
+    display: flex; align-items: flex-start; gap: 18px;
+    padding: 20px 24px; background: var(--white);
+    border: 1px solid var(--border); border-radius: var(--radius);
+    transition: all var(--transition);
+}
+a.contact-card { cursor: pointer; }
+a.contact-card:hover { transform: translateY(-2px); box-shadow: var(--shadow); border-color: transparent; }
+.contact-card__icon {
+    flex-shrink: 0; width: 48px; height: 48px;
+    background: var(--secondary); border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    transition: all var(--transition);
+}
+.contact-card__icon svg {
+    width: 24px; height: 24px; fill: none;
+    stroke: var(--white); stroke-width: 1.8;
+    stroke-linecap: round; stroke-linejoin: round;
+}
+a.contact-card:hover .contact-card__icon { background: var(--primary); }
+.contact-card__body { flex: 1; min-width: 0; }
+.contact-card__label {
+    font-size: 12px; font-weight: 600; letter-spacing: 1px;
+    text-transform: uppercase; color: var(--muted); margin-bottom: 6px;
+}
+.contact-card__value { font-size: 17px; font-weight: 600; color: var(--secondary); line-height: 1.5; }
+
+.contact-messengers { display: flex; gap: 12px; flex-wrap: wrap; }
+.contact-msg {
+    flex: 1; min-width: 130px;
+    display: inline-flex; align-items: center; justify-content: center;
+    gap: 10px; padding: 16px 20px;
+    font-size: 15px; font-weight: 700; color: var(--white);
+    border-radius: var(--radius-sm); transition: all var(--transition);
+    white-space: nowrap;
+}
+.contact-msg svg { width: 22px; height: 22px; fill: currentColor; flex-shrink: 0; }
+.contact-msg--max { background: linear-gradient(135deg, #471AFF, #9500FF); }
+.contact-msg--wa  { background: #25D366; }
+.contact-msg--tg  { background: #229ED9; }
+.contact-msg:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); }
+
+.contacts-map {
+    border-radius: var(--radius-lg); overflow: hidden;
+    border: 1px solid var(--border); box-shadow: var(--shadow);
+    min-height: 480px; background: var(--soft);
+}
+.contacts-map iframe {
+    display: block; width: 100%; height: 100%;
+    min-height: 480px; border: none;
+}
+
+/* ===== ОПТОВИКАМ ===== */
+.opt-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 24px; margin-bottom: 48px;
+}
+.opt-card {
+    background: var(--white); border: 1px solid var(--border);
+    border-radius: var(--radius-lg); padding: 36px 32px;
+    text-align: center; transition: all var(--transition);
+}
+@media (hover: hover) {
+    .opt-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-color: transparent; }
+}
+.opt-card__icon {
+    width: 64px; height: 64px; margin: 0 auto 20px;
+    background: rgba(255, 107, 53, 0.10); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--primary); transition: all var(--transition);
+}
+.opt-card:hover .opt-card__icon { background: var(--primary); color: var(--white); }
+.opt-card__icon svg {
+    width: 32px; height: 32px; fill: none;
+    stroke: currentColor; stroke-width: 1.8;
+    stroke-linecap: round; stroke-linejoin: round;
+}
+.opt-card h3 {
+    font-size: 20px; font-weight: 800; color: var(--secondary);
+    margin-bottom: 14px; letter-spacing: -0.01em;
+}
+.opt-card p { font-size: 15px; color: var(--muted); line-height: 1.6; }
+.opt-card__list { list-style: none; display: inline-block; text-align: left; }
+.opt-card__list li {
+    position: relative; padding-left: 20px; padding-bottom: 10px;
+    font-size: 15px; color: var(--text); line-height: 1.5;
+}
+.opt-card__list li strong { color: var(--primary); font-weight: 800; }
+.opt-card__list li::before {
+    content: ''; position: absolute; left: 0; top: 9px;
+    width: 8px; height: 8px; border-radius: 50%; background: var(--primary);
+}
+.opt-cta {
+    text-align: center; padding: 40px;
+    background: var(--soft); border-radius: var(--radius-lg);
+    border: 2px dashed var(--border);
+}
+.opt-cta p { font-size: 17px; font-weight: 600; color: var(--secondary); margin-bottom: 20px; }
+
+/* ===== ФУТЕР ===== */
+.footer {
+    background: var(--dark); color: rgba(255, 255, 255, 0.6);
+    padding: 48px 0 24px; font-size: 14px;
+    border-top: 3px solid var(--primary);
+}
+.footer__top {
+    display: grid; grid-template-columns: 1.1fr 1.4fr 1fr;
+    gap: 40px; padding-bottom: 32px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    margin-bottom: 24px; text-align: left;
+}
+.footer__col h4 {
+    font-size: 12px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 1.5px;
+    color: rgba(255, 255, 255, 0.85); margin-bottom: 14px;
+}
+.footer__brand-name { font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 6px; }
+.footer__brand-tagline { font-size: 12px; color: rgba(255, 255, 255, 0.5); margin-bottom: 14px; }
+.footer__brand-desc { font-size: 12.5px; color: rgba(255, 255, 255, 0.5); line-height: 1.6; }
+
+.footer__requisites { display: flex; flex-direction: column; gap: 5px; }
+.footer__req-row { display: flex; gap: 8px; font-size: 12.5px; line-height: 1.55; }
+.footer__req-label { color: rgba(255, 255, 255, 0.4); flex-shrink: 0; min-width: 100px; }
+.footer__req-value { color: rgba(255, 255, 255, 0.78); word-break: break-word; }
+.footer__placeholder {
+    color: #fbbf24; background: rgba(251, 191, 36, 0.08);
+    padding: 1px 6px; border-radius: 4px;
+    font-family: 'Courier New', monospace; font-size: 12px;
+}
+
+.footer__contacts { display: flex; flex-direction: column; gap: 9px; }
+.footer__contact-item {
+    display: flex; align-items: flex-start; gap: 9px;
+    font-size: 13px; color: rgba(255, 255, 255, 0.72);
+}
+.footer__contact-item svg {
+    width: 14px; height: 14px; flex-shrink: 0;
+    color: var(--primary); margin-top: 3px;
+}
+.footer__contact-item a { color: rgba(255, 255, 255, 0.85); }
+.footer__contact-item a:hover { color: #fff; }
+
+.footer__legal-links {
+    display: flex; justify-content: center; align-items: center;
+    flex-wrap: wrap; gap: 0; margin-bottom: 16px; text-align: center;
+}
+.footer__legal-links a {
+    font-size: 12px; color: rgba(255, 255, 255, 0.5);
+    transition: color var(--transition); cursor: pointer;
+}
+.footer__legal-links a:hover { color: rgba(255, 255, 255, 0.9); }
+.footer__legal-links .dot { margin: 0 8px; color: rgba(255, 255, 255, 0.15); }
+
+.footer__bottom {
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 12px; padding-top: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+.footer__copy { font-size: 12px; color: rgba(255, 255, 255, 0.4); }
+.footer__author { font-size: 12px; color: rgba(255, 255, 255, 0.4); }
+.footer__author a {
+    color: rgba(255, 255, 255, 0.7); text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.2);
+    text-underline-offset: 2px; transition: all var(--transition);
+}
+.footer__author a:hover { color: #fff; text-decoration-color: rgba(255, 255, 255, 0.6); }
+
 @media (max-width: 900px) {
-  .cat { padding-bottom: 30px; }
-  .cat-action {
-    position: static; margin-top: 20px; padding-top: 15px; border-top: 1px dashed rgba(212,169,78,.2);
-    opacity: 1; transform: none; background: none; pointer-events: auto;
-  }
+    .footer__top { grid-template-columns: 1fr; gap: 28px; }
+}
+@media (max-width: 768px) {
+    .footer { padding: 36px 0 20px; }
+    .footer__bottom { flex-direction: column; text-align: center; gap: 8px; }
+    .footer__req-label { min-width: 90px; }
 }
 
-/* Гарантии */
-.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
-.gcard{background:var(--card);border:1px solid rgba(212,169,78,.15);border-radius:var(--radius);padding:30px 24px;transition:transform .3s, border-color .3s; display: flex; flex-direction: column;}
-.gcard:hover{transform:translateY(-8px); border-color: rgba(212,169,78,0.4);}
-.gcard-icon { width: 44px; height: 44px; border-radius: 50%; background: rgba(212,169,78,0.1); border: 1px solid rgba(212,169,78,0.3); display: flex; align-items: center; justify-content: center; margin-bottom: 16px; transition: transform 0.3s;}
-.gcard:hover .gcard-icon { transform: scale(1.1) rotate(10deg); }
-.gcard-icon i { font-size: 20px; color: var(--gold); }
-.gcard h4{font-family:var(--ff);font-size:17px;color:#fff;margin-bottom:12px; min-height: 44px; line-height: 1.3;}
-.gcard p{color:var(--muted);font-size:14px; flex: 1;}
-
-/* Процесс */
-.p4{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;counter-reset:step}
-.pcard{background:var(--card);border:1px solid rgba(212,169,78,.15);border-radius:var(--radius);padding:30px 24px;position:relative; transition: transform 0.3s, border-color 0.3s; display: flex; flex-direction: column;}
-.pcard:hover { transform: translateY(-8px); border-color: rgba(212,169,78,0.4); }
-.pcard-icon { width: 44px; height: 44px; border-radius: 50%; background: rgba(212,169,78,0.1); border: 1px solid rgba(212,169,78,0.3); display: flex; align-items: center; justify-content: center; margin-bottom: 20px; transition: transform 0.3s;}
-.pcard:hover .pcard-icon { transform: scale(1.1); }
-.pcard-icon i { font-size: 20px; color: var(--gold); }
-.pcard::before{counter-increment:step;content:'0' counter(step);font-family:var(--ff);font-size:36px;color:rgba(212,169,78,.15);position: absolute;top: 20px; right: 20px;line-height: 1; transition: color 0.3s;}
-.pcard:hover::before { color: rgba(212,169,78,0.4); }
-.pcard h4{font-family:var(--ff);font-size:18px;color:#fff;margin-bottom:12px; position: relative; z-index: 1;}
-.pcard p{color:var(--muted);font-size:14px; position: relative; z-index: 1; flex: 1;}
-.pnote{margin-top:34px;text-align:center;background:rgba(212,169,78,.08);border:1px solid rgba(212,169,78,.3);border-radius:12px;padding:18px;color:var(--text);font-size:14.5px; display: flex; align-items: center; justify-content: center; gap: 10px;}
-.pnote i{color:var(--gold); font-size: 20px;}
-
-/* CTA Plashka */
-.cta-strip{
-  background: var(--card); border:1px solid rgba(212,169,78,.3); border-radius:20px;
-  padding:clamp(30px,5vw,52px); text-align:center; margin-top:56px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+/* ===== COOKIE ===== */
+.cookie {
+    position: fixed; bottom: 0; left: 0; right: 0;
+    background: var(--secondary); color: var(--white);
+    padding: 18px 0; z-index: 9990;
+    transform: translateY(100%);
+    transition: transform 0.35s ease;
+    box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.12);
 }
-.cta-strip h3{font-size:clamp(20px,2.6vw,30px);color:#fff;margin-bottom:12px}
-.cta-strip p{color:var(--muted);margin-bottom:26px;max-width:560px;margin-left:auto;margin-right:auto}
-
-/* Отзывы */
-.rev-widget{
-  margin: 18px auto 0; width: 100%; max-width: 1000px;
-  border: 1px solid rgba(212,175,55,.25); border-radius: 14px; overflow: hidden; background: #141a24; display: block;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+.cookie.is-visible { transform: translateY(0); }
+.cookie__inner {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 24px; flex-wrap: wrap;
 }
-.rev-widget iframe { display: block; width: 100% !important; height: 520px; border: 0; }
-.rev-sum{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px;margin-top:22px;padding:18px 22px;border:1px solid rgba(212,175,55,.3);border-radius:14px;background:linear-gradient(135deg,rgba(212,175,55,.08),rgba(212,175,55,.02)); max-width: 1000px; margin-left: auto; margin-right: auto;}
-.rev-sum b{font-size:34px;color:var(--gold);font-family:Georgia,serif}
-.rev-sum .stars i{color:var(--gold);font-size:15px}
-.rev-sum a{color:var(--gold);text-decoration:underline;text-underline-offset:3px;font-size:14px}
-.rev-sum small{width:100%;color:#8a93a6;font-size:12.5px}
-
-/* FAQ */
-section#faq { background: var(--bg2); }
-details{background:var(--card);border:1px solid rgba(212,169,78,.15);border-radius:12px;margin-bottom:14px;overflow:hidden; transition: border-color 0.3s, box-shadow 0.3s;}
-details:hover { border-color: rgba(212,169,78,.4); box-shadow: 0 4px 20px rgba(0,0,0,0.2); }
-details[open] { border-color: rgba(212,169,78,.6); box-shadow: 0 4px 20px rgba(0,0,0,0.3); }
-summary{padding:20px 24px;cursor:pointer;font-weight:600;color:#fff;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px; transition: background-color 0.3s; line-height: 1.4;}
-summary:hover { background: rgba(255,255,255,0.03); }
-details[open] summary { background: rgba(212,169,78,0.08); }
-summary::-webkit-details-marker { display: none; }
-summary::after{content:'+';color:var(--gold);font-size:24px;font-weight: 300;transition:transform 0.3s;flex-shrink:0}
-details[open] summary::after{transform:rotate(45deg)}
-
-/* Плавная анимация текста */
-details div{padding:0 24px 20px;color:var(--muted);font-size:15px; line-height: 1.6;
-  opacity: 0; transform: translateY(-8px); transition: opacity 0.3s ease, transform 0.3s ease;}
-details[open] div { opacity: 1; transform: translateY(0); }
-
-/* Контакты */
-.c-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
-.c-info{display:flex;flex-direction:column;gap:24px}
-.c-item b{color:#fff;display:block;font-size:16px; margin-bottom: 6px;}
-.c-item span,.c-item a{color:var(--muted);font-size:15px;text-decoration:none; line-height: 1.5; display: block;}
-.c-item a:hover{color:var(--gold2)}
-.c-messengers { display: flex; gap: 15px; flex-wrap: wrap; margin-top: 8px; }
-.c-messengers a { display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px; border-radius: 8px; font-weight: 600; transition: 0.3s; }
-.c-messengers .c-max { background: rgba(135,120,255,0.1); color: var(--maxc); border: 1px solid rgba(135,120,255,0.3); }
-.c-messengers .c-max:hover { background: var(--maxc); color: #fff; transform: scale(1.05);}
-.c-messengers .c-wa { background: rgba(37,211,102,0.1); color: var(--green); border: 1px solid rgba(37,211,102,0.3); }
-.c-messengers .c-wa:hover { background: var(--green); color: #fff; transform: scale(1.05);}
-.map-wrap{border-radius:var(--radius);overflow:hidden;border:1px solid rgba(212,169,78,.25);min-height:420px; width: 100%;}
-.map-wrap iframe{width:100%;height:460px;border:0;display:block; filter: grayscale(0.2) contrast(1.1); transition: filter 0.3s;}
-.map-wrap:hover iframe { filter: grayscale(0) contrast(1); }
-
-/* Подвал */
-footer{background:#101216;border-top:1px solid rgba(212,169,78,.2);padding:44px 0;text-align:center;color:var(--muted);font-size:13.5px}
-footer .flinks{margin:14px 0}
-footer .flinks a{color:var(--gold2);text-decoration:none;margin:0 10px}
-.disc{max-width:860px;margin:0 auto;color:#7a7d82;font-size:12px}
-
-/* Cookie */
-.cookie{position:fixed;bottom:0;left:0;right:0;background:rgba(20,22,26,.97);border-top:1px solid rgba(212,169,78,.35);padding:16px 24px;z-index:1100;display:flex;gap:16px;align-items:center;justify-content:center;flex-wrap:wrap;transform:translateY(110%);transition:transform .4s; box-shadow: 0 -4px 20px rgba(0,0,0,0.3);}
-.cookie.show{transform:translateY(0)}
-.cookie p{color:var(--muted);font-size:13.5px;max-width:640px}
-.cookie p a{color:var(--gold2)}
-.cookie button{padding:10px 20px;border-radius:8px;border:none;cursor:pointer;font-weight:600;font-size:13.5px}
-.cookie .c-all{background:var(--gold);color:#1a1a1a}
-.cookie .c-min{background:transparent;color:var(--gold);border:1px solid var(--gold)}
-
-/* Модалки общие */
-.modal{position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:1200;display:none;align-items:center;justify-content:center;padding:20px;overflow-y:auto; -webkit-backdrop-filter: blur(5px); backdrop-filter: blur(5px);}
-.modal.open{display:flex}
-.modal-box{background:var(--card);border:1px solid rgba(212,169,78,.3);border-radius:16px;max-width:800px;width:100%;position:relative;animation:fadeIn .3s; max-height: 85vh; display: flex; flex-direction: column; overflow: hidden;}
-
-.modal-close{
-  position: absolute; top: 16px; right: 16px;
-  width: 32px; height: 32px; border-radius: 50%;
-  background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.1);
-  color: var(--muted); font-size: 16px; cursor: pointer;
-  display: flex; align-items: center; justify-content: center;
-  transition: 0.3s; z-index: 10;
+.cookie__text {
+    font-size: 14px; line-height: 1.5;
+    flex: 1; min-width: 260px;
 }
-.modal-close:hover { background: rgba(255,255,255,.15); color: #fff; transform: rotate(90deg);}
-
-.modal-tabs {
-  display: flex; background: rgba(0,0,0,0.2); border-bottom: 1px solid rgba(212,169,78,.2);
+.cookie__text a { color: var(--primary); text-decoration: underline; }
+.cookie__actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.cookie__btn {
+    padding: 10px 22px; font-size: 14px; font-weight: 700;
+    border-radius: var(--radius-sm); transition: all var(--transition);
+    white-space: nowrap; cursor: pointer;
 }
-.modal-tab {
-  flex: 1; padding: 16px; text-align: center; cursor: pointer; color: var(--muted);
-  font-weight: 600; font-size: 15px; transition: 0.3s; border-bottom: 2px solid transparent;
+.cookie__btn--primary { background: var(--primary); color: var(--white); }
+.cookie__btn--primary:hover { background: var(--primary-hover); }
+.cookie__btn--ghost {
+    background: transparent; color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.25);
 }
-.modal-tab:hover { color: #fff; }
-.modal-tab.active { color: var(--gold); border-bottom-color: var(--gold); background: rgba(212,169,78,.05); }
-
-.modal-content { padding: 30px; overflow-y: auto; color: var(--text); font-size: 14.5px; line-height: 1.7; }
-.tab-pane { display: none; animation: fadeIn 0.3s; }
-.tab-pane.active { display: block; }
-.tab-pane h3 { color: var(--gold2); font-size: 18px; margin-bottom: 12px; margin-top: 20px; }
-.tab-pane h3:first-child { margin-top: 0; }
-.tab-pane p { margin-bottom: 12px; }
-
-/* Модалка портфолио */
-#work-modal .modal-box { padding: 0; background: var(--card); overflow: hidden; display: flex; flex-direction: column; border: 1px solid rgba(212,169,78,.4);}
-#work-modal .work-img-wrap { width: 100%; height: 50vh; background: #000; display: flex; align-items: center; justify-content: center;}
-#work-modal .work-img-wrap img { max-width: 100%; max-height: 100%; object-fit: contain; }
-#work-modal .work-info { padding: 30px; }
-#work-modal .work-info h3 { font-size: 26px; color: #fff; margin-bottom: 10px; margin-top: 0;}
-#work-modal .work-info p { font-size: 16px; color: var(--muted); margin-bottom: 20px; }
-@media (min-width: 768px) {
-  #work-modal .modal-box { flex-direction: row; align-items: stretch; }
-  #work-modal .work-img-wrap { width: 60%; height: auto; min-height: 400px; }
-  #work-modal .work-info { width: 40%; display: flex; flex-direction: column; justify-content: center; }
+.cookie__btn--ghost:hover {
+    background: rgba(255, 255, 255, 0.08); color: #fff;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+@media (max-width: 768px) {
+    .cookie__inner { flex-direction: column; text-align: center; }
+    .cookie__actions { flex-direction: column; width: 100%; }
+    .cookie__btn { width: 100%; }
 }
 
-/* FAB */
-.fab{position:fixed;right:22px;bottom:22px;z-index:1050;display:flex;flex-direction:column;align-items:flex-end;gap:12px}
-.fab-main{width:58px;height:58px;border-radius:50%;background:linear-gradient(135deg,var(--gold),#b8860b);color:#1a1a1a;border:none;font-size:23px;cursor:pointer;box-shadow:0 8px 28px rgba(212,169,78,.45);transition:transform .3s}
-.fab-main:hover{transform:scale(1.1) rotate(10deg)}
-.fab-items{display:flex;flex-direction:column;gap:10px}
-.fab-item{position:relative;width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;text-decoration:none;opacity:0;transform:translateY(20px) scale(.6);pointer-events:none;transition:all .35s cubic-bezier(.34,1.56,.64,1)}
-.fab.open .fab-item{opacity:1;transform:translateY(0) scale(1);pointer-events:auto}
-.fab.open .fab-item:nth-child(1){transition-delay:.05s}
-.fab.open .fab-item:nth-child(2){transition-delay:.13s}
-.fab.open .fab-item:nth-child(3){transition-delay:.21s}
-.fab-item.phone{background:#2f81f7;color:#fff}
-.fab-item.wa{background:var(--green);color:#fff}
-.fab-item.max{background:var(--maxc);color:#fff}
-.fab-item:hover{transform:scale(1.15)}
-.fab-item .tip{position:absolute;right:58px;background:var(--card2);color:var(--text);font-size:12px;padding:5px 10px;border-radius:8px;white-space:nowrap;opacity:0;transition:opacity .2s;pointer-events:none}
-.fab-item:hover .tip{opacity:1}
-.fab.open .fab-main i{transform:rotate(135deg)}
-.fab-main i{transition:transform .3s}
+/* ===== МОДАЛКА ===== */
+.modal {
+    position: fixed; inset: 0;
+    display: flex; align-items: center; justify-content: center;
+    padding: 20px; background: rgba(15, 25, 40, 0.7);
+    backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
+    z-index: 10000; opacity: 0; visibility: hidden;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+.modal.is-open { opacity: 1; visibility: visible; }
+.modal__window {
+    position: relative; width: 100%; max-width: 720px;
+    max-height: 85vh; background: var(--white);
+    border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);
+    overflow: hidden; transform: scale(0.96);
+    transition: transform 0.25s ease;
+}
+.modal.is-open .modal__window { transform: scale(1); }
+.modal__scroll { max-height: 85vh; padding: 40px; overflow-y: auto; }
+.modal__close {
+    position: absolute; top: 18px; right: 18px;
+    width: 40px; height: 40px;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 50%; color: var(--muted);
+    background: var(--white); z-index: 10;
+    transition: all var(--transition);
+}
+.modal__close svg {
+    width: 20px; height: 20px; fill: none;
+    stroke: currentColor; stroke-width: 2; stroke-linecap: round;
+}
+.modal__close:hover { background: var(--soft); color: var(--secondary); }
+.modal__title {
+    font-size: 22px; font-weight: 800; color: var(--secondary);
+    margin-bottom: 24px; letter-spacing: -0.01em; padding-right: 40px;
+}
+.modal__tabs {
+    display: flex; gap: 4px; margin-bottom: 24px;
+    padding: 4px; background: var(--soft);
+    border-radius: var(--radius-sm);
+}
+.modal__tab {
+    flex: 1; padding: 10px 16px;
+    font-size: 14px; font-weight: 600;
+    color: var(--muted); border-radius: 6px;
+    transition: all var(--transition);
+}
+.modal__tab:hover { color: var(--secondary); }
+.modal__tab.is-active { background: var(--white); color: var(--secondary); box-shadow: var(--shadow-sm); }
+.modal__content { display: none; }
+.modal__content.is-active { display: block; animation: fadeUp 0.3s ease; }
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(4px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+.modal__content h3 { font-size: 16px; font-weight: 700; color: var(--secondary); margin-bottom: 14px; }
+.modal__content p { font-size: 14px; line-height: 1.7; color: var(--text); margin-bottom: 12px; }
+.modal__content a { color: var(--primary); }
 
-/* Уведомление о копировании */
-.copy-toast{position:fixed;bottom:90px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--card2);color:var(--text);padding:12px 24px;border-radius:12px;border:1px solid var(--gold);font-size:14px;z-index:1300;opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;box-shadow:0 8px 24px rgba(0,0,0,.5);text-align:center;max-width:90vw;}
-.copy-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+/* ===== ВИДЖЕТ МЕССЕНДЖЕРОВ ===== */
+.widget {
+    position: fixed; right: 24px; bottom: 24px;
+    display: flex; flex-direction: column-reverse;
+    align-items: flex-end; gap: 12px; z-index: 9500;
+}
+.widget__trigger {
+    position: relative; width: 56px; height: 56px;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--primary); color: var(--white);
+    border-radius: 50%; box-shadow: 0 6px 20px rgba(255, 107, 53, 0.35);
+    transition: all var(--transition);
+    animation: pulse 2.4s infinite;
+}
+.widget__trigger:hover { background: var(--primary-hover); transform: scale(1.06); }
+.widget__icon-open, .widget__icon-close {
+    position: absolute; width: 24px; height: 24px;
+    fill: none; stroke: currentColor; stroke-width: 1.8;
+    stroke-linecap: round; stroke-linejoin: round;
+    transition: all var(--transition);
+}
+.widget__icon-open { opacity: 1; transform: rotate(0deg) scale(1); }
+.widget__icon-close { opacity: 0; transform: rotate(-90deg) scale(0.6); }
+.widget.is-open .widget__icon-open { opacity: 0; transform: rotate(90deg) scale(0.6); }
+.widget.is-open .widget__icon-close { opacity: 1; transform: rotate(0deg) scale(1); }
+@keyframes pulse {
+    0%   { box-shadow: 0 6px 20px rgba(255, 107, 53, 0.35), 0 0 0 0 rgba(255, 107, 53, 0.4); }
+    70%  { box-shadow: 0 6px 20px rgba(255, 107, 53, 0.35), 0 0 0 14px rgba(255, 107, 53, 0); }
+    100% { box-shadow: 0 6px 20px rgba(255, 107, 53, 0.35), 0 0 0 0 rgba(255, 107, 53, 0); }
+}
+.widget__menu {
+    display: flex; flex-direction: column; gap: 10px;
+    opacity: 0; pointer-events: none;
+    transform: translateY(10px);
+    transition: all 0.25s ease;
+}
+.widget.is-open .widget__menu { opacity: 1; pointer-events: auto; transform: translateY(0); }
+.widget__link {
+    width: 48px; height: 48px;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--white); border-radius: 50%;
+    box-shadow: var(--shadow); transition: all var(--transition);
+}
+.widget__link:hover { transform: scale(1.08); }
+.widget__link svg { width: 22px; height: 22px; fill: currentColor; stroke: none; }
+.widget__link--phone { background: var(--secondary); }
+.widget__link--phone svg { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.widget__link--max { background: linear-gradient(135deg, #471AFF, #9500FF); }
+.widget__link--wa  { background: #25D366; }
+.widget__link--tg  { background: #229ED9; }
 
-/* Анимация появления (Каскад) */
-.cascade { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
-.cascade.visible { opacity: 1; transform: translateY(0); }
+/* ===== АДАПТИВНОСТЬ ===== */
+@media (max-width: 1100px) { .trust { grid-template-columns: repeat(3, 1fr); gap: 32px 20px; } }
 
-/* Кросс-браузерный адаптив */
-@media(max-width:1600px){ .container{max-width:1300px} }
-@media(max-width:1400px){ .container{max-width:1140px} }
-@media(max-width:1100px){
-  nav.desktop{display:none}
-  .burger{display:block}
-  .g4,.p4,.cat-grid{grid-template-columns:repeat(2,1fr)}
-  .g-grid{grid-template-columns:repeat(2,1fr)}
-  .nav-wrap { justify-content: space-between; }
+@media (max-width: 1024px) {
+    .text-rotator { white-space: normal; min-width: 0; }
 }
 
-@media(max-width:900px){
-  .c-grid{grid-template-columns:1fr}
-  .section{padding:64px 0}
-  .hero{padding: 120px 0 60px;}
+@media (max-width: 900px) {
+    .grid-3 { grid-template-columns: repeat(2, 1fr); }
+    .hero { padding: 80px 0 90px; }
+    .section { padding: 72px 0; }
+    .section__head { margin-bottom: 42px; }
+    .text-rotator { min-width: 320px; }
+    .opt-grid { grid-template-columns: 1fr; }
+    .contacts-wrap { grid-template-columns: 1fr; gap: 28px; }
 }
 
-@media(max-width:768px){
-  .g-grid{grid-template-columns:1fr}
-  .hero-stats{gap:20px;}
-  .stat{flex: 1 1 40%;} 
-  .btn-hero-quiz{max-width: 100%;}
-  .q-nav .btn{flex:1; width: 100%;}
-  .quiz-card{padding:24px 20px;}
-  .map-wrap iframe { height: 350px; }
-  /* Мобильная шапка */
-  .nav-wrap { height: 64px; gap: 8px; }
-  .logo img { height: 30px; }
-  .logo span { font-size: 16px; }
+@media (max-width: 768px) {
+    html { scroll-padding-top: 80px; }
+    body { padding-top: 64px; }
+    .header { height: 64px; }
+    .header__inner { justify-content: center; position: relative; }
+    .logo { justify-content: center; }
+    .burger {
+        display: flex; position: absolute;
+        right: 16px; top: 50%; transform: translateY(-50%);
+    }
+    .nav {
+        position: fixed; top: 64px; left: 0; right: 0;
+        height: calc(100vh - 64px); background: var(--white);
+        border-top: 1px solid var(--border);
+        padding: 24px; transform: translateX(-100%);
+        transition: transform 0.3s ease; overflow-y: auto;
+    }
+    .nav.is-open { transform: translateX(0); }
+    .nav__list {
+        flex-direction: column; align-items: center;
+        gap: 28px; padding-top: 40px;
+    }
+    .nav__link {
+        display: inline-block; padding: 12px 20px;
+        font-size: 22px; font-weight: 700;
+        text-align: center; border-radius: var(--radius-sm);
+        color: var(--secondary);
+    }
+    .nav__link::after { display: none; }
+    .nav__link:hover, .nav__link:focus { color: var(--primary); }
+    .nav-mobile-block {
+        display: flex; flex-direction: column; align-items: center;
+        gap: 16px; margin-top: 40px; padding-top: 32px;
+        border-top: 1px solid var(--border);
+        width: 100%; max-width: 340px;
+        margin-left: auto; margin-right: auto;
+    }
+    .nav-mobile-phone {
+        font-size: 22px; font-weight: 800;
+        color: var(--primary); text-decoration: none;
+    }
+    .nav-mobile-msg { display: flex; gap: 10px; width: 100%; }
+    .nav-mobile-btn {
+        flex: 1; display: inline-flex; align-items: center; justify-content: center;
+        gap: 6px; padding: 12px 10px;
+        font-size: 13px; font-weight: 700; color: var(--white);
+        border-radius: var(--radius-sm); transition: all var(--transition);
+        white-space: nowrap;
+    }
+    .nav-mobile-btn svg { width: 18px; height: 18px; fill: currentColor; flex-shrink: 0; }
+    .nav-mobile-btn--max { background: linear-gradient(135deg, #471AFF, #9500FF); }
+    .nav-mobile-btn--wa  { background: #25D366; }
+    .nav-mobile-btn--tg  { background: #229ED9; }
+    .nav-mobile-btn:active { transform: scale(0.97); }
+    .header__contacts { display: none; }
+    .widget { display: none; }
+    .grid-3 { grid-template-columns: 1fr; }
+    .trust { grid-template-columns: repeat(2, 1fr); gap: 28px 16px; }
+    .trust__medal { width: 96px; height: 96px; }
+    .trust__medal svg { width: 54px; height: 54px; }
+    .trust__text { font-size: 13px; }
+    .hero__title { min-height: 100px; }
+    .text-rotator { min-width: 200px; white-space: normal; }
+    .hero__actions { flex-direction: column; }
+    .hero__actions .btn { width: 100%; }
+    .promo__inner { flex-direction: column; text-align: center; }
+    .promo__btn { width: 100%; }
+    .gost__inner { flex-direction: column; gap: 12px; }
+    .modal__window { max-height: 90vh; }
+    .modal__scroll { padding: 32px 22px; max-height: 90vh; }
+    .modal__tabs { overflow-x: auto; }
+    .modal__tab { white-space: nowrap; padding: 10px 14px; }
+    .contact-card { padding: 18px 20px; gap: 14px; }
+    .contact-card__value { font-size: 15px; }
+    .contact-card__icon { width: 44px; height: 44px; border-radius: 10px; }
+    .contact-card__icon svg { width: 22px; height: 22px; }
+    .contact-messengers { flex-direction: column; }
+    .contact-msg { width: 100%; }
+    .contacts-map { min-height: 360px; }
+    .contacts-map iframe { min-height: 360px; }
+    .logo__icon { width: 36px; height: 36px; }
+    .logo__name { font-size: 13px; }
+    .logo__sub { font-size: 8px; }
+    .opt-card { padding: 28px 22px; }
+    .opt-cta { padding: 32px 22px; }
+    .opt-cta .btn { width: 100%; }
 }
 
-@media(max-width:640px){
-  .cat-grid,.g4,.p4{grid-template-columns:1fr}
-  .section-title { font-size: 24px; margin-bottom: 12px; }
-  .section-sub { margin-bottom: 32px; font-size: 15px;}
-  .g-body h3 { font-size: 17px; }
-  .g-ph { height: 200px; }
-  .hero h1 { font-size: 26px; }
-  .hero-stats{flex-direction: column; gap: 16px; margin-top: 24px;}
-  .stat { display: flex; align-items: baseline; gap: 10px;} 
-  .stat b { margin-bottom: 0; }
-  .btn-wa-msg, .btn-max-msg { padding: 14px 8px; font-size: 14px; }
-  .cta-strip{padding: 24px;}
-  .fab{right:16px;bottom:16px}
-  .modal-tabs { flex-direction: column; } 
-  .modal-tab { border-bottom: none; border-left: 3px solid transparent; text-align: left; padding: 12px 20px; }
-  .modal-tab.active { border-left-color: var(--gold); border-bottom: none; }
+@media (max-width: 480px) {
+    .container { padding: 0 18px; }
+    .section { padding: 56px 0; }
+    .hero { padding: 60px 0 70px; }
+    .hero__badge { font-size: 12px; padding: 6px 14px; }
+    .hero__title { min-height: 90px; }
+    .text-rotator { min-width: 170px; }
+    .promo__title { font-size: 18px; }
+    .step { padding: 28px 22px; }
+    .step__icon { width: 64px; height: 64px; border-radius: 18px; }
+    .step__icon svg { width: 32px; height: 32px; }
+    .step__num { min-width: 26px; height: 26px; font-size: 11px; top: -8px; right: -8px; }
+    .cat-card__visual { height: 150px; }
+    .cat-card__icon { width: 76px; height: 76px; }
+    .trust { gap: 24px 12px; }
+    .trust__medal { width: 84px; height: 84px; }
+    .trust__medal svg { width: 46px; height: 46px; }
+    .trust__text { font-size: 12px; }
+    .nav-mobile-msg { flex-direction: column; }
+    .nav-mobile-btn { width: 100%; }
 }
 
-@media(max-width:480px){
-  /* Скрываем текст в кнопке "Позвонить", оставляем только иконку */
-  .nav-actions .btn-outline {
-    padding: 10px;
-    font-size: 0; 
-  }
-  .nav-actions .btn-outline i {
-    font-size: 18px; 
-    margin: 0;
-  }
-  .logo span { font-size: 14px; letter-spacing: 0.5px; }
-  .logo img { height: 26px; }
+@media (min-width: 1200px) {
+    .header { height: 80px; }
+    .header__inner { height: 80px; }
+    body { padding-top: 80px; }
+    html { scroll-padding-top: 96px; }
+
+    .logo__icon { width: 46px; height: 46px; }
+    .logo__name { font-size: 16px; }
+    .logo__sub { font-size: 10px; letter-spacing: 1.2px; }
+
+    .nav__link { padding: 12px 16px; font-size: 15.5px; }
+    .header__phone-number { font-size: 16px; }
+    .header__phone-number--second { font-size: 14px; }
+    .header__phone-hours { font-size: 12px; }
 }
 
-@media(max-width:380px){
-  .container{padding:0 16px}
-  .hero h1 { font-size: 24px; }
-  .hero p { font-size: 14px; }
-  .btn-hero { font-size: 15px; padding: 12px 20px; }
+@media (min-width: 1440px) {
+    .container { max-width: 1340px; }
+    .hero { padding: 130px 0 140px; }
+    .section { padding: 110px 0; }
+    .section__head { margin-bottom: 64px; }
+    .hero__title { min-height: 140px; }
 }
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+@media (min-width: 1920px) {
+    html { font-size: 17px; }
+    .container { max-width: 1500px; padding: 0 32px; }
+    .hero { padding: 150px 0 160px; }
+    .section { padding: 130px 0; }
+    .hero__title { min-height: 160px; }
+    .text-rotator { min-width: 500px; }
+    .trust__medal { width: 130px; height: 130px; }
+    .trust__medal svg { width: 72px; height: 72px; }
+    .trust__text { font-size: 15px; }
+    .cat-card__visual { height: 220px; }
+    .cat-card__icon { width: 110px; height: 110px; }
+}
+
+@media (min-width: 2560px) {
+    html { font-size: 18px; }
+    .container { max-width: 1700px; padding: 0 40px; }
+    .hero { padding: 180px 0 190px; }
+    .section { padding: 150px 0; }
+    .hero__title { min-height: 180px; }
+    .text-rotator { min-width: 560px; }
+    .trust__medal { width: 150px; height: 150px; }
+    .trust__medal svg { width: 82px; height: 82px; }
+    .trust__text { font-size: 16px; }
+    .cat-card__visual { height: 250px; }
+    .cat-card__icon { width: 130px; height: 130px; }
+}
 </style>
-<!-- JSON-LD -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Ритуал-Память",
-  "description": "Изготовление и установка памятников в Батайске. Собственный карьер в Карелии. Гранит категории №1, гарантия 30 лет.",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "ул. Тургенева, 112",
-    "addressLocality": "Батайск",
-    "addressRegion": "Ростовская область",
-    "postalCode": "346880",
-    "addressCountry": "RU"
-  },
-  "telephone": "+7-951-535-35-34",
-  "url": "https://energiekost.github.io/ritual/",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5.0",
-    "reviewCount": "129"
-  },
-  "openingHours": "Mo-Su 08:00-19:00",
-  "priceRange": "₽₽"
-}
-</script>
+
+<noscript>
+<style>
+    .burger { display: none !important; }
+    .widget { display: none !important; }
+    .header { position: static !important; height: auto !important; }
+    body { padding-top: 0 !important; }
+    .header__inner {
+        flex-wrap: wrap !important;
+        gap: 8px 20px !important;
+        padding-top: 12px !important;
+        padding-bottom: 12px !important;
+    }
+    .nav {
+        position: static !important;
+        transform: none !important;
+        height: auto !important;
+        width: auto !important;
+        padding: 0 !important;
+        background: transparent !important;
+        border-top: none !important;
+        overflow: visible !important;
+    }
+    .nav__list {
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 4px !important;
+        padding-top: 0 !important;
+    }
+    .nav__link { font-size: 14px !important; padding: 6px 10px !important; }
+    .nav-mobile-block { display: none !important; }
+    html { scroll-padding-top: 20px !important; }
+</style>
+</noscript>
 </head>
 <body>
 
-<div id="progress"></div>
+<div class="scroll-progress" id="scrollProgress"></div>
 
-<!-- Шапка -->
-<header>
-<div class="container nav-wrap">
-<a href="#top" class="logo">
-  <img src="logo.png" alt="Ритуал-Память">
-  <span>РИТУАЛ-ПАМЯТЬ</span>
-</a>
-<nav class="desktop">
-<a href="#works">Работы</a>
-<a href="#catalog">Каталог</a>
-<a href="#guarantees">Гарантии</a>
-<a href="#process">Процесс</a>
-<a href="#reviews">Отзывы</a>
-<a href="#faq">Вопросы</a>
-<a href="#contacts">Контакты</a>
-</nav>
-<div class="nav-actions">
-<a class="btn btn-outline" href="tel:+79515353534"><i class="fa-solid fa-phone"></i>Позвонить</a>
-<button class="burger" id="burger" aria-label="Меню"><i class="fa-solid fa-bars"></i></button>
-</div>
-</div>
+<header class="header">
+    <div class="container header__inner">
+        <a href="#" class="logo" aria-label="На главную">
+            <img class="logo__icon" src="img/logo.png" alt="Логотип Профессионалы" width="42" height="42">
+            <span class="logo__text">
+                <span class="logo__name">ПРОФЕССИОНАЛЫ</span>
+                <span class="logo__sub">СПЕЦОДЕЖДА</span>
+            </span>
+        </a>
+
+        <button class="burger" id="menuToggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="navMenu" type="button">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav" aria-label="Основная навигация">
+            <ul class="nav__list" id="navMenu">
+                <li><a href="#assortment" class="nav__link">Ассортимент</a></li>
+                <li><a href="#advantages" class="nav__link">Преимущества</a></li>
+                <!-- ПРАВКА 3: якорь "О магазине" добавлен -->
+                <li><a href="#about" class="nav__link">О магазине</a></li>
+                <li><a href="#how" class="nav__link">Как купить</a></li>
+                <li><a href="#opt" class="nav__link">Оптовикам</a></li>
+                <li><a href="#contacts" class="nav__link">Контакты</a></li>
+            </ul>
+
+            <div class="nav-mobile-block">
+                <a href="tel:+79889458880" class="nav-mobile-phone">+7 988 945-8880</a>
+                <div class="nav-mobile-msg">
+                    <a href="https://max.ru/" target="_blank" rel="noopener noreferrer" class="nav-mobile-btn nav-mobile-btn--max" aria-label="MAX">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4C7.58 4 4 7.13 4 11c0 1.83.82 3.48 2.18 4.7L5.5 20l4.32-1.62c.7.16 1.43.24 2.18.24 4.42 0 8-3.13 8-7S16.42 4 12 4z"/></svg>
+                        MAX
+                    </a>
+                    <a href="https://wa.me/79889458880" target="_blank" rel="noopener noreferrer" class="nav-mobile-btn nav-mobile-btn--wa" aria-label="WhatsApp">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4 C17.2 14.3 15.9 13.6 15.6 13.5 C15.3 13.4 15.1 13.4 14.9 13.7 C14.7 14 14.1 14.7 13.9 14.9 C13.7 15.1 13.5 15.2 13.2 15 C12.9 14.9 12.1 14.6 11.1 13.7 C10.4 13 9.9 12.2 9.7 11.9 C9.5 11.6 9.6 11.4 9.8 11.2 C9.9 11.1 10.1 10.9 10.2 10.7 C10.4 10.5 10.4 10.4 10.5 10.2 C10.6 10 10.6 9.9 10.5 9.7 C10.4 9.5 9.8 8.1 9.6 7.6 C9.4 7.1 9.1 7.2 8.9 7.2 L8.4 7.2 C8.2 7.2 7.9 7.3 7.7 7.6 C7.5 7.9 6.9 8.5 6.9 9.8 C6.9 11.1 7.7 12.3 7.8 12.5 C7.9 12.7 9.5 15.2 11.9 16.2 C12.5 16.4 12.9 16.5 13.3 16.6 C13.8 16.8 14.3 16.7 14.7 16.6 C15.1 16.5 16.1 16 16.3 15.4 C16.5 14.9 16.5 14.4 16.4 14.3 Z M12 21.5 A9.5 9.5 0 1 1 21.5 12 A9.5 9.5 0 0 1 12 21.5 Z M12 1 A11 11 0 0 0 2.2 17.1 L1 23 L7 21.8 A11 11 0 1 0 12 1 Z"/></svg>
+                        WhatsApp
+                    </a>
+                    <a href="https://t.me/your_nickname" target="_blank" rel="noopener noreferrer" class="nav-mobile-btn nav-mobile-btn--tg" aria-label="Telegram">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.8 16.6 L9.5 20.3 C9.9 20.3 10.1 20.1 10.3 19.9 L12 18.3 L15.5 20.9 C16.2 21.3 16.6 21.1 16.8 20.3 L19.1 4.5 C19.3 3.8 18.8 3.5 18.2 3.7 L1.4 10.2 C0.7 10.5 0.7 10.9 1.3 11.1 L5.6 12.4 L15.5 5.5 C16 5.2 16.4 5.3 16 5.6 L8 12.9 L7.7 17 L9.8 16.6 Z"/></svg>
+                        Telegram
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- ПРАВКА 7: два телефона в шапке -->
+        <div class="header__contacts">
+            <div class="header__phones">
+                <a href="tel:+79889458880" class="header__phone-number">+7 988 945-8880</a>
+                <span class="header__phone-sep" aria-hidden="true">·</span>
+                <a href="tel:+70000000000" class="header__phone-number header__phone-number--second">
+                    <span class="footer__placeholder">[ТЕЛ. 2]</span>
+                </a>
+            </div>
+            <span class="header__phone-hours">Пн–Пт 10–19 · Сб–Вс 10–18</span>
+        </div>
+    </div>
 </header>
 
-<!-- Мобильное меню - ШТОРКА СПРАВА -->
-<div class="menu-overlay" id="mOverlay"></div>
-<div class="mobile-menu" id="mMenu">
-  <button class="menu-close" id="mClose" aria-label="Закрыть"><i class="fa-solid fa-xmark"></i></button>
-  
-  <div class="mobile-logo">
-    <img src="logo.png" alt="Ритуал-Память">
-    <span>РИТУАЛ-ПАМЯТЬ</span>
-  </div>
+<main>
 
-  <nav class="mobile-nav">
-    <a href="#top">Главная</a>
-    <a href="#works">Работы</a>
-    <a href="#catalog">Каталог</a>
-    <a href="#guarantees">Гарантии</a>
-    <a href="#process">Как мы работаем</a>
-    <a href="#reviews">Отзывы</a>
-    <a href="#contacts">Контакты</a>
-  </nav>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container hero__inner">
+            <div class="hero__badge">Магазин находится в Батайске · ул. Речная, 11/95</div>
+            <h1 class="hero__title">
+                Спецодежда, обувь и СИЗ<br>
+                для <span class="text-rotator" id="rotator">строительных бригад</span>
+            </h1>
+            <p class="hero__text">
+                Розничная продажа и оптовые поставки. Полный размерный ряд с примеркой прямо в магазине. Работа с организациями по договору и безналичному расчёту.
+            </p>
+            <div class="hero__actions">
+                <a href="#contacts" class="btn btn--primary">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M12 2 Q5 2 5 9 Q5 14 12 22 Q19 14 19 9 Q19 2 12 2 Z"/><circle cx="12" cy="9" r="3"/></svg>
+                    Как добраться
+                </a>
+                <a href="tel:+79889458880" class="btn btn--ghost">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    Позвонить
+                </a>
+            </div>
+        </div>
+    </section>
 
-  <div class="mobile-menu-bottom">
-    <a href="tel:+79515353534" class="mobile-phone"><i class="fa-solid fa-phone"></i> +7 (951) 535-35-34</a>
-    <div class="mobile-mess">
-      <a href="https://max.ru/u/f9LHodD0cOI861CVf03uhXmzv33QpoCSnWuZO3Lb8YXKonxJrw5vbTok-kE" class="btn-mob-max" target="_blank" rel="noopener"><i class="fa-solid fa-paper-plane"></i> MAX</a>
-      <a href="https://wa.me/79515353534" class="btn-mob-wa" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-    </div>
-  </div>
-</div>
+    <!-- АКЦИЯ -->
+    <section class="promo">
+        <div class="container promo__inner">
+            <span class="promo__tag">Акция</span>
+            <div class="promo__content">
+                <h2 class="promo__title">Скидка <span>10%</span> на всю зимнюю обувь</h2>
+                <p class="promo__text">Вся обувь сертифицирована и соответствует ГОСТ И МИНПРОМТОРГ</p>
+            </div>
+            <a href="tel:+79889458880" class="promo__btn">Узнать наличие</a>
+        </div>
+    </section>
 
-<main id="top">
-<!-- HERO -->
-<section class="hero">
-<div class="container">
-  <div class="hero-text">
-    <div class="hero-badge">
-      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-      <span>5,0 — <a href="https://yandex.ru/maps/org/ritual_pamyat/1754174854/reviews/" target="_blank" rel="noopener">129 оценок на Яндекс Картах</a></span>
-    </div>
-    
-    <h1>Памятники из гранита и мрамора <span class="gold">в Батайске</span></h1>
-    
-    <p class="hero-rotator" aria-live="polite">
-      <span class="hr-item active">Собственный карьер в Карелии — г. Петрозаводск</span>
-      <span class="hr-item">Более 1200 вариантов стел и комплексов</span>
-      <span class="hr-item">Гранит, мрамор и литьевой камень</span>
-      <span class="hr-item">Оградки, столики, скамейки и навесы из металла</span>
-      <span class="hr-item">Изготовление и установка по всей России</span>
-      <span class="hr-item">Сертификаты качества камня · гарантия 30 лет</span>
-    </p>
-    
-    <div class="hero-actions-wrap">
-      <a class="btn-hero btn-hero-quiz" href="#quiz">
-        <i class="fa-solid fa-wand-magic-sparkles"></i> Рассчитать стоимость
-      </a>
-    </div>
-  </div>
+    <!-- АССОРТИМЕНТ -->
+    <section class="section" id="assortment">
+        <div class="container">
+            <div class="section__head">
+                <h2 class="section__title">Что есть в магазине</h2>
+                <p class="section__sub">Полный размерный ряд в наличии. Примерка на месте.</p>
+            </div>
 
-  <!-- Добавлены id для анимации цифр -->
-  <div class="hero-stats">
-    <div class="stat"><b class="counter" data-target="1200">0</b><span>+ образцов камня</span></div>
-    <div class="stat"><b class="counter" data-target="30">0</b><span>лет гарантии на гранит</span></div>
-    <div class="stat"><b>10–20</b><span>дней изготовление</span></div>
-    <div class="stat"><b>0 ₽</b><span>зимнее хранение</span></div>
-  </div>
-</div>
-<div class="scroll-hint">листайте вниз<i class="fa-solid fa-chevron-down" style="display:block;margin-top:4px"></i></div>
-</section>
+            <div class="grid-3">
+                <!-- ПРАВКА 1: тематическая иконка — спецодежда с оранжевыми деталями -->
+                <article class="cat-card">
+                    <div class="cat-card__visual">
+                        <svg class="cat-card__icon" viewBox="0 0 64 64" aria-hidden="true">
+                            <path d="M22 10 L14 14 L8 26 L16 30 L16 54 L48 54 L48 30 L56 26 L50 14 L42 10 L32 18 Z"
+                                  fill="rgba(255,107,53,0.08)" stroke-linejoin="round"/>
+                            <path d="M28 13 L32 18 L36 13" fill="none" stroke="#FF6B35" stroke-width="2.6"
+                                  stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="32" cy="30" r="1.7" fill="#FF6B35"/>
+                            <circle cx="32" cy="38" r="1.7" fill="#FF6B35"/>
+                            <circle cx="32" cy="46" r="1.7" fill="#FF6B35"/>
+                        </svg>
+                    </div>
+                    <div class="cat-card__body">
+                        <h3 class="cat-card__title">Спецодежда</h3>
+                        <ul class="cat-card__list">
+                            <li>Рабочие костюмы</li>
+                            <li>Летние и утеплённые</li>
+                            <li>Куртки, полукомбинезоны</li>
+                        </ul>
+                        <a href="tel:+79889458880" class="cat-card__btn">Уточнить наличие</a>
+                    </div>
+                </article>
 
-<!-- КВИЗ -->
-<section class="section quiz" id="quiz">
-<div class="container">
-<h2 class="section-title">Подберём памятник за 6 шагов</h2>
-<p class="section-sub">Ответьте на вопросы — мастер Артём пришлёт 3 варианта с фото, ценой и сроком</p>
-<div class="quiz-card">
-<div class="quiz-top"><span id="qStep">Шаг 1 из 6</span><span id="qPct">17%</span></div>
-<div class="quiz-progress"><div id="qBar" style="width:17%"></div></div>
+                <!-- ПРАВКА 1: иконка обуви с оранжевой подошвой -->
+                <article class="cat-card">
+                    <div class="cat-card__visual">
+                        <svg class="cat-card__icon" viewBox="0 0 64 64" aria-hidden="true">
+                            <path d="M8 42 L8 30 Q8 24 14 22 L22 20 L28 28 L38 30 Q48 32 52 36 L56 40 Q58 42 58 44 L58 48 Q58 50 56 50 L8 50 Q6 50 6 48 L6 44 Q6 42 8 42 Z"
+                                  fill="rgba(255,107,53,0.08)" stroke-linejoin="round"/>
+                            <line x1="8" y1="50" x2="56" y2="50" stroke="#FF6B35" stroke-width="2.8" stroke-linecap="round"/>
+                            <circle cx="16" cy="30" r="1.5" fill="#FF6B35"/>
+                            <circle cx="22" cy="30" r="1.5" fill="#FF6B35"/>
+                            <circle cx="28" cy="30" r="1.5" fill="#FF6B35"/>
+                        </svg>
+                    </div>
+                    <div class="cat-card__body">
+                        <h3 class="cat-card__title">Рабочая обувь</h3>
+                        <ul class="cat-card__list">
+                            <li>Зимняя (утеплённая)</li>
+                            <li>Летняя обувь и берцы</li>
+                            <li>Сапоги, защита от проколов</li>
+                        </ul>
+                        <a href="tel:+79889458880" class="cat-card__btn">Уточнить наличие</a>
+                    </div>
+                </article>
 
-<div class="quiz-step active" data-step="1">
-<h3 class="q-title">Для кого вы планируете выбрать мемориал?</h3>
-<p class="q-hint">От этого зависит размер и комплектация стелы</p>
-<div class="q-opts">
-<button class="q-opt" data-val="Мужчине"><i class="fa-solid fa-person"></i>Мужчине</button>
-<button class="q-opt" data-val="Женщине"><i class="fa-solid fa-person-dress"></i>Женщине</button>
-<button class="q-opt" data-val="Семейный / двойной"><i class="fa-solid fa-users"></i>Семейный / двойной</button>
-</div>
-<div class="q-error" id="err1">Выберите вариант, чтобы продолжить</div>
-</div>
+                <!-- ПРАВКА 1: каска с оранжевым ребром -->
+                <article class="cat-card">
+                    <div class="cat-card__visual">
+                        <svg class="cat-card__icon" viewBox="0 0 64 64" aria-hidden="true">
+                            <path d="M14 42 Q14 18 32 18 Q50 18 50 42"
+                                  fill="rgba(255,107,53,0.08)" stroke-linejoin="round"/>
+                            <path d="M8 42 L56 42 Q58 42 58 44 L58 46 L6 46 L6 44 Q6 42 8 42 Z"
+                                  fill="rgba(255,107,53,0.08)" stroke-linejoin="round"/>
+                            <line x1="32" y1="18" x2="32" y2="42" stroke="#FF6B35" stroke-width="2.6" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="cat-card__body">
+                        <h3 class="cat-card__title">СИЗ</h3>
+                        <ul class="cat-card__list">
+                            <li>Каски защитные</li>
+                            <li>Респираторы, маски</li>
+                            <li>Перчатки х/б и трикотажные</li>
+                        </ul>
+                        <a href="tel:+79889458880" class="cat-card__btn">Уточнить наличие</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
 
-<div class="quiz-step" data-step="2">
-<h3 class="q-title">Какой бюджет вам комфортнее?</h3>
-<p class="q-hint">Подберём варианты ровно в вашу сумму — без навязывания</p>
-<div class="q-opts">
-<button class="q-opt" data-val="До 25 000 — строгие классические стелы"><i class="fa-solid fa-coins"></i>До 25 000 ₽ — строгие классические стелы</button>
-<button class="q-opt" data-val="25 000 - 50 000 — фигурные с оформлением"><i class="fa-solid fa-gem"></i>25 000 – 50 000 ₽ — фигурные с оформлением</button>
-<button class="q-opt" data-val="От 50 000 — комплексы с благоустройством"><i class="fa-solid fa-crown"></i>От 50 000 ₽ — комплексы с благоустройством</button>
-<button class="q-opt" data-val="Пока не знаю"><i class="fa-solid fa-circle-question"></i>Пока не знаю — покажите разные варианты</button>
-</div>
-<div class="q-error" id="err2">Выберите вариант, чтобы продолжить</div>
-</div>
+    <!-- ГОСТ -->
+    <section class="gost">
+        <div class="container gost__inner">
+            <svg class="gost__icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2 L4 6 V12 Q4 19 12 22 Q20 19 20 12 V6 Z"/>
+                <polyline points="8.5,12 11,14.5 15.5,10"/>
+            </svg>
+            <p class="gost__text">
+                Вся продукция <strong>соответствует ГОСТ</strong> и МИНПРОМТОРГ
+            </p>
+        </div>
+    </section>
 
-<div class="quiz-step" data-step="3">
-<h3 class="q-title">Какая форма вам ближе?</h3>
-<p class="q-hint">Форму можно уточнить при утверждении макета</p>
-<div class="q-opts">
-<button class="q-opt" data-val="Строгая классическая"><i class="fa-solid fa-monument"></i>Строгая классическая — всегда уместна</button>
-<button class="q-opt" data-val="Фигурная (волна, арка, сердце)"><i class="fa-solid fa-heart"></i>Фигурная — волна, арка, сердце</button>
-<button class="q-opt" data-val="Эксклюзивный комплекс"><i class="fa-solid fa-layer-group"></i>Эксклюзивный комплекс — стела + цоколь + плитка</button>
-</div>
-<div class="q-error" id="err3">Выберите вариант, чтобы продолжить</div>
-</div>
+    <!-- ПРЕИМУЩЕСТВА -->
+    <section class="section section--soft" id="advantages">
+        <div class="container">
+            <div class="section__head">
+                <h2 class="section__title">Почему нам доверяют</h2>
+                <p class="section__sub">Прямые поставки от проверенных фабрик и компаний России</p>
+            </div>
 
-<div class="quiz-step" data-step="4">
-<h3 class="q-title">Что должно быть на памятнике?</h3>
-<p class="q-hint">Можно выбрать несколько пунктов — каждый отразится в смете</p>
-<div class="q-opts">
-<button class="q-opt" data-val="Портрет (гравировка по фото)"><i class="fa-regular fa-image"></i>Портрет (гравировка по фото)</button>
-<button class="q-opt" data-val="ФИО, даты, эпитафия"><i class="fa-solid fa-pen-nib"></i>ФИО, даты, эпитафия</button>
-<button class="q-opt" data-val="Религиозные символы"><i class="fa-solid fa-cross"></i>Религиозные символы (крест, полумесяц)</button>
-<button class="q-opt" data-val="Цветник / ваза"><i class="fa-solid fa-seedling"></i>Цветник / ваза</button>
-<button class="q-opt" data-val="Ограда или цоколь"><i class="fa-solid fa-fence"></i>Ограда или цоколь</button>
-</div>
-<div class="q-error" id="err4">Выберите хотя бы один пункт</div>
-</div>
+            <!-- ПРАВКА 5: тематические акценты в медальонах -->
+            <div class="trust">
+                <div class="trust__item">
+                    <div class="trust__medal">
+                        <svg viewBox="0 0 64 64" aria-hidden="true">
+                            <circle cx="32" cy="32" r="30"/>
+                            <path d="M20 32 L28 40 L44 24" stroke="#FF6B35" stroke-width="3"/>
+                        </svg>
+                    </div>
+                    <p class="trust__text">Высокое<br>качество продукции</p>
+                </div>
+                <div class="trust__item">
+                    <div class="trust__medal">
+                        <svg viewBox="0 0 64 64" aria-hidden="true">
+                            <circle cx="32" cy="32" r="30"/>
+                            <path d="M20 14 H44 A2 2 0 0 1 46 16 V48 A2 2 0 0 1 44 50 H20 A2 2 0 0 1 18 48 V16 A2 2 0 0 1 20 14 Z"/>
+                            <line x1="24" y1="24" x2="40" y2="24" stroke="#FF6B35"/>
+                            <line x1="24" y1="32" x2="40" y2="32" stroke="#FF6B35"/>
+                            <line x1="24" y1="40" x2="34" y2="40"/>
+                        </svg>
+                    </div>
+                    <p class="trust__text">Заключение<br>Минпромторг РФ</p>
+                </div>
+                <div class="trust__item">
+                    <div class="trust__medal">
+                        <svg viewBox="0 0 64 64" aria-hidden="true">
+                            <circle cx="32" cy="32" r="30"/>
+                            <path d="M20 26 H44 L40 44 H24 Z"/>
+                            <line x1="26" y1="26" x2="26" y2="20" stroke="#FF6B35"/>
+                            <line x1="38" y1="26" x2="38" y2="20" stroke="#FF6B35"/>
+                        </svg>
+                    </div>
+                    <p class="trust__text">Сбалансированный<br>ассортимент</p>
+                </div>
+                <div class="trust__item">
+                    <div class="trust__medal">
+                        <svg viewBox="0 0 64 64" aria-hidden="true">
+                            <circle cx="32" cy="32" r="30"/>
+                            <path d="M14 28 H30 V42 H14 Z"/>
+                            <path d="M30 32 H40 L46 38 V42 H30 Z" stroke="#FF6B35"/>
+                            <circle cx="22" cy="46" r="3"/>
+                            <circle cx="40" cy="46" r="3"/>
+                        </svg>
+                    </div>
+                    <p class="trust__text">Оперативная<br>доставка</p>
+                </div>
+                <div class="trust__item">
+                    <div class="trust__medal">
+                        <svg viewBox="0 0 64 64" aria-hidden="true">
+                            <circle cx="32" cy="32" r="30"/>
+                            <path d="M20 32 Q20 20 32 20 Q44 20 44 32 Q44 40 38 44 L26 44 Q20 40 20 32 Z"/>
+                            <path d="M26 44 V50 L32 48 L38 50 V44"/>
+                            <path d="M28 32 L31 35 L37 29" stroke="#FF6B35" stroke-width="2.6"/>
+                        </svg>
+                    </div>
+                    <p class="trust__text">Работаем через<br>«Честный знак»</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div class="quiz-step" data-step="5">
-<h3 class="q-title">Когда планируете установку?</h3>
-<p class="q-hint">Это поможет правильно рассчитать сроки</p>
-<div class="q-opts">
-<button class="q-opt" data-val="Нужно срочно"><i class="fa-solid fa-bolt"></i>Нужно срочно — постараемся уложиться в минимальный срок</button>
-<button class="q-opt" data-val="К годовщине"><i class="fa-solid fa-calendar-check"></i>К годовщине — рассчитаем, чтобы успеть точно</button>
-<button class="q-opt" data-val="Зимняя цена и бесплатное хранение"><i class="fa-solid fa-snowflake"></i>Времени нет — зимняя цена и бесплатное хранение до весны</button>
-</div>
-<div class="q-error" id="err5">Выберите вариант, чтобы продолжить</div>
-</div>
+    <!-- О МАГАЗИНЕ -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="about">
+                <h2 class="section__title">О магазине</h2>
+                <p class="about__text">
+                    Компания «Профессионалы Спецодежда» — надёжный поставщик спецодежды, камуфляжа, рабочей обуви, берцев и средств индивидуальной защиты. Работаем на рынке с 2013 года.
+                </p>
+                <p class="about__text">
+                    Тщательный подбор материалов, высокое качество, оперативная логистика и клиентоориентированность — наши главные ценности. Прямые контракты с проверенными поставщиками обеспечивают стабильность и соответствие ГОСТ.
+                </p>
+                <p class="about__text">
+                    В числе наших постоянных оптовых партнёров — металлургические компании, строительные предприятия, автомастерские, продовольственные магазины, кафе и рестораны.
+                </p>
+            </div>
+        </div>
+    </section>
 
-<div class="quiz-step" data-step="6">
-<h3 class="q-title">Ваш персональный подбор готов</h3>
-<p class="q-hint">Мастер Артём пришлёт 3 варианта памятника под ваш бюджет — с фото, ценой и сроком. Никакого спама.</p>
-<label class="q-label" for="qName">Ваше имя *</label>
-<input class="q-input" id="qName" type="text" placeholder="Как к вам обращаться" maxlength="40" autocomplete="name">
-<label class="q-label" for="qPhone">Номер телефона *</label>
-<input class="q-input" id="qPhone" type="tel" inputmode="tel" placeholder="+7 (___) ___-__-__" maxlength="18" autocomplete="tel">
-<label class="q-label">Куда отправить подборку? *</label>
-<div class="mess-choice">
-<button class="q-opt wa" data-mess="whatsapp"><i class="fa-brands fa-whatsapp"></i>WhatsApp</button>
-<button class="q-opt max" data-mess="max"><i class="fa-solid fa-paper-plane"></i>Max</button>
-</div>
-<label class="consent"><input type="checkbox" id="qConsent"><span>Согласен с <a href="#" data-modal="legal">политикой конфиденциальности</a> и обработкой персональных данных</span></label>
-<div class="q-error" id="errName">Пожалуйста, укажите имя (минимум 2 символа)</div>
-<div class="q-error" id="errPhone">Введите корректный номер: 11 цифр, формат +7 (XXX) XXX-XX-XX</div>
-<div class="q-error" id="errMess">Выберите мессенджер для отправки</div>
-<div class="q-error" id="errConsent">Отметьте согласие — без него мы не сможем связаться</div>
-<p class="q-privacy">Данные уходят только мастеру Артёму и никуда больше не передаются</p>
-</div>
+    <!-- ОТЗЫВЫ -->
+    <section class="section section--soft" id="reviews">
+        <div class="container">
+            <div class="section__head">
+                <h2 class="section__title">Отзывы наших клиентов</h2>
+                <p class="section__sub">Реальные оценки на Яндекс.Картах</p>
+            </div>
 
-<div class="q-nav">
-<button class="btn btn-outline" id="qBack" style="visibility:hidden"><i class="fa-solid fa-arrow-left"></i>Назад</button>
-<button class="btn btn-gold" id="qNext">Далее<i class="fa-solid fa-arrow-right"></i></button>
-<button class="btn btn-gold" id="qSubmit" style="display:none;width:100%"><i class="fa-solid fa-paper-plane"></i><span id="qSubmitTxt">Отправить заявку</span></button>
-</div>
-</div>
-</div>
-</section>
+            <div class="reviews__frame">
+                <iframe
+                    src="https://yandex.ru/maps-reviews-widget/1201692137?comments"
+                    width="100%"
+                    height="600"
+                    loading="lazy"
+                    title="Отзывы о магазине «Профессионалы» на Яндекс.Картах"
+                ></iframe>
+            </div>
+        </div>
+    </section>
 
-<!-- РАБОТЫ (ВСТАВЛЕНЫ РЕАЛЬНЫЕ ФОТО С КАРТ) -->
-<section class="section" id="works">
-<div class="container">
-<h2 class="section-title">Выполненные работы</h2>
-<p class="section-sub">Собственное производство полного цикла: отборный камень, резка, круговая полировка и высокоточная гравировка — всё своими руками, без посредников</p>
-<div class="g-grid">
+    <!-- КАК КУПИТЬ -->
+    <section class="section" id="how">
+        <div class="container">
+            <div class="section__head">
+                <h2 class="section__title">Как купить</h2>
+                <p class="section__sub">Три простых шага — от заявки до получения</p>
+            </div>
 
-  <div class="g-card cascade" data-title="Стела «Классика»" data-desc="Вертикальный памятник из карельского габбро-диабаза. Полная полировка, гравировка портрета и дат.">
-    <div class="g-ph"><img src="https://avatars.mds.yandex.net/get-altay/10280775/2a0000018a0e1f2a3c4d5e6f7a8b9c0d1e2f/XXL" alt="Памятник 1"></div>
-    <div class="g-body"><h3>Стела «Классика»</h3><p>Вертикальный памятник, габбро-диабаз, полная полировка</p></div>
-  </div>
+            <!-- ПРАВКА 6: иконки в плашках + номер-бейдж -->
+            <div class="grid-3">
+                <div class="step">
+                    <div class="step__icon">
+                        <svg viewBox="0 0 32 32" aria-hidden="true">
+                            <path d="M4 12 L6 5 H26 L28 12"/>
+                            <path d="M5 12 V26 H27 V12"/>
+                            <rect x="12" y="17" width="8" height="9"/>
+                            <line x1="14" y1="21" x2="18" y2="21"/>
+                        </svg>
+                        <span class="step__num">01</span>
+                    </div>
+                    <h3 class="step__title">Приехать и примерить</h3>
+                    <p class="step__text">Магазин работает по адресу ул. Речная, 11/95. Полный размерный ряд в наличии, можно примерить и купить сразу.</p>
+                </div>
 
-  <div class="g-card cascade" data-title="Стела «Волна»" data-desc="Фигурная стела необычной формы. Отличается плавными линиями и элегантным видом. Изготовлена из цельного куска гранита.">
-    <div class="g-ph"><img src="https://avatars.mds.yandex.net/get-altay/10280775/2a0000018a0e1f2a3c4d5e6f7a8b9c0d1e3f/XXL" alt="Памятник 2"></div>
-    <div class="g-body"><h3>Стела «Волна»</h3><p>Фигурная форма, круговая полировка, эпитафия</p></div>
-  </div>
+                <div class="step">
+                    <div class="step__icon">
+                        <svg viewBox="0 0 32 32" aria-hidden="true">
+                            <path d="M28 22 v3 a2 2 0 0 1-2.2 2 20 20 0 0 1-8.7-3.1 19.7 19.7 0 0 1-6-6A20 20 0 0 1 8 9.2 2 2 0 0 1 10 7 h3 a2 2 0 0 1 2 1.7 13 13 0 0 0 .7 2.9 2 2 0 0 1-.4 2.1 l-1.3 1.3a16 16 0 0 0 6 6 l1.3-1.3 a2 2 0 0 1 2.1-.4 13 13 0 0 0 2.9.7 2 2 0 0 1 1.7 2z"/>
+                        </svg>
+                        <span class="step__num">02</span>
+                    </div>
+                    <h3 class="step__title">Согласовать по телефону</h3>
+                    <p class="step__text">Снабженцы могут заранее согласовать спецификацию. Соберём, упакуем и отложим партию к приезду.</p>
+                </div>
 
-  <div class="g-card cascade" data-title="Стела «Сердце»" data-desc="Резная стела с сердцем и зоной под портрет. Очень популярный вариант для парных захоронений.">
-    <div class="g-ph"><img src="https://avatars.mds.yandex.net/get-altay/10280775/2a0000018a0e1f2a3c4d5e6f7a8b9c0d1e4f/XXL" alt="Памятник 3"></div>
-    <div class="g-body"><h3>Стела «Сердце»</h3><p>Резная форма, портретная зона под гравировку</p></div>
-  </div>
+                <div class="step">
+                    <div class="step__icon">
+                        <svg viewBox="0 0 32 32" aria-hidden="true">
+                            <path d="M9 3 H21 L27 9 V26 a2 2 0 0 1-2 2 H9 a2 2 0 0 1-2-2 V5 a2 2 0 0 1 2-2 z"/>
+                            <polyline points="21,3 21,9 27,9"/>
+                            <line x1="11" y1="14" x2="21" y2="14"/>
+                            <line x1="11" y1="18" x2="21" y2="18"/>
+                            <line x1="11" y1="22" x2="17" y2="22"/>
+                        </svg>
+                        <span class="step__num">03</span>
+                    </div>
+                    <h3 class="step__title">Оформить по договору</h3>
+                    <p class="step__text">Для юрлиц — официальный договор, безналичный расчёт и полный пакет закрывающих документов.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <div class="g-card cascade" data-title="Комплекс с плиткой" data-desc="Полное благоустройство: стела, цоколь и гранитная плитка. Долговечное покрытие, не требующее ухода.">
-    <div class="g-ph"><img src="https://avatars.mds.yandex.net/get-altay/10280775/2a0000018a0e1f2a3c4d5e6f7a8b9c0d1e5f/XXL" alt="Памятник 4"></div>
-    <div class="g-body"><h3>Комплекс с плиткой</h3><p>Цоколь, гранитная плитка, установка под ключ</p></div>
-  </div>
+    <!-- ОПТОВИКАМ -->
+    <section class="section section--soft" id="opt">
+        <div class="container">
+            <div class="section__head">
+                <h2 class="section__title">Оптовикам</h2>
+                <p class="section__sub">Работаем с организациями и ИП по договору и безналичному расчёту</p>
+            </div>
 
-  <div class="g-card cascade" data-title="Портретная гравировка" data-desc="Пример высокоточной лазерной гравировки. Максимальная детализация и сохранение всех черт лица.">
-    <div class="g-ph"><img src="https://avatars.mds.yandex.net/get-altay/10280775/2a0000018a0e1f2a3c4d5e6f7a8b9c0d1e6f/XXL" alt="Памятник 5"></div>
-    <div class="g-body"><h3>Портретная гравировка</h3><p>Высокоточная гравировка по фотографии</p></div>
-  </div>
+            <div class="opt-grid">
+                <div class="opt-card">
+                    <div class="opt-card__icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M20.59 13.41 L13.42 20.58 A2 2 0 0 1 11.99 21.17 A2 2 0 0 1 10.56 20.58 L2.83 12.85 A2 2 0 0 1 2.24 11.42 V4 A2 2 0 0 1 4.24 2 H11.66 A2 2 0 0 1 13.09 2.59 L20.59 10.09 A2 2 0 0 1 20.59 13.41 Z"/>
+                            <circle cx="7.5" cy="7.5" r="1.5"/>
+                        </svg>
+                    </div>
+                    <h3>Скидки от объёма</h3>
+                    <ul class="opt-card__list">
+                        <li>от 10 000 ₽ — <strong>5%</strong></li>
+                        <li>от 50 000 ₽ — <strong>7%</strong></li>
+                        <li>от 100 000 ₽ — <strong>10%</strong></li>
+                    </ul>
+                </div>
+                <div class="opt-card">
+                    <div class="opt-card__icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M14 2 H6 A2 2 0 0 0 4 4 V20 A2 2 0 0 0 6 22 H18 A2 2 0 0 0 20 20 V8 Z"/>
+                            <polyline points="14,2 14,8 20,8"/>
+                            <path d="M9 15 L11 17 L15 12"/>
+                        </svg>
+                    </div>
+                    <h3>Работа по договору</h3>
+                    <p>Официальный договор поставки для юрлиц и ИП. Безналичный расчёт по счёту, гибкие условия для постоянных партнёров.</p>
+                </div>
+                <div class="opt-card">
+                    <div class="opt-card__icon">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="3" y="4" width="18" height="16" rx="2"/>
+                            <line x1="3" y1="10" x2="21" y2="10"/>
+                            <line x1="7" y1="14" x2="11" y2="14"/>
+                            <line x1="7" y1="17" x2="15" y2="17"/>
+                        </svg>
+                    </div>
+                    <h3>Полный пакет документов</h3>
+                    <p>Счёт, УПД, ТОРГ-12, счёт-фактура. Все закрывающие документы для бухгалтерии — сразу при отгрузке.</p>
+                </div>
+            </div>
 
-  <div class="g-card cascade" data-title="Ограда и цветник" data-desc="Кованая ограда и цветник из гранита. Завершают композицию и защищают место захоронения.">
-    <div class="g-ph"><img src="https://avatars.mds.yandex.net/get-altay/10280775/2a0000018a0e1f2a3c4d5e6f7a8b9c0d1e7f/XXL" alt="Памятник 6"></div>
-    <div class="g-body"><h3>Ограда и цветник</h3><p>Ограда из металла, цветник из гранита</p></div>
-  </div>
+            <div class="opt-cta">
+                <p>Готовы обсудить условия сотрудничества?</p>
+                <a href="tel:+79889458880" class="btn btn--primary">
+                    <svg class="icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    Позвонить нам
+                </a>
+            </div>
+        </div>
+    </section>
 
-</div>
-<div class="g-note"><i class="fa-solid fa-camera"></i>145 реальных фотографий выполненных работ и цеха — в <a href="https://yandex.ru/maps/org/ritual_pamyat/1754174854/gallery/?ll=39.738850%2C47.104216&z=14.6145" target="_blank" rel="noopener">карточке организации на Яндекс Картах</a>. Полные фото каждой работы — по запросу в WhatsApp.</div>
-<div class="cta-strip">
-<h3>Затрудняетесь с выбором?</h3>
-<p>Пройдите короткий опрос — мастер Артём подберёт 3 варианта под ваш бюджет и пришлёт с фото и ценой</p>
-<a class="btn btn-gold" href="#quiz"><i class="fa-solid fa-wand-magic-sparkles"></i>Пройти подбор за 1 минуту</a>
-</div>
-</div>
-</section>
+    <!-- КОНТАКТЫ -->
+    <section class="section" id="contacts">
+        <div class="container">
+            <div class="section__head">
+                <h2 class="section__title">Контакты</h2>
+                <p class="section__sub">Приезжайте в магазин или свяжитесь удобным способом</p>
+            </div>
 
-<!-- КАТАЛОГ -->
-<section class="section quiz" id="catalog">
-<div class="container">
-<h2 class="section-title">Категории изделий и услуг</h2>
-<p class="section-sub">Все цены — базовая стоимость заготовки, финальная смета фиксируется в договоре</p>
-<div class="cat-grid">
-  <div class="cat cascade">
-    <div class="cat-icon"><i class="fa-solid fa-monument"></i></div>
-    <h3>Вертикальные памятники</h3>
-    <p>Одиночные стелы классических и резных форм. Оптимальное решение для эстетичного благоустройства одного захоронения.</p>
-    <div class="price">от 18 500 ₽</div>
-    <div class="term">изготовление 10–14 дней</div>
-    <div class="cat-action">
-      <div class="cat-buttons">
-        <a href="https://wa.me/79515353534?text=Здравствуйте,%20Артём!%20Интересует%20вертикальный%20памятник." target="_blank" rel="noopener" class="btn-wa-msg"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-        <a href="https://max.ru/u/f9LHodD0cOI861CVf03uhXmzv33QpoCSnWuZO3Lb8YXKonxJrw5vbTok-kE" target="_blank" rel="noopener" class="btn-max-msg"><i class="fa-solid fa-paper-plane"></i> MAX</a>
-      </div>
-    </div>
-  </div>
-  <div class="cat cascade">
-    <div class="cat-icon"><i class="fa-solid fa-table-columns"></i></div>
-    <h3>Горизонтальные надгробия</h3>
-    <p>Двойные и семейные памятники, позволяющие монументально и гармонично оформить общее родовое захоронение.</p>
-    <div class="price">от 25 000 ₽</div>
-    <div class="term">изготовление 12–18 дней</div>
-    <div class="cat-action">
-      <div class="cat-buttons">
-        <a href="https://wa.me/79515353534?text=Здравствуйте,%20Артём!%20Интересует%20горизонтальное%20надгробие." target="_blank" rel="noopener" class="btn-wa-msg"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-        <a href="https://max.ru/u/f9LHodD0cOI861CVf03uhXmzv33QpoCSnWuZO3Lb8YXKonxJrw5vbTok-kE" target="_blank" rel="noopener" class="btn-max-msg"><i class="fa-solid fa-paper-plane"></i> MAX</a>
-      </div>
-    </div>
-  </div>
-  <div class="cat cascade">
-    <div class="cat-icon"><i class="fa-solid fa-cubes"></i></div>
-    <h3>Мемориальные комплексы</h3>
-    <p>Полное благоустройство под ключ: цоколь, гранитная плитка, ограды. Комплекс целиком — скидка 10%.</p>
-    <div class="price">Расчёт по проекту</div>
-    <div class="term">смета за 1 день</div>
-    <div class="cat-action">
-      <div class="cat-buttons">
-        <a href="https://wa.me/79515353534?text=Здравствуйте,%20Артём!%20Хочу%20обсудить%20мемориальный%20комплекс." target="_blank" rel="noopener" class="btn-wa-msg"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-        <a href="https://max.ru/u/f9LHodD0cOI861CVf03uhXmzv33QpoCSnWuZO3Lb8YXKonxJrw5vbTok-kE" target="_blank" rel="noopener" class="btn-max-msg"><i class="fa-solid fa-paper-plane"></i> MAX</a>
-      </div>
-    </div>
-  </div>
-  <div class="cat cascade">
-    <div class="cat-icon"><i class="fa-solid fa-hammer"></i></div>
-    <h3>Металлоизделия и литьевой камень</h3>
-    <p>Оградки, столики, скамейки и навесы. Изделия из литьевого камня — под цвет и фактуру гранита.</p>
-    <div class="price">по запросу</div>
-    <div class="term">смета за 1 день</div>
-    <div class="cat-action">
-      <div class="cat-buttons">
-        <a href="https://wa.me/79515353534?text=Здравствуйте,%20Артём!%20Интересуют%20металлоизделия." target="_blank" rel="noopener" class="btn-wa-msg"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-        <a href="https://max.ru/u/f9LHodD0cOI861CVf03uhXmzv33QpoCSnWuZO3Lb8YXKonxJrw5vbTok-kE" target="_blank" rel="noopener" class="btn-max-msg"><i class="fa-solid fa-paper-plane"></i> MAX</a>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-</section>
+            <div class="contacts-wrap">
+                <div class="contacts-left">
+                    <div class="contact-list">
+                        <a href="https://yandex.ru/maps/org/professionaly/1201692137/" target="_blank" rel="noopener noreferrer" class="contact-card">
+                            <div class="contact-card__icon">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M12 22 S4 14 4 10 A8 8 0 1 1 20 10 C20 14 12 22 12 22 Z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div class="contact-card__body">
+                                <div class="contact-card__label">Адрес магазина</div>
+                                <div class="contact-card__value">г. Батайск, ул. Речная, 11/95</div>
+                            </div>
+                        </a>
 
-<!-- ГАРАНТИИ -->
-<section class="section" id="guarantees">
-<div class="container">
-<h2 class="section-title">Официальные гарантии и стандарты</h2>
-<p class="section-sub">Каждое обязательство — прописано и исполнимо</p>
-<div class="g4">
-  <div class="gcard cascade">
-    <div class="gcard-icon"><i class="fa-solid fa-file-signature"></i></div>
-    <h4>Официальный договор</h4>
-    <p>Работаем официально. Фиксируем итоговую стоимость и сроки в договоре. Никаких скрытых доплат.</p>
-  </div>
-  <div class="gcard cascade">
-    <div class="gcard-icon"><i class="fa-solid fa-mountain"></i></div>
-    <h4>Камень напрямую из Карелии</h4>
-    <p>Прямые поставки габбро-диабаза из Петрозаводска. Без наценок посредников, с контролем качества на каждом этапе.</p>
-  </div>
-  <div class="gcard cascade">
-    <div class="gcard-icon"><i class="fa-solid fa-shield-halved"></i></div>
-    <h4>Гарантия 30 лет</h4>
-    <p>Используем гранит категории №1. Даём письменную гарантию на изделие и монтаж.</p>
-  </div>
-  <div class="gcard cascade">
-    <div class="gcard-icon"><i class="fa-solid fa-snowflake"></i></div>
-    <h4>Зимнее хранение 0 ₽</h4>
-    <p>Закажите в межсезонье по сниженной цене — бесплатно сохраним памятник на охраняемом складе до весны.</p>
-  </div>
-</div>
-</div>
-</section>
+                        <a href="tel:+79889458880" class="contact-card">
+                            <div class="contact-card__icon">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-card__body">
+                                <div class="contact-card__label">Телефон отдела продаж</div>
+                                <div class="contact-card__value">+7 988 945-8880</div>
+                            </div>
+                        </a>
 
-<!-- ПРОЦЕСС -->
-<section class="section quiz" id="process">
-<div class="container">
-<h2 class="section-title">Как мы работаем</h2>
-<p class="section-sub">Прозрачно на каждом этапе — от эскиза до установки</p>
-<div class="p4">
-  <div class="pcard cascade">
-    <div class="pcard-icon"><i class="fa-solid fa-comments"></i></div>
-    <h4>Консультация</h4>
-    <p>Помогаем определиться с материалом и размерами — в офисе, на кладбище или удалённо.</p>
-  </div>
-  <div class="pcard cascade">
-    <div class="pcard-icon"><i class="fa-solid fa-file-contract"></i></div>
-    <h4>Макет и договор</h4>
-    <p>Разрабатываем точный эскиз, утверждаем смету и подписываем официальный договор.</p>
-  </div>
-  <div class="pcard cascade">
-    <div class="pcard-icon"><i class="fa-solid fa-industry"></i></div>
-    <h4>Производство</h4>
-    <p>Резка камня, круговая полировка граней, высокоточная гравировка портрета.</p>
-  </div>
-  <div class="pcard cascade">
-    <div class="pcard-icon"><i class="fa-solid fa-truck-fast"></i></div>
-    <h4>Установка</h4>
-    <p>Бережная доставка и монтаж по строительным нормам на любом кладбище области.</p>
-  </div>
-</div>
-<div class="pnote">
-  <i class="fa-solid fa-video"></i> 
-  <span>На каждом объекте — ежедневные видеоотчёты: вы видите ход работ, не выезжая на кладбище</span>
-</div>
-</div>
-</section>
+                        <!-- ПРАВКА 7: второй телефон в контактах -->
+                        <a href="tel:+70000000000" class="contact-card">
+                            <div class="contact-card__icon">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-card__body">
+                                <div class="contact-card__label">Дополнительный телефон</div>
+                                <div class="contact-card__value"><span class="footer__placeholder">[ТЕЛ. 2]</span></div>
+                            </div>
+                        </a>
 
-<!-- ОТЗЫВЫ -->
-<section class="section" id="reviews">
-<div class="container">
-<h2 class="section-title">Отзывы наших клиентов</h2>
-<p class="section-sub">Реальные отзывы с Яндекс Карт — рейтинг 5,0</p>
-<div class="rev-sum"><b>5,0</b><span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span><a href="https://yandex.ru/maps/org/ritual_pamyat/1754174854/reviews/" target="_blank" rel="noopener">129 оценок — читать все отзывы</a><a href="https://yandex.ru/maps/org/ritual_pamyat/1754174854/reviews/" target="_blank" rel="noopener">Оставить отзыв на Яндекс Картах</a><small>Официальный виджет Яндекс Бизнеса: рейтинг и отзывы обновляются автоматически</small></div>
-<div class="rev-widget"><iframe src="https://yandex.ru/maps-reviews-widget/1754174854?comments" width="100%" height="520" frameborder="0" loading="lazy" title="Отзывы организации на Яндекс Картах"></iframe></div>
-</div>
-</section>
+                        <div class="contact-card">
+                            <div class="contact-card__icon">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="9"/>
+                                    <polyline points="12,7 12,12 15,14"/>
+                                </svg>
+                            </div>
+                            <div class="contact-card__body">
+                                <div class="contact-card__label">Режим работы</div>
+                                <div class="contact-card__value">Пн–Пт: 10:00 – 19:00<br>Сб–Вс: 10:00 – 18:00</div>
+                            </div>
+                        </div>
+                    </div>
 
-<!-- FAQ -->
-<section class="section" id="faq">
-<div class="container">
-<h2 class="section-title">Частые вопросы</h2>
-<p class="section-sub">Отвечаем честно — как есть</p>
-<div style="max-width:820px;margin:0 auto">
-<details><summary>Когда можно устанавливать памятник?</summary><div>Оптимально — не ранее чем через 6–12 месяцев после похорон, когда грунт осядет. Зимой заготовку можно заказать со скидкой и бесплатно хранить на складе до весны.</div></details>
-<details><summary>Почему зимой дешевле?</summary><div>В межсезонье спрос ниже, а поставщики камня дают скидки на сырьё. Заказ зимой — экономия 10–15% при том же качестве.</div></details>
-<details><summary>Можно ли оформить рассрочку?</summary><div>Да. Порядок оплаты обсуждается индивидуально и фиксируется в договоре — без скрытых процентов.</div></details>
-<details><summary>Установите памятник на кладбище в другой области?</summary><div>Да, выезд монтажных бригад по всей Ростовской области. Готовые изделия отправляем транспортными компаниями по России.</div></details>
-<details><summary>Что если камень треснет?</summary><div>Гарантия на гранит — 30 лет. Мы используем камень категории №1 с контролем на микротрещины, поэтому такие случаи практически исключены.</div></details>
-<details><summary>Сколько ждать изготовление?</summary><div>Обычно 10–20 дней в зависимости от сложности оформления. Точный срок указывается в договоре.</div></details>
-</div>
-</div>
-</section>
+                    <div class="contact-messengers">
+                        <a href="https://max.ru/" class="contact-msg contact-msg--max" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4C7.58 4 4 7.13 4 11c0 1.83.82 3.48 2.18 4.7L5.5 20l4.32-1.62c.7.16 1.43.24 2.18.24 4.42 0 8-3.13 8-7S16.42 4 12 4z"/></svg>
+                            MAX
+                        </a>
+                        <a href="https://wa.me/79889458880" class="contact-msg contact-msg--wa" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            WhatsApp
+                        </a>
+                        <a href="https://t.me/your_nickname" class="contact-msg contact-msg--tg" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.242-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                            Telegram
+                        </a>
+                    </div>
+                </div>
 
-<!-- КОНТАКТЫ (Обновленный блок) -->
-<section class="section" id="contacts">
-<div class="container">
-<h2 class="section-title">Контакты и адреса</h2>
-<p class="section-sub">Приезжайте в мастерскую или напишите — отвечаем быстрее всего в мессенджерах</p>
-<div class="c-grid">
-<div class="c-info">
-  <div class="c-item">
-    <b>Адреса мастерских в Батайске</b>
-    <span>г. Батайск, ул. Тургенева, 112<br>г. Батайск, ул. Совхозная, 20А — напротив кладбища «Красный Сад»</span>
-  </div>
-  <div class="c-item">
-    <b>Телефоны и связь</b>
-    <a href="tel:+79515353534">+7 (951) 535-35-34 — ежедневно 8:00–19:00</a>
-  </div>
-  <div class="c-item">
-    <b>Мессенджеры</b>
-    <div class="c-messengers">
-      <a href="https://max.ru/u/f9LHodD0cOI861CVf03uhXmzv33QpoCSnWuZO3Lb8YXKonxJrw5vbTok-kE" target="_blank" rel="noopener" class="c-max"><i class="fa-solid fa-paper-plane"></i> MAX</a>
-      <a href="https://wa.me/79515353534" target="_blank" rel="noopener" class="c-wa"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-    </div>
-  </div>
-  <div class="c-item">
-    <b>Оплата</b>
-    <span>Наличные, банковские карты через терминал, QR-код СБП, безналичный расчёт для юрлиц.</span>
-  </div>
-  <div class="c-item">
-    <b>География</b>
-    <span>Батайск, Ростов-на-Дону и вся Ростовская область. Отправка изделий транспортными компаниями по России.</span>
-  </div>
-</div>
-<div class="map-wrap">
-<iframe src="https://yandex.ru/map-widget/v1/?ol=biz&oid=1754174854&z=16" title="Ритуал-Память на Яндекс Картах — ул. Совхозная, 20А" loading="lazy" allowfullscreen></iframe>
-</div>
-</div>
-</div>
-</section>
+                <div class="contacts-map">
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?ll=39.767017%2C47.148624&z=16&pt=39.767017,47.148624,pm2rdm"
+                        width="100%"
+                        height="100%"
+                        loading="lazy"
+                        allowfullscreen
+                        title="Карта — г. Батайск, ул. Речная, 11/95"
+                    ></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </main>
 
-<!-- ПОДВАЛ -->
-<footer>
-<div class="container" style="text-align:center">
-<p style="color:var(--text);font-size:14.5px;margin-bottom:12px">Батайск · ул. Тургенева, 112 · ул. Совхозная, 20А · +7 (951) 535-35-34</p>
-<div class="flinks">
-<a href="#" data-modal="legal" onclick="document.querySelector('[data-tab=\'privacy\']').click()">Политика конфиденциальности</a> ·
-<a href="#" data-modal="legal" onclick="document.querySelector('[data-tab=\'cookie\']').click()">Cookie</a> ·
-<a href="#" data-modal="legal" onclick="document.querySelector('[data-tab=\'offer\']').click()">Правовая информация и оферта</a>
-</div>
-<p class="disc">Внимание: цены на природный гранит и мрамор подвержены сезонным колебаниям. Сведения и прайс-листы, размещённые на данном сайте, носят исключительно ознакомительный характер, отражают начальную базовую стоимость заготовок изделий (без художественного оформления и монтажа) и ни при каких условиях не являются публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса Российской Федерации. Полный расчёт сметы с фиксированной ценой производится индивидуально и закрепляется в официальном двухстороннем договоре.</p>
-<p style="color:#5a5d63;font-size:12px;margin-top:10px">© 2014–2026 Ритуальная мастерская «Ритуал-Память». ИП Иванов Артём Вячеславович · ОГРНИП 314618127400040 · ИНН 614110058162</p>
-</div>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="footer__col">
+                <div class="footer__brand-name">Магазин спецодежды «Профессионалы»</div>
+                <div class="footer__brand-tagline">г. Батайск · с 2013 года</div>
+                <p class="footer__brand-desc">
+                    Спецодежда, обувь и средства индивидуальной защиты для профессионалов.
+                    Работаем с юридическими лицами и ИП.
+                </p>
+            </div>
+
+            <div class="footer__col">
+                <h4>Реквизиты</h4>
+                <div class="footer__requisites">
+                    <div class="footer__req-row">
+                        <span class="footer__req-label">Наименование:</span>
+                        <span class="footer__req-value"><span class="footer__placeholder">[НАИМЕНОВАНИЕ ИП]</span></span>
+                    </div>
+                    <div class="footer__req-row">
+                        <span class="footer__req-label">ИНН:</span>
+                        <span class="footer__req-value"><span class="footer__placeholder">[ИНН]</span></span>
+                    </div>
+                    <div class="footer__req-row">
+                        <span class="footer__req-label">ОГРНИП:</span>
+                        <span class="footer__req-value"><span class="footer__placeholder">[ОГРНИП]</span></span>
+                    </div>
+                    <div class="footer__req-row">
+                        <span class="footer__req-label">Адрес:</span>
+                        <span class="footer__req-value">346880, Ростовская обл., г. Батайск, ул. Речная, 11/95</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__col">
+                <h4>Контакты</h4>
+                <div class="footer__contacts">
+                    <div class="footer__contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        <a href="tel:+79889458880">+7 988 945-8880</a>
+                    </div>
+                    <!-- ПРАВКА 7: второй телефон в футере -->
+                    <div class="footer__contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        <a href="tel:+70000000000"><span class="footer__placeholder">[ТЕЛ. 2]</span></a>
+                    </div>
+                    <div class="footer__contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                        <a href="mailto:example@mail.ru"><span class="footer__placeholder">[EMAIL ДЛЯ КЛИЕНТОВ]</span></a>
+                    </div>
+                    <div class="footer__contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <span>г. Батайск, ул. Речная, 11/95</span>
+                    </div>
+                    <div class="footer__contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                        <span>Пн–Пт: 10:00–19:00 · Сб–Вс: 10:00–18:00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__legal-links">
+            <a href="#" id="openPolicy">Политика конфиденциальности</a>
+            <span class="dot">·</span>
+            <a href="#" id="openPolicyCookie">Использование cookie</a>
+            <span class="dot">·</span>
+            <a href="#" id="openPolicyOferta">Оферта</a>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="footer__copy">© 2026 Магазин спецодежды «Профессионалы», Батайск. Все права защищены.</div>
+            <div class="footer__author">
+                Разработка и поддержка сайта: <a href="mailto:energiekost.code@mail.ru">energiekost.code@mail.ru</a>
+            </div>
+        </div>
+    </div>
 </footer>
 
-<!-- COOKIE -->
-<div class="cookie" id="cookieBanner">
-<span><i class="fa-solid fa-cookie-bite" style="color:var(--gold);margin-right:8px"></i>Мы используем файлы cookie: обязательные — для работы сайта, аналитические — только с вашего согласия. Подробности — в <a href="#" data-modal="legal" onclick="document.querySelector('[data-tab=\'cookie\']').click()">политике конфиденциальности</a>.</span>
-<button class="btn btn-gold c-all" id="ckAll">Принять все</button>
-<button class="btn btn-outline c-min" id="ckMin">Только обязательные</button>
-</div>
-
-<!-- ЕДИНАЯ МОДАЛКА ДЛЯ ДОКУМЕНТОВ -->
-<div class="modal" id="legalModal" role="dialog" aria-modal="true">
-  <div class="modal-box">
-    <button class="modal-close" data-close aria-label="Закрыть"><i class="fa-solid fa-xmark"></i></button>
-    
-    <div class="modal-tabs">
-      <div class="modal-tab active" data-tab="privacy">152-ФЗ</div>
-      <div class="modal-tab" data-tab="cookie">Cookie</div>
-      <div class="modal-tab" data-tab="offer">Оферта</div>
+<div class="cookie" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Согласие на использование cookie">
+    <div class="container cookie__inner">
+        <p class="cookie__text">
+            Мы используем cookie для корректной работы сайта и анализа посещаемости.
+            Подробнее — в <a href="#" id="openPolicyCookie2">политике cookie</a>.
+        </p>
+        <div class="cookie__actions">
+            <button class="cookie__btn cookie__btn--primary" id="cookieAccept" type="button">Принять все</button>
+            <button class="cookie__btn cookie__btn--ghost" id="cookieNecessary" type="button">Только необходимые</button>
+        </div>
     </div>
+</div>
 
-    <div class="modal-content">
-      <div class="tab-pane active" id="tab-privacy">
-        <h3>Политика в отношении обработки персональных данных</h3>
-        <p>Настоящая Политика определяет порядок обработки персональных данных и меры по обеспечению их безопасности, применяемые мастерской «Ритуал-Память» (далее — Оператор).</p>
-        <p><b>1. Оператор.</b> Оператор персональных данных — ИП Иванов Артём Вячеславович, ОГРНИП 314618127400040, адрес: г. Батайск, ул. Тургенева, 112. Контакты: +7 (951) 535-35-34.</p>
-        <p><b>2. Общие положения.</b> Политика разработана в соответствии с Федеральным законом от 27.07.2006 № 152-ФЗ «О персональных данных».</p>
-        <p><b>3. Состав обрабатываемых данных.</b> При отправке квиза Оператор получает: имя, номер телефона и выбранные ответы на вопросы. Иные данные (куки, строка браузера) собираются в объёме, описанном в разделе Cookie.</p>
-        <p><b>4. Цели обработки.</b> Данные используются исключительно для связи с клиентом и подготовки персонального подбора памятника. Данные не передаются третьим лицам.</p>
-        <p><b>5. Права пользователя.</b> По запросу на телефон или в мессенджер вы можете уточнить, изменить или удалить свои персональные данные.</p>
-      </div>
+<div class="modal" id="popupOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal__window">
+        <button class="modal__close" id="popupClose" aria-label="Закрыть" type="button">
+            <svg viewBox="0 0 24 24"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+        </button>
 
-      <div class="tab-pane" id="tab-cookie">
-        <h3>Использование файлов Cookie</h3>
-        <p>Наш сайт использует файлы cookie для обеспечения корректной работы интерфейса и улучшения взаимодействия с пользователем.</p>
-        <p><b>Обязательные cookie</b> обеспечивают базовую функциональность сайта (например, запоминают ваш выбор в баннере cookie). Они не могут быть отключены.</p>
-        <p><b>Аналитические cookie</b> помогают нам понимать, как посетители взаимодействуют с сайтом (например, с помощью Яндекс.Метрики). Они устанавливаются только после вашего согласия, нажатием кнопки «Принять все».</p>
-        <p>Отозвать согласие можно в любой момент, очистив данные сайта в настройках вашего браузера.</p>
-      </div>
+        <div class="modal__scroll">
+            <h2 class="modal__title" id="modalTitle">Правовая информация</h2>
 
-      <div class="tab-pane" id="tab-offer">
-        <h3>Правовая информация и оферта</h3>
-        <p>Информация, размещённая на данном сайте, носит исключительно ознакомительный характер и не является публичной офертой, определяемой положениями Статьи 437 Гражданского Кодекса РФ.</p>
-        <p><b>Цены и сроки.</b> Указанные на сайте цены являются базовой стоимостью заготовок и могут меняться в зависимости от сезонности и сложности работ. Итоговая стоимость и сроки фиксируются индивидуально в двустороннем договоре.</p>
-        <p><b>Гарантии.</b> Гарантия на гранит категории №1 составляет 30 лет. Условия гарантии на гравировку, монтаж и комплектующие прописываются в договоре.</p>
-        <p><b>Мессенджеры.</b> Переходя по ссылкам на WhatsApp или Max, вы покидаете сайт. Обработка переписки регулируется правилами соответствующих сервисов.</p>
-      </div>
+            <div class="modal__tabs" role="tablist">
+                <button class="modal__tab is-active" data-tab="tab-1" role="tab" aria-selected="true" type="button">152-ФЗ</button>
+                <button class="modal__tab" data-tab="tab-2" role="tab" aria-selected="false" type="button">Cookie</button>
+                <button class="modal__tab" data-tab="tab-3" role="tab" aria-selected="false" type="button">Оферта</button>
+            </div>
+
+            <!-- ПРАВКА 8: обновлённые правовые документы под магазин спецодежды -->
+            <div class="modal__content is-active" id="tab-1" role="tabpanel">
+                <h3>Политика в отношении обработки персональных данных</h3>
+                <p>Настоящая Политика определяет порядок обработки персональных данных и меры по обеспечению их безопасности, применяемые магазином спецодежды «Профессионалы» (далее — Оператор).</p>
+
+                <p><strong>1. Оператор.</strong> Оператор персональных данных — магазин спецодежды «Профессионалы». Адрес: 346880, Ростовская обл., г. Батайск, ул. Речная, 11/95. Контакты: <a href="tel:+79889458880">+7 988 945-8880</a>, e-mail: <span class="footer__placeholder">[EMAIL]</span>.</p>
+
+                <p><strong>2. Общие положения.</strong> Политика разработана в соответствии с Федеральным законом от 27.07.2006 № 152-ФЗ «О персональных данных» и действует в отношении всей информации, которую Оператор может получить от посетителей сайта, покупателей и представителей контрагентов.</p>
+
+                <p><strong>3. Состав обрабатываемых данных.</strong><br>
+                — физические лица-покупатели: ФИО, контактный телефон, адрес доставки, сведения о заказах;<br>
+                — представители юрлиц и ИП: ФИО, должность, наименование организации, ИНН, контактные данные.<br>
+                Сайт не содержит форм сбора данных — обработка возникает только при обращении клиента по телефону, в мессенджерах или при заключении договора.</p>
+
+                <p><strong>4. Цели обработки.</strong> Оформление и исполнение заказов, доставка товара; подготовка коммерческих предложений, счетов и договоров; ведение бухгалтерского и налогового учёта; обратная связь с покупателями и контрагентами; исполнение требований законодательства РФ.</p>
+
+                <p><strong>5. Правовые основания.</strong> Согласие субъекта персональных данных (п. 1 ч. 1 ст. 6 Закона № 152-ФЗ); исполнение договора, стороной которого является субъект; исполнение обязанностей, возложенных на Оператора законодательством (НК РФ, ФЗ «О бухгалтерском учёте»).</p>
+
+                <p><strong>6. Сроки обработки и хранения.</strong> Данные хранятся не дольше, чем требуется для целей обработки. Для бухгалтерских документов — не менее 5 лет в соответствии с архивным законодательством. Контактные данные потенциальных клиентов — не более 3 лет с момента последнего взаимодействия. По достижении целей данные уничтожаются.</p>
+
+                <p><strong>7. Передача третьим лицам.</strong> Оператор не продаёт и не передаёт данные для маркетинговых целей. Передача возможна только: транспортным компаниям (для доставки), банкам и платёжным системам (для расчётов), государственным органам — по мотивированным запросам в порядке, установленном законом.</p>
+
+                <p><strong>8. Права субъекта.</strong> Вы вправе: получать информацию об обработке своих данных; требовать их уточнения, блокирования или уничтожения; отозвать согласие; обратиться в Роскомнадзор или в суд. Обращения принимаются по адресу Оператора или по телефону <a href="tel:+79889458880">+7 988 945-8880</a>.</p>
+
+                <p><strong>9. Защита данных.</strong> Оператор принимает правовые, организационные и технические меры для защиты персональных данных от неправомерного доступа, уничтожения, изменения, блокирования и распространения.</p>
+
+                <p><strong>10. Cookie и аналитика.</strong> Сайт может использовать технические cookie для корректной работы интерфейса и обезличенную статистику Яндекс.Метрика. Cookie не содержат персональных данных.</p>
+
+                <p style="font-size:12px;opacity:.6;margin-top:16px">Редакция от 14.10.2026</p>
+            </div>
+
+            <div class="modal__content" id="tab-2" role="tabpanel">
+                <h3>Использование файлов Cookie и счётчиков аналитики</h3>
+                <p>Для корректной работы интерфейса сайта магазина «Профессионалы» мы используем технические файлы cookie — небольшие текстовые файлы, сохраняемые в вашем браузере. Они обеспечивают работу корзины, форм обратной связи и запоминание выбора пользователя.</p>
+                <p>Cookie не содержат персональных данных и не позволяют идентифицировать конкретного посетителя. Мы не передаём cookie третьим лицам.</p>
+                <p>Дополнительно сайт может использовать счётчик Яндекс.Метрика для сбора обезличенной статистики: количество визитов, источники переходов, страницы просмотра, тип устройства. Эти данные используются исключительно для улучшения работы сайта.</p>
+                <p>Вы можете отключить cookie в настройках браузера (Chrome, Firefox, Safari, Edge) или установить расширение для блокировки аналитических скриптов. Это может повлиять на корректность работы отдельных элементов сайта, но не помешает просмотру основной информации.</p>
+                <p>Продолжая пользоваться сайтом, вы соглашаетесь с использованием cookie в описанных целях.</p>
+            </div>
+
+            <div class="modal__content" id="tab-3" role="tabpanel">
+                <h3>Уведомление об отсутствии публичной оферты</h3>
+                <p>В связи со спецификой оптовой и розничной торговли спецодеждой, регулярными изменениями отпускных цен у фабрик-производителей и зависимостью стоимости от объёма партии, вся информация на сайте — описания товаров, изображения, характеристики, статусы наличия — носит исключительно ознакомительный и справочный характер.</p>
+                <p>Ни один элемент сайта, включая указания на наличие товара, не является публичной офертой в смысле статьи 437 Гражданского кодекса РФ.</p>
+                <p>Ассортимент, наличие, актуальные цены и условия поставки уточняются индивидуально:</p>
+                <p>— по телефону <a href="tel:+79889458880">+7 988 945-8880</a>;<br>
+                — по адресу магазина: г. Батайск, ул. Речная, 11/95;<br>
+                — в мессенджерах MAX, WhatsApp, Telegram.</p>
+                <p>Для юридических лиц и ИП условия фиксируются в индивидуальном договоре поставки и спецификации. Договор вступает в силу с момента подписания обеими сторонами.</p>
+                <p>Возврат товара надлежащего качества: для физических лиц — в течение 14 дней при сохранении товарного вида и упаковки (Закон РФ «О защите прав потребителей»); для юридических лиц — согласно условиям договора.</p>
+                <p>Информация о маркированных товарах, в том числе передаваемых через систему «Честный знак», предоставляется при оформлении заказа.</p>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 
-<!-- Модалка портфолио (Лайтбокс) -->
-<div class="modal" id="work-modal" role="dialog" aria-modal="true">
-  <div class="modal-box">
-    <button class="modal-close" data-close><i class="fa-solid fa-xmark"></i></button>
-    <div class="work-img-wrap" id="wm-img"></div>
-    <div class="work-info">
-      <h3 id="wm-title"></h3>
-      <p id="wm-desc"></p>
-      <a href="#quiz" class="btn btn-gold" data-close style="margin-top:auto;">Хочу такой же</a>
+<div class="widget" id="msgWidget">
+    <button class="widget__trigger" id="widgetTrigger" type="button" aria-label="Связаться" aria-expanded="false">
+        <svg class="widget__icon-open" viewBox="0 0 24 24"><path d="M21 11.5 A8.38 8.38 0 0 1 20.5 15 A8.5 8.5 0 0 1 12 20.5 A8.38 8.38 0 0 1 8.5 20 L3 21 L4 15.5 A8.38 8.38 0 0 1 3.5 12 A8.5 8.5 0 0 1 12 3.5 A8.38 8.38 0 0 1 15.5 4 A8.5 8.5 0 0 1 21 11.5 Z"/></svg>
+        <svg class="widget__icon-close" viewBox="0 0 24 24"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+    </button>
+    <div class="widget__menu">
+        <a href="tel:+79889458880" class="widget__link widget__link--phone" aria-label="Позвонить">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </a>
+        <a href="https://max.ru/" class="widget__link widget__link--max" target="_blank" rel="noopener noreferrer" aria-label="MAX">
+            <svg viewBox="0 0 24 24"><path d="M12 4C7.58 4 4 7.13 4 11c0 1.83.82 3.48 2.18 4.7L5.5 20l4.32-1.62c.7.16 1.43.24 2.18.24 4.42 0 8-3.13 8-7S16.42 4 12 4z"/></svg>
+        </a>
+        <a href="https://wa.me/79889458880" class="widget__link widget__link--wa" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24"><path d="M17.5 14.4 C17.2 14.3 15.9 13.6 15.6 13.5 C15.3 13.4 15.1 13.4 14.9 13.7 C14.7 14 14.1 14.7 13.9 14.9 C13.7 15.1 13.5 15.2 13.2 15 C12.9 14.9 12.1 14.6 11.1 13.7 C10.4 13 9.9 12.2 9.7 11.9 C9.5 11.6 9.6 11.4 9.8 11.2 C9.9 11.1 10.1 10.9 10.2 10.7 C10.4 10.5 10.4 10.4 10.5 10.2 C10.6 10 10.6 9.9 10.5 9.7 C10.4 9.5 9.8 8.1 9.6 7.6 C9.4 7.1 9.1 7.2 8.9 7.2 L8.4 7.2 C8.2 7.2 7.9 7.3 7.7 7.6 C7.5 7.9 6.9 8.5 6.9 9.8 C6.9 11.1 7.7 12.3 7.8 12.5 C7.9 12.7 9.5 15.2 11.9 16.2 C12.5 16.4 12.9 16.5 13.3 16.6 C13.8 16.8 14.3 16.7 14.7 16.6 C15.1 16.5 16.1 16 16.3 15.4 C16.5 14.9 16.5 14.4 16.4 14.3 Z M12 21.5 A9.5 9.5 0 1 1 21.5 12 A9.5 9.5 0 0 1 12 21.5 Z M12 1 A11 11 0 0 0 2.2 17.1 L1 23 L7 21.8 A11 11 0 1 0 12 1 Z"/></svg>
+        </a>
+        <a href="https://t.me/your_nickname" class="widget__link widget__link--tg" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+            <svg viewBox="0 0 24 24"><path d="M9.8 16.6 L9.5 20.3 C9.9 20.3 10.1 20.1 10.3 19.9 L12 18.3 L15.5 20.9 C16.2 21.3 16.6 21.1 16.8 20.3 L19.1 4.5 C19.3 3.8 18.8 3.5 18.2 3.7 L1.4 10.2 C0.7 10.5 0.7 10.9 1.3 11.1 L5.6 12.4 L15.5 5.5 C16 5.2 16.4 5.3 16 5.6 L8 12.9 L7.7 17 L9.8 16.6 Z"/></svg>
+        </a>
     </div>
-  </div>
 </div>
-
-<!-- FAB -->
-<div class="fab" id="fab">
-<div class="fab-items" id="fabItems">
-<a class="fab-item phone" href="tel:+79515353534" aria-label="Позвонить"><i class="fa-solid fa-phone"></i><span class="tip">Позвонить</span></a>
-<a class="fab-item wa" href="https://wa.me/79515353534" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i><span class="tip">WhatsApp</span></a>
-<a class="fab-item max" href="#" id="fabMax" aria-label="Max"><i class="fa-solid fa-paper-plane"></i><span class="tip">Max</span></a>
-</div>
-<button class="fab-main" id="fabMain" aria-label="Связь"><i class="fa-solid fa-comment-dots" id="fabIcon"></i></button>
-</div>
-
-<div class="copy-toast" id="copyToast">Заявка скопирована! Вставьте её в чат MAX.</div>
 
 <script>
-(function(){
 'use strict';
-/* ── ПРОГРЕСС ПРОКРУТКИ ── */
-var bar=document.getElementById('progress');
-function onScroll(){var h=document.documentElement,p=h.scrollTop/(h.scrollHeight-h.clientHeight||1);if(bar)bar.style.width=(p*100).toFixed(2)+'%';}
-window.addEventListener('scroll',onScroll,{passive:true});onScroll();
 
-/* ── АНИМАЦИЯ ЦИФР (СЧЕТЧИК) ── */
-var counters = document.querySelectorAll('.counter');
-var speed = 200; // Скорость анимации
+document.addEventListener('DOMContentLoaded', () => {
 
-var animateCounters = function() {
-  counters.forEach(counter => {
-    var updateCount = () => {
-      var target = +counter.getAttribute('data-target');
-      var count = +counter.innerText.replace('+', '');
-      var inc = target / speed;
-      if (count < target) {
-        counter.innerText = Math.ceil(count + inc) + (target > 100 ? '+' : '');
-        setTimeout(updateCount, 1);
-      } else {
-        counter.innerText = target + (target > 100 ? '+' : '');
-      }
+    /* ===== 1. БУРГЕР-МЕНЮ ===== */
+    const burger = document.getElementById('menuToggle');
+    const nav = document.querySelector('.nav');
+
+    const setMenuState = (open) => {
+        if (!nav) return;
+        nav.classList.toggle('is-open', open);
+        if (burger) {
+            burger.setAttribute('aria-expanded', String(open));
+            burger.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню');
+        }
+        document.body.style.overflow = open ? 'hidden' : '';
     };
-    updateCount();
-  });
-};
 
-var observer = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      animateCounters();
-      observer.unobserve(entry.target);
+    if (burger && nav) {
+        burger.addEventListener('click', () => setMenuState(!nav.classList.contains('is-open')));
+        document.querySelectorAll('.nav__link').forEach(link => {
+            link.addEventListener('click', () => setMenuState(false));
+        });
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768 && nav.classList.contains('is-open')) {
+                setMenuState(false);
+            }
+        });
     }
-  });
-}, { threshold: 0.5 });
 
-var heroStats = document.querySelector('.hero-stats');
-if (heroStats) observer.observe(heroStats);
+    /* ===== 2. ВИДЖЕТ МЕССЕНДЖЕРОВ ===== */
+    const widget = document.getElementById('msgWidget');
+    const widgetTrigger = document.getElementById('widgetTrigger');
 
-/* ── КАСКАДНАЯ АНИМАЦИЯ (ПОЯВЛЕНИЕ КАРТОЧЕК) ── */
-var cascadeObserver = new IntersectionObserver((entries, observer) => {
-  entries.forEach((entry, index) => {
-    if (entry.isIntersecting) {
-      setTimeout(() => {
-        entry.target.classList.add('visible');
-      }, index * 100); // Задержка для эффекта лесенки
-      observer.unobserve(entry.target);
+    const setWidgetState = (open) => {
+        if (!widget) return;
+        widget.classList.toggle('is-open', open);
+        if (widgetTrigger) widgetTrigger.setAttribute('aria-expanded', String(open));
+    };
+
+    if (widget && widgetTrigger) {
+        widgetTrigger.addEventListener('click', (e) => {
+            e.stopPropagation();
+            setWidgetState(!widget.classList.contains('is-open'));
+        });
+        document.addEventListener('click', (e) => {
+            if (widget.classList.contains('is-open') && !widget.contains(e.target)) {
+                setWidgetState(false);
+            }
+        });
     }
-  });
-}, { threshold: 0.1 });
 
-document.querySelectorAll('.cascade').forEach(el => cascadeObserver.observe(el));
+    /* ===== 3. ПОЛОСА ПРОГРЕССА ===== */
+    const scrollProgress = document.getElementById('scrollProgress');
+    if (scrollProgress) {
+        let ticking = false;
+        const update = () => {
+            const h = document.documentElement.scrollHeight - window.innerHeight;
+            const p = h > 0 ? (window.scrollY / h) * 100 : 0;
+            scrollProgress.style.width = p + '%';
+            ticking = false;
+        };
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                requestAnimationFrame(update);
+                ticking = true;
+            }
+        }, { passive: true });
+        update();
+    }
 
-/* ── МОБИЛЬНОЕ МЕНЮ (ШТОРКА) ── */
-var burger=document.getElementById('burger'),mMenu=document.getElementById('mMenu'),mClose=document.getElementById('mClose'),mOverlay=document.getElementById('mOverlay');
-function menuShow(v){if(!mMenu)return;mMenu.classList.toggle('open',v);mOverlay.classList.toggle('open',v);document.body.style.overflow=v?'hidden':'';}
-if(burger)burger.addEventListener('click',function(){menuShow(true)});
-if(mClose)mClose.addEventListener('click',function(){menuShow(false)});
-if(mOverlay)mOverlay.addEventListener('click',function(){menuShow(false)});
-if(mMenu)mMenu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){menuShow(false)})});
+    /* ===== 4. COOKIE ===== */
+    const cookie = document.getElementById('cookieBanner');
+    const cookieAccept = document.getElementById('cookieAccept');
+    const cookieNecessary = document.getElementById('cookieNecessary');
 
-/* ── ПЛАВАЮЩИЙ ВИДЖЕТ МЕССЕНДЖЕРОВ ── */
-var fabBox=document.getElementById('fab'),fabMain=document.getElementById('fabMain'),fabIcon=document.getElementById('fabIcon'),fabOpen=false;
-function fabToggle(v){fabOpen=v;fabBox&&fabBox.classList.toggle('open',v);if(fabIcon)fabIcon.className=v?'fa-solid fa-xmark':'fa-solid fa-comment-dots';}
-if(fabMain){fabMain.addEventListener('click',function(e){e.stopPropagation();fabToggle(!fabOpen);});}
-document.addEventListener('click',function(e){if(fabOpen&&fabBox&&!fabBox.contains(e.target))fabToggle(false);});
+    const loadAnalytics = () => {
+        // Раскомментируйте и вставьте ваш ID счётчика Яндекс.Метрики:
+        // (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        // m[i].l=1*new Date();for(var j=0;j<document.scripts.length;j++){if(document.scripts[j].src===r){return;}}
+        // k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+        // (window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");
+        // window.ym(YOUR_COUNTER_ID, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true});
+    };
 
-/* ── КУКИ ── */
-var cb=document.getElementById('cookieBanner');
-function ckHide(){cb&&cb.classList.remove('show');}
-try{if(!localStorage.getItem('rpCookie'))setTimeout(function(){cb&&cb.classList.add('show')},900);}catch(e){}
-var ckAll=document.getElementById('ckAll'),ckMin=document.getElementById('ckMin');
-if(ckAll)ckAll.addEventListener('click',function(){try{localStorage.setItem('rpCookie','all')}catch(e){}ckHide();});
-if(ckMin)ckMin.addEventListener('click',function(){try{localStorage.setItem('rpCookie','min')}catch(e){}ckHide();});
+    if (cookie && cookieAccept && cookieNecessary) {
+        let saved = null;
+        try { saved = localStorage.getItem('cookie_consent'); } catch (err) { saved = null; }
 
-/* ── МОДАЛКИ ── */
-var openModal=null;
-document.addEventListener('click',function(e){
- var opener=e.target.closest('[data-modal]');
- if(opener){e.preventDefault();var m=document.getElementById(opener.getAttribute('data-modal')+'Modal');if(m){m.classList.add('open');openModal=m;document.body.style.overflow='hidden';}return;}
- var closer=e.target.closest('[data-close]');
- if(closer&&openModal){openModal.classList.remove('open');openModal=null;document.body.style.overflow='';return;}
- if(openModal&&e.target===openModal){openModal.classList.remove('open');openModal=null;document.body.style.overflow='';}
-});
-document.addEventListener('keydown',function(e){if(e.key==='Escape'&&openModal){openModal.classList.remove('open');openModal=null;document.body.style.overflow='';}});
+        if (!saved) {
+            setTimeout(() => cookie.classList.add('is-visible'), 1500);
+        } else if (saved === 'all') {
+            loadAnalytics();
+        }
 
-/* ── ВКЛАДКИ В МОДАЛКЕ ── */
-document.querySelectorAll('.modal-tab').forEach(tab => {
-  tab.addEventListener('click', function() {
-    document.querySelectorAll('.modal-tab').forEach(t => t.classList.remove('active'));
-    document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
-    this.classList.add('active');
-    const targetId = 'tab-' + this.getAttribute('data-tab');
-    document.getElementById(targetId).classList.add('active');
-  });
-});
+        cookieAccept.addEventListener('click', () => {
+            cookie.classList.remove('is-visible');
+            try { localStorage.setItem('cookie_consent', 'all'); } catch (err) {}
+            loadAnalytics();
+        });
 
-/* ── ЛАЙТБОКС ПОРТФОЛИО ── */
-document.querySelectorAll('.g-card').forEach(function(card){
-  card.addEventListener('click', function(){
-    var title = this.getAttribute('data-title');
-    var desc = this.getAttribute('data-desc');
-    var imgHtml = this.querySelector('.g-ph').innerHTML;
-    
-    document.getElementById('wm-title').textContent = title;
-    document.getElementById('wm-desc').textContent = desc;
-    document.getElementById('wm-img').innerHTML = imgHtml;
-    
-    var modal = document.getElementById('work-modal');
-    modal.classList.add('open');
-    openModal = modal;
-    document.body.style.overflow = 'hidden';
-  });
-});
+        cookieNecessary.addEventListener('click', () => {
+            cookie.classList.remove('is-visible');
+            try { localStorage.setItem('cookie_consent', 'necessary'); } catch (err) {}
+        });
+    }
 
-/* ── АКТИВНЫЙ ПУНКТ МЕНЮ ── */
-var secs=['works','catalog','guarantees','process','reviews','faq','contacts'].map(function(id){return document.getElementById(id)}).filter(Boolean);
-var navLinks=document.querySelectorAll('a[href^="#"]');
-function setActive(){var y=window.scrollY+120,cur=null;secs.forEach(function(s){if(s.offsetTop<=y)cur=s.id;});
-navLinks.forEach(function(a){a.classList.toggle('active',cur&&a.getAttribute('href')==='#'+cur&&a.closest('nav, .mobile-menu'));});}
-window.addEventListener('scroll',setActive,{passive:true});setActive();
+    /* ===== 5. МОДАЛКА с focus-trap ===== */
+    const modal = document.getElementById('popupOverlay');
+    const modalClose = document.getElementById('popupClose');
+    const FOCUSABLE = 'a[href], button:not([disabled]), textarea:not([disabled]), input:not([disabled]), select:not([disabled]), [tabindex]:not([tabindex="-1"])';
+    let previousFocus = null;
 
-/* ── FAQ АККОРДЕОН ── */
-var allDetails = document.querySelectorAll('details');
-allDetails.forEach(function(targetDetail) {
-  targetDetail.addEventListener('click', function() {
-    allDetails.forEach(function(detail) {
-      if (detail !== targetDetail) detail.removeAttribute('open');
+    const openModal = () => {
+        if (!modal) return;
+        previousFocus = document.activeElement;
+        modal.classList.add('is-open');
+        document.body.style.overflow = 'hidden';
+        if (modalClose) modalClose.focus();
+    };
+
+    const closeModal = () => {
+        if (!modal) return;
+        modal.classList.remove('is-open');
+        document.body.style.overflow = '';
+        if (previousFocus && typeof previousFocus.focus === 'function') {
+            try { previousFocus.focus(); } catch (err) {}
+        }
+    };
+
+    if (modal && modalClose) {
+        document.querySelectorAll('#openPolicy, #openPolicyCookie, #openPolicyCookie2, #openPolicyOferta').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                openModal();
+                const id = btn.id;
+                let target = 'tab-1';
+                if (id === 'openPolicyCookie' || id === 'openPolicyCookie2') target = 'tab-2';
+                if (id === 'openPolicyOferta') target = 'tab-3';
+                const tabBtn = document.querySelector('.modal__tab[data-tab="' + target + '"]');
+                if (tabBtn) tabBtn.click();
+            });
+        });
+
+        modalClose.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+
+        modal.addEventListener('keydown', (e) => {
+            if (e.key !== 'Tab' || !modal.classList.contains('is-open')) return;
+            const items = Array.from(modal.querySelectorAll(FOCUSABLE))
+                .filter(el => !el.disabled && el.offsetParent !== null);
+            if (items.length === 0) return;
+            const first = items[0];
+            const last = items[items.length - 1];
+            if (e.shiftKey && document.activeElement === first) {
+                e.preventDefault();
+                last.focus();
+            } else if (!e.shiftKey && document.activeElement === last) {
+                e.preventDefault();
+                first.focus();
+            }
+        });
+    }
+
+    /* ===== 6. ВКЛАДКИ ===== */
+    const modalTabs = document.querySelectorAll('.modal__tab');
+    const modalContents = document.querySelectorAll('.modal__content');
+
+    modalTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const targetId = tab.getAttribute('data-tab');
+            if (!targetId) return;
+
+            modalTabs.forEach(t => {
+                t.classList.remove('is-active');
+                t.setAttribute('aria-selected', 'false');
+            });
+            modalContents.forEach(c => c.classList.remove('is-active'));
+
+            tab.classList.add('is-active');
+            tab.setAttribute('aria-selected', 'true');
+            const target = document.getElementById(targetId);
+            if (target) target.classList.add('is-active');
+        });
     });
-  });
+
+    /* ===== 7. РОТАТОР ===== */
+    const rotator = document.getElementById('rotator');
+    if (rotator) {
+        const words = [
+            'строительных бригад',
+            'сварщиков и монтажников',
+            'охранных структур',
+            'комплексного снабжения',
+            'автосервисов и СТО',
+            'промышленных предприятий'
+        ];
+        let index = 0;
+        let timer = null;
+        const DELAY = 3200;
+        const FADE = 350;
+
+        const rotate = () => {
+            rotator.classList.add('is-fading');
+            setTimeout(() => {
+                index = (index + 1) % words.length;
+                rotator.textContent = words[index];
+                rotator.classList.remove('is-fading');
+            }, FADE);
+        };
+
+        const start = () => {
+            stop();
+            timer = setInterval(rotate, DELAY);
+        };
+
+        const stop = () => {
+            if (timer) { clearInterval(timer); timer = null; }
+        };
+
+        const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (!reduced) {
+            start();
+            document.addEventListener('visibilitychange', () => {
+                if (document.hidden) stop();
+                else start();
+            });
+        }
+    }
+
+    /* ===== 8. ESC ===== */
+    document.addEventListener('keydown', (e) => {
+        if (e.key !== 'Escape') return;
+
+        if (modal && modal.classList.contains('is-open')) closeModal();
+
+        if (nav && nav.classList.contains('is-open')) {
+            nav.classList.remove('is-open');
+            if (burger) burger.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = '';
+        }
+
+        if (widget && widget.classList.contains('is-open')) {
+            widget.classList.remove('is-open');
+            if (widgetTrigger) widgetTrigger.setAttribute('aria-expanded', 'false');
+        }
+    });
+
 });
-
-/* ── КВИЗ ── */
-var step=1,TOTAL=6,answers={},mess=null;
-var steps=document.querySelectorAll('.quiz-step');
-var qStep=document.getElementById('qStep'),qPct=document.getElementById('qPct'),qBar=document.getElementById('qBar');
-var qBack=document.getElementById('qBack'),qNext=document.getElementById('qNext'),qSubmit=document.getElementById('qSubmit'),qSubmitTxt=document.getElementById('qSubmitTxt');
-function show(n){steps.forEach(function(s){s.classList.toggle('active',+s.dataset.step===n)});
- if(qStep)qStep.textContent='Шаг '+n+' из '+TOTAL;
- var pct=Math.round(n/TOTAL*100);if(qPct)qPct.textContent=pct+'%';if(qBar)qBar.style.width=pct+'%';
- if(qBack)qBack.style.visibility=n===1?'hidden':'visible';
- if(qNext)qNext.style.display=n<TOTAL?'':'none';
- if(qSubmit)qSubmit.style.display=n===TOTAL?'':'none';
- if(n===TOTAL)bindMask();}
-function err(id,on){var el=document.getElementById(id);if(el)el.style.display=on?'block':'none';}
-['err1','err2','err3','err4','err5','errName','errPhone','errMess','errConsent'].forEach(function(id){var el=document.getElementById(id);if(el)el.style.display='none';});
-
-document.querySelectorAll('.quiz-step').forEach(function(st){
- var sn=+st.dataset.step;
- st.querySelectorAll('.q-opt').forEach(function(opt){
- opt.addEventListener('click',function(){
- if(sn===4){opt.classList.toggle('sel');
- var any=st.querySelectorAll('.q-opt.sel').length>0;
- err('err4',!any);return;}
- st.querySelectorAll('.q-opt').forEach(function(o){o.classList.remove('sel')});
- opt.classList.add('sel');err('err'+sn,false);
- answers['q'+sn]=opt.dataset.val||opt.textContent.trim();
- setTimeout(next,280);
- });});});
-
-document.querySelectorAll('.mess-choice .q-opt').forEach(function(opt){
- opt.addEventListener('click',function(){
- document.querySelectorAll('.mess-choice .q-opt').forEach(function(o){o.classList.remove('sel')});
- opt.classList.add('sel');mess=opt.dataset.mess;
- if(qSubmitTxt)qSubmitTxt.textContent = mess==='max' ? 'Отправить в Max' : 'Отправить в WhatsApp';
- err('errMess',false);});});
-
-function validate(cur){
- if(cur<6)return false;
- var ok=true;
- var name=(document.getElementById('qName')||{}).value||'';
- var raw=(document.getElementById('qPhone')||{}).value||'';
- if(name.trim().length<2){err('errName',true);ok=false}else err('errName',false);
- if(!phoneOk(raw)){err('errPhone',true);ok=false}else err('errPhone',false);
- if(!mess){err('errMess',true);ok=false}else err('errMess',false);
- var c=document.getElementById('qConsent');
- if(!c||!c.checked){err('errConsent',true);ok=false}else err('errConsent',false);
- return ok;}
-
-function next(){
- var st=document.querySelector('.quiz-step[data-step="'+step+'"]');if(!st)return;
- if(step<6){var chosen=st.querySelectorAll('.q-opt.sel').length>0;
- if(!chosen){err('err'+step,true);return;}
- step++;show(step);var card=document.querySelector('.quiz-card');card&&card.scrollIntoView({behavior:'smooth',block:'nearest'});}
- else{if(validate(6))submit();}}
-
-if(qNext)qNext.addEventListener('click',next);
-if(qBack)qBack.addEventListener('click',function(){if(step>1){step--;show(step);}var e=document.getElementById('err'+step);e&&(e.style.display='none');});
-if(qSubmit)qSubmit.addEventListener('click',function(){if(validate(6))submit();});
-
-var ALLOWED={3:1,4:1,6:1,8:1,9:1};
-function maskPhone(raw){
- var d=(raw||'').replace(/\D/g,'');
- if(d.length&&d[0]==='8')d='7'+d.slice(1);
- if(d.length&&d[0]!=='7')d='7'+d;
- d=d.slice(0,11);
- if(!d)return'';
- var r='+7';
- if(d.length>1)r+=' ('+d.slice(1,4);
- if(d.length>=5)r+=') '+d.slice(4,7);
- if(d.length>=8)r+='-'+d.slice(7,9);
- if(d.length>=10)r+='-'+d.slice(9,11);
- return r;}
-function phoneOk(raw){var d=(raw||'').replace(/\D/g,'');if(d[0]==='8')d='7'+d.slice(1);if(d.length!==11||d[0]!=='7')return false;return!!ALLOWED[d[1]];}
-var maskBound=false;
-function bindMask(){var p=document.getElementById('qPhone');if(!p||maskBound)return;maskBound=true;
- p.addEventListener('input',function(){p.value=maskPhone(p.value);});}
-
-/* ── СБОРКА ЗАЯВКИ ── */
-var PHONE='+7 (951) 535-35-34';
-var MAX_PROFILE_LINK='https://max.ru/u/f9LHodD0cOI861CVf03uhXmzv33QpoCSnWuZO3Lb8YXKonxJrw5vbTok-kE'; 
-var isMobile=/Android|iPhone|iPad|iPod|Mobi/i.test(navigator.userAgent);
-function toast(msg){var t=document.getElementById('copyToast');if(!t)return;t.textContent=msg;t.classList.add('show');setTimeout(function(){t.classList.remove('show')},4000);}
-function copyToClip(t,cb){
- if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(cb,cb);}
- else{var ta=document.createElement('textarea');ta.value=t;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(ta);cb();}
-}
-function openMax(){window.open(isMobile?'https://max.ru':'https://web.max.ru','_blank','noopener');}
-function openWA(t){
- if(isMobile){window.open('https://wa.me/79515353534'+(t?'?text='+encodeURIComponent(t):''),'_blank','noopener');}
- else{window.open('https://web.whatsapp.com/send?phone=79515353534'+(t?'&text='+encodeURIComponent(t):''),'_blank','noopener');}
-}
-function buildText(){
- var L=[];
- L.push('📝 Заявка с сайта «Ритуал-Память»');
- L.push('');
- var order=[[1,'👤 Для кого: '],[2,'💰 Бюджет: '],[3,'📸 Форма: ']];
- for(var k=0;k<order.length;k++){if(answers['q'+order[k][0]])L.push(order[k][1]+answers['q'+order[k][0]]);}
- var st4=document.querySelector('.quiz-step[data-step="4"]');
- if(st4){var sel=[].slice.call(st4.querySelectorAll('.q-opt.sel')).map(function(o){return o.textContent.trim()});
- if(sel.length)L.push('✍️ Оформление: '+sel.join(', '));}
- if(answers['q5'])L.push('📅 Сроки: '+answers['q5']);
- L.push('');
- L.push('👤 Имя: '+document.getElementById('qName').value.trim());
- L.push('📱 Телефон: '+document.getElementById('qPhone').value.trim());
- L.push('💬 Куда ответить: '+(mess==='max'?'MAX':'WhatsApp'));
- L.push('');
- L.push('🟢 Прошу прислать 3 варианта с фото, ценой и сроком');
- return L.join('\n');}
-
-function submit(){
- var t=buildText();
- if(mess==='max'){
-   copyToClip(t, function(){
-     if(MAX_PROFILE_LINK){window.open(MAX_PROFILE_LINK,'_blank','noopener');}
-     else{openMax();}
-     toast('Заявка скопирована! Вставьте её в чат MAX.');
-   });
- }else{
-   openWA(t);
- }
- show(1);step=1;answers={};mess=null;
- document.querySelectorAll('.quiz-step .q-opt.sel').forEach(function(o){o.classList.remove('sel')});
- document.querySelectorAll('.mess-choice .q-opt.sel').forEach(function(o){o.classList.remove('sel')});
- var nameInp=document.getElementById('qName');if(nameInp)nameInp.value='';
- var phoneInp=document.getElementById('qPhone');if(phoneInp)phoneInp.value='';
- var cons=document.getElementById('qConsent');if(cons)cons.checked=false;
- if(qSubmitTxt)qSubmitTxt.textContent='Отправить заявку';
-}
-
-/* Кнопка Max в плавающей панели */
-var fabMax=document.getElementById('fabMax');
-if(fabMax)fabMax.addEventListener('click',function(e){
-  e.preventDefault();
-  if(MAX_PROFILE_LINK){ window.open(MAX_PROFILE_LINK,'_blank','noopener'); }
-  else{ copyToClip(PHONE,function(){toast('Номер скопирован! Найдите нас в MAX по поиску: '+PHONE);openMax();}); }
-});
-
-/* Ротатор фраз на первом экране */
-var rot=document.querySelector('.hero-rotator');
-if(rot){var ritems=rot.querySelectorAll('.hr-item');
- if(ritems.length>1&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
-  var ri=0;
-  setInterval(function(){if(rot.matches(':hover'))return;ritems[ri].classList.remove('active');ri=(ri+1)%ritems.length;ritems[ri].classList.add('active');},3800);
- }
-}
-show(1);
-})();
 </script>
+
 </body>
 </html>
