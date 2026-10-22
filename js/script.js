@@ -1,104 +1,118 @@
-'use strict';
-
 document.addEventListener('DOMContentLoaded', () => {
 
-    /* ======================================================================
-       1. БУРГЕР-МЕНЮ
-       ====================================================================== */
-    const burger = document.getElementById('menuToggle');
-    const nav = document.querySelector('.nav');
+    // --- 1. ПОЛОСА ПРОГРЕССА ---
+    const scrollProgress = document.getElementById('scrollProgress');
+    if (scrollProgress) {
+        window.addEventListener('scroll', () => {
+            const h = document.documentElement.scrollHeight - window.innerHeight;
+            const p = h > 0 ? (window.scrollY / h) * 100 : 0;
+            scrollProgress.style.width = p + '%';
+        }, { passive: true });
+    }
 
-    const setMenuState = (open) => {
-        if (!nav) return;
-        nav.classList.toggle('is-open', open);
-        if (burger) {
-            burger.setAttribute('aria-expanded', String(open));
-            burger.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню');
-        }
-        document.body.style.overflow = open ? 'hidden' : '';
-    };
-
+    // --- 2. МОБИЛЬНОЕ МЕНЮ ---
+    const burger = document.getElementById('burger');
+    const nav = document.getElementById('nav');
     if (burger && nav) {
         burger.addEventListener('click', () => {
-            setMenuState(!nav.classList.contains('is-open'));
+            nav.classList.toggle('active');
+            const isOpen = nav.classList.contains('active');
+            burger.setAttribute('aria-expanded', isOpen);
+            const icon = burger.querySelector('i');
+            icon.className = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+            document.body.style.overflow = isOpen ? 'hidden' : '';
         });
-
-        document.querySelectorAll('.nav__link').forEach(link => {
-            link.addEventListener('click', () => setMenuState(false));
-        });
-
-        window.addEventListener('resize', () => {
-            if (window.innerWidth > 768 && nav.classList.contains('is-open')) {
-                setMenuState(false);
-            }
+        document.querySelectorAll('.nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+                burger.setAttribute('aria-expanded', 'false');
+                burger.querySelector('i').className = 'fa-solid fa-bars';
+                document.body.style.overflow = '';
+            });
         });
     }
 
-    /* ======================================================================
-       2. ВИДЖЕТ МЕССЕНДЖЕРОВ
-       ====================================================================== */
+    // --- 3. КРАСИВЫЙ СЛАЙДЕР С ТЕКСТОМ ---
+    const rotator = document.getElementById('rotator');
+    if (rotator) {
+        const words = ['строительных бригад', 'охранных структур', 'автосервисов и СТО', 'сварщиков и монтажников', 'промышленных предприятий'];
+        let i = 0;
+        
+        setInterval(() => {
+            rotator.style.transition = 'opacity 0.4s ease, transform 0.4s ease-in';
+            rotator.style.opacity = '0';
+            rotator.style.transform = 'translateX(40px)';
+
+            setTimeout(() => {
+                i = (i + 1) % words.length;
+                rotator.textContent = words[i];
+                
+                rotator.style.transition = 'none';
+                rotator.style.transform = 'translateX(-40px)';
+                void rotator.offsetWidth;
+                
+                rotator.style.transition = 'opacity 0.4s ease, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1)';
+                rotator.style.opacity = '1';
+                rotator.style.transform = 'translateX(0)';
+            }, 400);
+        }, 3000);
+    }
+
+    // --- 4. ВИДЖЕТ СВЯЗИ ---
     const widget = document.getElementById('msgWidget');
     const widgetTrigger = document.getElementById('widgetTrigger');
-
-    const setWidgetState = (open) => {
-        if (!widget) return;
-        widget.classList.toggle('is-open', open);
-        if (widgetTrigger) widgetTrigger.setAttribute('aria-expanded', String(open));
-    };
-
     if (widget && widgetTrigger) {
         widgetTrigger.addEventListener('click', (e) => {
             e.stopPropagation();
-            setWidgetState(!widget.classList.contains('is-open'));
+            widget.classList.toggle('is-open');
+            widgetTrigger.setAttribute('aria-expanded', widget.classList.contains('is-open'));
         });
-
         document.addEventListener('click', (e) => {
             if (widget.classList.contains('is-open') && !widget.contains(e.target)) {
-                setWidgetState(false);
+                widget.classList.remove('is-open');
+                widgetTrigger.setAttribute('aria-expanded', 'false');
             }
         });
     }
 
-    /* ======================================================================
-       3. COOKIE-БАННЕР (1.5 сек, без сдвига виджета — меньше дёрганья)
-       ====================================================================== */
+    // --- 5. COOKIE БАННЕР ---
     const cookie = document.getElementById('cookieBanner');
-    const cookieOk = document.getElementById('cookieOk');
-
-    if (cookie && cookieOk) {
-        let accepted = false;
-        try {
-            accepted = localStorage.getItem('cookie_accepted') === 'true';
-        } catch (err) {
-            accepted = false;
+    const cookieAccept = document.getElementById('cookieAccept');
+    const cookieNecessary = document.getElementById('cookieNecessary');
+    if (cookie && cookieAccept && cookieNecessary) {
+        let saved = localStorage.getItem('cookie_consent');
+        if (!saved) {
+            setTimeout(() => cookie.classList.add('is-visible'), 1000);
         }
-
-        if (!accepted) {
-            setTimeout(() => {
-                cookie.classList.add('is-visible');
-            }, 1500);
-        }
-
-        cookieOk.addEventListener('click', () => {
+        const hideCookie = (value) => {
             cookie.classList.remove('is-visible');
-            try {
-                localStorage.setItem('cookie_accepted', 'true');
-            } catch (err) {}
-        });
+            localStorage.setItem('cookie_consent', value);
+        };
+        cookieAccept.addEventListener('click', () => hideCookie('all'));
+        cookieNecessary.addEventListener('click', () => hideCookie('necessary'));
     }
 
-    /* ======================================================================
-       4. МОДАЛКА «ПРАВОВАЯ ИНФОРМАЦИЯ»
-       ====================================================================== */
+    // --- 6. МОДАЛЬНОЕ ОКНО ---
     const modal = document.getElementById('popupOverlay');
     const modalClose = document.getElementById('popupClose');
-    const openPolicy = document.getElementById('openPolicy');
-
-    const openModal = () => {
+    
+    const openModal = (targetTab) => {
         if (!modal) return;
         modal.classList.add('is-open');
         document.body.style.overflow = 'hidden';
-        if (modalClose) modalClose.focus();
+        document.querySelectorAll('.modal-tab').forEach(t => {
+            t.classList.remove('is-active');
+            t.setAttribute('aria-selected', 'false');
+        });
+        document.querySelectorAll('.modal-content').forEach(c => c.classList.remove('is-active'));
+        
+        const tabBtn = document.querySelector(`.modal-tab[data-tab="${targetTab}"]`);
+        const tabContent = document.getElementById(targetTab);
+        if (tabBtn && tabContent) {
+            tabBtn.classList.add('is-active');
+            tabBtn.setAttribute('aria-selected', 'true');
+            tabContent.classList.add('is-active');
+        }
     };
 
     const closeModal = () => {
@@ -107,135 +121,43 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.style.overflow = '';
     };
 
-    if (modal && modalClose && openPolicy) {
-        openPolicy.addEventListener('click', (e) => {
-            e.preventDefault();
-            openModal();
-        });
+    if (modal && modalClose) {
+        document.getElementById('openPolicy').addEventListener('click', (e) => { e.preventDefault(); openModal('tab-1'); });
+        document.getElementById('openPolicyCookie').addEventListener('click', (e) => { e.preventDefault(); openModal('tab-2'); });
+        document.getElementById('openPolicyCookie2').addEventListener('click', (e) => { e.preventDefault(); openModal('tab-2'); });
+        document.getElementById('openPolicyOferta').addEventListener('click', (e) => { e.preventDefault(); openModal('tab-3'); });
 
         modalClose.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
 
-        modal.addEventListener('click', (e) => {
-            if (e.target === modal) closeModal();
+        document.querySelectorAll('.modal-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                const targetId = tab.getAttribute('data-tab');
+                document.querySelectorAll('.modal-tab').forEach(t => {
+                    t.classList.remove('is-active');
+                    t.setAttribute('aria-selected', 'false');
+                });
+                document.querySelectorAll('.modal-content').forEach(c => c.classList.remove('is-active'));
+                tab.classList.add('is-active');
+                tab.setAttribute('aria-selected', 'true');
+                document.getElementById(targetId).classList.add('is-active');
+            });
         });
     }
 
-    /* ======================================================================
-       5. ВКЛАДКИ В МОДАЛКЕ
-       ====================================================================== */
-    const modalTabs = document.querySelectorAll('.modal__tab');
-    const modalContents = document.querySelectorAll('.modal__content');
-
-    modalTabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-            const targetId = tab.getAttribute('data-tab');
-            if (!targetId) return;
-
-            modalTabs.forEach(t => {
-                t.classList.remove('is-active');
-                t.setAttribute('aria-selected', 'false');
-            });
-            modalContents.forEach(c => c.classList.remove('is-active'));
-
-            tab.classList.add('is-active');
-            tab.setAttribute('aria-selected', 'true');
-
-            const target = document.getElementById(targetId);
-            if (target) target.classList.add('is-active');
-        });
-    });
-
-    /* ======================================================================
-       6. РОТАТОР ТЕКСТА
-       ====================================================================== */
-    const rotator = document.getElementById('rotator');
-
-    if (rotator) {
-        const words = [
-            'строительных бригад',
-            'сварщиков и монтажников',
-            'охранных структур',
-            'комплексного снабжения',
-            'автосервисов и СТО',
-            'промышленных предприятий'
-        ];
-
-        let index = 0;
-        let timer = null;
-        const DELAY = 3200;
-        const FADE = 350;
-
-        const rotate = () => {
-            rotator.classList.add('is-fading');
-            setTimeout(() => {
-                index = (index + 1) % words.length;
-                rotator.textContent = words[index];
-                rotator.classList.remove('is-fading');
-            }, FADE);
-        };
-
-        const start = () => {
-            stop();
-            timer = setInterval(rotate, DELAY);
-        };
-
-        const stop = () => {
-            if (timer) {
-                clearInterval(timer);
-                timer = null;
-            }
-        };
-
-        const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-        if (!reduced) {
-            start();
-
-            document.addEventListener('visibilitychange', () => {
-                if (document.hidden) stop();
-                else start();
-            });
-        }
-    }
-
-    /* ======================================================================
-       7. ESC — ЗАКРЫТЬ ВСЁ ОТКРЫТОЕ
-       ====================================================================== */
+    // --- 7. ЗАКРЫТИЕ ПО ESC ---
     document.addEventListener('keydown', (e) => {
-        if (e.key !== 'Escape') return;
-
-        if (modal && modal.classList.contains('is-open')) closeModal();
-
-        if (nav && nav.classList.contains('is-open')) {
-            nav.classList.remove('is-open');
-            if (burger) burger.setAttribute('aria-expanded', 'false');
-            document.body.style.overflow = '';
-        }
-
-        if (widget && widget.classList.contains('is-open')) {
-            widget.classList.remove('is-open');
-            if (widgetTrigger) widgetTrigger.setAttribute('aria-expanded', 'false');
+        if (e.key === 'Escape') {
+            if (modal && modal.classList.contains('is-open')) closeModal();
+            if (nav && nav.classList.contains('active')) {
+                nav.classList.remove('active');
+                burger.querySelector('i').className = 'fa-solid fa-bars';
+                document.body.style.overflow = '';
+            }
+            if (widget && widget.classList.contains('is-open')) {
+                widget.classList.remove('is-open');
+                widgetTrigger.setAttribute('aria-expanded', 'false');
+            }
         }
     });
-
-    /* ======================================================================
-       8. ФОЛЛБЭК ПЛАВНОГО СКРОЛЛА
-       ====================================================================== */
-    if (!('scrollBehavior' in document.documentElement.style)) {
-        document.querySelectorAll('a[href^="#"]').forEach(link => {
-            link.addEventListener('click', (e) => {
-                const href = link.getAttribute('href');
-                if (href === '#' || href.length < 2) return;
-
-                const target = document.querySelector(href);
-                if (!target) return;
-
-                e.preventDefault();
-                const offset = 80;
-                const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
-
-                window.scrollTo({ top, behavior: 'smooth' });
-            });
-        });
-    }
-
 });
