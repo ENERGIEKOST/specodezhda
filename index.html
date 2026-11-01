@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <script>
+    (function(){
+        var d = document.documentElement;
+        d.classList.remove('no-js');
+        d.classList.add('js');
+        try { if (localStorage.getItem('promo_minimized') === 'true') { d.classList.add('promo-min'); } } catch(e) {}
+        if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+    })();
+    window.imgFallback=function(el){var svg=document.createElementNS('http://www.w3.org/2000/svg','svg');svg.setAttribute('viewBox','0 0 24 24');svg.setAttribute('class',el.className);svg.setAttribute('role','img');svg.setAttribute('aria-label',el.alt||'Изображение товара');svg.innerHTML='<rect x="3" y="4" width="18" height="16" rx="3" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="9" cy="10" r="1.6"/><path d="M4 17l4.5-4.5 3 3L15 12l5 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>';el.replaceWith(svg);};
+    </script>
+    <script>
+    setTimeout(function () {
+        document.querySelectorAll('.reveal').forEach(function (el) {
+            el.classList.add('active');
+        });
+    }, 3500);
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Спецодежда, рабочая обувь и СИЗ в Батайске | Магазин «Профессионалы»</title>
+    <meta name="description" content="Магазин спецодежды «Профессионалы» в Батайске. Спецодежда, рабочая обувь, СИЗ. Опт и розница с 2013 года. ГОСТ. ул. Тургенева 95 / Речная 11.">
+    <link rel="icon" href="./img/favicon.ico">
+    <link rel="canonical" href="https://spetsodezhdabt.ru/">
+    <meta name="theme-color" content="#0f172a">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Профессионалы — спецодежда и СИЗ">
+    <meta property="og:title" content="Спецодежда, рабочая обувь и СИЗ в Батайске | Магазин «Профессионалы»">
+    <meta property="og:description" content="Спецодежда, рабочая обувь и СИЗ. Опт и розница с 2013 года. ГОСТ. Батайск, ул. Тургенева 95 / Речная 11.">
+    <meta property="og:url" content="https://spetsodezhdabt.ru/">
+    <meta property="og:image" content="https://spetsodezhdabt.ru/img/boots.webp">
+    <meta property="og:image:alt" content="Зимняя рабочая обувь со скидкой 10%">
+    <meta property="og:locale" content="ru_RU">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Спецодежда, рабочая обувь и СИЗ в Батайске | Магазин «Профессионалы»">
+    <meta name="twitter:description" content="Спецодежда, рабочая обувь и СИЗ. Опт и розница с 2013 года. ГОСТ. Батайск, ул. Тургенева 95 / Речная 11.">
+    <meta name="twitter:image" content="https://spetsodezhdabt.ru/img/boots.webp">
+    <meta name="geo.region" content="RU-ROS">
+    <meta name="geo.placename" content="Батайск">
+    <meta name="geo.position" content="47.129;39.749">
+    <meta name="ICBM" content="47.129, 39.749">
+    <meta name="format-detection" content="telephone=no">
+
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Store","name":"Профессионалы — спецодежда и СИЗ","description":"Спецодежда, рабочая обувь и СИЗ в Батайске. Опт и розница с 2013 года.","url":"https://spetsodezhdabt.ru/","image":"https://spetsodezhdabt.ru/img/boots.webp","telephone":"+7-988-945-8880","email":"profroba161@yandex.ru","address":{"@type":"PostalAddress","addressLocality":"Батайск","streetAddress":"ул. Тургенева 95 / Речная 11","addressRegion":"Ростовская область","postalCode":"346880","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":47.129,"longitude":39.749},"hasMap":"https://yandex.ru/maps/org/professionaly/1201692137/","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"10:00","closes":"19:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"18:00"}],"priceRange":"₽","foundingDate":"2013"}
+    </script>
+
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="preload" as="image" href="./img/hero-bg.webp" media="(min-width: 769px)">
+    <link rel="preload" as="image" href="./img/hero-bg-mobile.webp" media="(max-width: 768px)">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="scroll-progress" id="scrollProgress" style="position:fixed;top:0;left:0;height:3px;background:var(--primary);z-index:9999;width:0;transition:width 0.1s;"></div>
+
+    <!-- ШАПКА -->
+    <header class="header">
+        <div class="container header-inner">
+            <a href="/" class="logo" id="logoLink" aria-label="Профессионалы — на главную">
+                <img class="logo-icon" src="./img/logo.webp" alt="Логотип" onerror="imgFallback(this)">
+                <span class="logo-text">
+                    <span class="logo-name">ПРОФЕССИОНАЛЫ</span>
+                    <span class="logo-sub">СПЕЦОДЕЖДА</span>
+                </span>
+            </a>
+
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#catalog" class="nav__link">Ассортимент</a></li>
+                    <li><a href="#about" class="nav__link">О компании</a></li>
+                    <li><a href="#how" class="nav__link">Как купить</a></li>
+                    <li><a href="#wholesale" class="nav__link">Оптовикам</a></li>
+                    <li><a href="#contacts" class="nav__link">Контакты</a></li>
+                </ul>
+
+                <div class="nav-mobile-contacts">
+                    <a href="tel:+79889458880" class="mobile-phone-main">
+                        <i class="fa fa-phone"></i> +7 988 945-8880
+                    </a>
+                    <span class="mobile-schedule">
+                        <i class="fa fa-clock-o"></i> Пн-Пт 10-19 · Сб 10-18 · Вс - выходной
+                    </span>
+                    <div class="nav-messengers">
+                        <a href="https://max.ru/u/f9LHodD0cOLCpM7u_pa_Vx3ul_MFQYvq51uS13gZhT7H8y5cZUYExjlwQ-0" target="_blank" rel="noopener noreferrer" class="nav-msg-btn nav-msg-btn--max" aria-label="MAX"><i class="fa fa-comment"></i></a>
+                        <a href="https://wa.me/79889458880" target="_blank" rel="noopener noreferrer" class="nav-msg-btn nav-msg-btn--wa" aria-label="WhatsApp"><i class="fa fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="header-contacts">
+                <div class="phones">
+                    <a href="tel:+79889458880" class="phone-main">+7 988 945-8880</a>
+                    <a href="tel:+78632461545" class="phone-main">8 (863) 246-15-45</a>
+                </div>
+                <span class="work-hours"><i class="fa fa-clock-o"></i> Пн-Пт 10-19 · Сб 10-18 · Вс - выходной</span>
+            </div>
+
+            <a href="tel:+79889458880" class="header-mobile-phone" aria-label="Позвонить">
+                <i class="fa fa-phone"></i>
+            </a>
+
+            <button class="burger" id="burger" aria-label="Меню" aria-expanded="false">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- ГЛАВНЫЙ ЭКРАН -->
+        <section class="hero">
+            <div class="container hero-inner reveal">
+                <div class="hero-badge">Магазин находится в Батайске ул. Тургенева 95 / Речная 11</div>
+
+                <h1 class="hero-title">
+                    <span class="hero-title-top">Спецодежда, обувь и СИЗ</span>
+                    <span class="hero-title-bottom">
+                        <span class="rotator-wrapper">
+                            <span class="rotator-sizer" aria-hidden="true">для строительных бригад</span>
+                            <span class="text-rotator" id="rotator">для строительных бригад</span>
+                        </span>
+                    </span>
+                </h1>
+
+                <p class="hero-text">
+                    Розничная продажа и оптовые поставки. Полный размерный ряд с примеркой прямо в магазине. Работа с организациями по договору и безналичному расчёту.
+                </p>
+                <div class="hero-actions">
+                    <a href="#contacts" class="btn btn-primary"><i class="fa fa-map-marker"></i> Как добраться</a>
+                    <a href="tel:+79889458880" class="btn btn-outline"><i class="fa fa-phone"></i> Позвонить</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- КАТАЛОГ (КАРУСЕЛЬ) -->
+        <section class="section" id="catalog">
+            <div class="container">
+                <div class="section-title reveal">
+                    <h2>Что есть в магазине</h2>
+                    <p>Полный размерный ряд в наличии. Примерка на месте.</p>
+                </div>
+
+                <!-- КАРУСЕЛЬ -->
+                <div class="catalog-wrap reveal">
+                    <div class="tabs" id="tabs"></div>
+                    <div class="cat-card">
+                        <div class="scene" id="scene">
+                            <button class="cat-arrow l" id="arrL" aria-label="Назад">&#8249;</button>
+                            <div class="stage" id="stage"></div>
+                            <div class="plaque" id="plaque"></div>
+                            <button class="cat-arrow r" id="arrR" aria-label="Вперёд">&#8250;</button>
+                        </div>
+                        <div class="thumbs" id="thumbs"></div>
+
+                        <button class="cta" id="ctaBtn">Уточнить наличие</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- О КОМПАНИИ -->
+        <section class="section section-dark" id="about">
+            <div class="container">
+                <div class="section-title reveal">
+                    <h2>О компании</h2>
+                    <p>Надежный поставщик спецодежды и СИЗ</p>
+                </div>
+
+                <div class="about-text reveal">
+                    <p>Компания «Профессионалы Спецодежда» — надёжный поставщик спецодежды, камуфляжа, рабочей обуви, берцев и средств индивидуальной защиты. <strong>Работаем на рынке с 2013 года.</strong></p>
+                    <p>Тщательный подбор материалов, высокое качество, оперативная логистика и клиентоориентированность — наши главные ценности. Прямые контракты с проверенными поставщиками обеспечивают стабильность и соответствие ГОСТ.</p>
+                </div>
+
+                <div class="features-grid reveal">
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fa fa-trophy"></i></div>
+                        <h4>Высокое качество</h4>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fa fa-file-text-o"></i></div>
+                        <h4>Минпромторг РФ</h4>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fa fa-cubes"></i></div>
+                        <h4>Ассортимент</h4>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fa fa-truck"></i></div>
+                        <h4>Доставка</h4>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fa fa-qrcode"></i></div>
+                        <h4>Честный знак</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- БРЕНДЫ -->
+        <section class="section" id="brands">
+            <div class="container">
+                <div class="section-title reveal">
+                    <h2>Официальные поставщики</h2>
+                    <p>Мы работаем напрямую с ведущими фабриками России</p>
+                </div>
+                <div class="brands-wrap reveal">
+                    <div class="brand-item"><img src="./img/brand/urus_logo.webp"   alt="УРСУС"          onerror="imgFallback(this)"></div>
+                    <div class="brand-item"><img src="./img/brand/sirius_logo.webp" alt="Планета Сириус" onerror="imgFallback(this)"></div>
+                    <div class="brand-item"><img src="./img/brand/torch_logo.webp"  alt="Факел"          onerror="imgFallback(this)"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ГОСТ -->
+        <div class="gost">
+            <div class="container gost-inner reveal">
+                <i class="fa fa-shield"></i>
+                <span>Вся продукция соответствует <strong>ГОСТ</strong> и Минпромторгу</span>
+            </div>
+        </div>
+
+        <!-- КАК КУПИТЬ -->
+        <section class="section" id="how">
+            <div class="container">
+                <div class="section-title reveal">
+                    <h2>Как купить</h2>
+                    <p>Три простых шага — от заявки до получения</p>
+                </div>
+                <div class="steps-grid">
+                    <div class="step-card reveal">
+                        <div class="step-icon"><i class="fa fa-shopping-bag"></i></div>
+                        <h3>Приехать и примерить</h3>
+                        <p>Магазин работает по адресу ул. Тургенева 95 / Речная 11. Полный размерный ряд в наличии.</p>
+                    </div>
+                    <div class="step-card reveal reveal-delay-1">
+                        <div class="step-icon"><i class="fa fa-volume-control-phone"></i></div>
+                        <h3>Согласовать по телефону</h3>
+                        <p>Снабженцы могут заранее согласовать спецификацию. Соберём, упакуем и отложим партию.</p>
+                    </div>
+                    <div class="step-card reveal reveal-delay-2">
+                        <div class="step-icon"><i class="fa fa-file-text-o"></i></div>
+                        <h3>Оформить по договору</h3>
+                        <p>Для юрлиц — официальный договор, безналичный расчёт и полный пакет документов.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ОПТОВИКАМ -->
+        <section class="section section-dark" id="wholesale">
+            <div class="container">
+                <div class="section-title reveal">
+                    <h2>Оптовикам</h2>
+                    <p>Работаем с организациями и ИП по договору и безналичному расчёту</p>
+                </div>
+                <div class="opt-grid">
+                    <div class="opt-card reveal">
+                        <div class="opt-card__icon"><i class="fa fa-tags"></i></div>
+                        <h3>Скидки от объёма</h3>
+                        <ul class="opt-card__list">
+                            <li>от 10 000 ₽ — <strong>5%</strong></li>
+                            <li>от 50 000 ₽ — <strong>7%</strong></li>
+                            <li>от 100 000 ₽ — <strong>10%</strong></li>
+                        </ul>
+                    </div>
+                    <div class="opt-card reveal reveal-delay-1">
+                        <div class="opt-card__icon"><i class="fa fa-pencil-square-o"></i></div>
+                        <h3>Работа по договору</h3>
+                        <p>Официальный договор поставки для юрлиц и ИП. Безналичный расчёт по счёту.</p>
+                    </div>
+                    <div class="opt-card reveal reveal-delay-2">
+                        <div class="opt-card__icon"><i class="fa fa-files-o"></i></div>
+                        <h3>Полный пакет документов</h3>
+                        <p>Счёт, УПД, ТОРГ-12, счёт-фактура. Все закрывающие документы сразу при отгрузке.</p>
+                    </div>
+                </div>
+                <div class="opt-cta reveal">
+                    <p>Если у вас есть предложения по сотрудничеству, напишите нам</p>
+                    <a href="mailto:profroba161@yandex.ru" class="btn btn-primary"><i class="fa fa-envelope"></i> Написать нам</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ОТЗЫВЫ -->
+        <section class="section" id="reviews">
+            <div class="container">
+                <div class="section-title reveal">
+                    <h2>Отзывы наших клиентов</h2>
+                    <p>Реальные оценки на Яндекс.Картах</p>
+                </div>
+                <div class="reviews-frame reveal">
+                    <iframe src="https://yandex.ru/maps-reviews-widget/1201692137?comments" title="Отзывы о магазине" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- КОНТАКТЫ -->
+        <section class="section section-dark" id="contacts">
+            <div class="container">
+                <div class="section-title reveal">
+                    <h2>Контакты</h2>
+                    <p>Приезжайте в магазин или свяжитесь с нами</p>
+                </div>
+                <div class="contacts-grid">
+                    <div class="contact-box reveal">
+                        <a href="https://yandex.ru/maps/org/professionaly/1201692137/" target="_blank" rel="noopener noreferrer" class="contact-item">
+                            <div class="contact-icon"><i class="fa fa-map-marker"></i></div>
+                            <div>
+                                <div class="contact-label">Адрес магазина (Открыть на карте)</div>
+                                <div class="contact-val">г. Батайск, ул. Тургенева 95 / Речная 11</div>
+                            </div>
+                        </a>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa fa-phone"></i></div>
+                            <div>
+                                <div class="contact-label">Телефоны</div>
+                                <div class="contact-val">
+                                    <a href="tel:+79889458880">+7 988 945-8880</a><br>
+                                    <a href="tel:+78632461545">8 (863) 246-15-45</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa fa-envelope"></i></div>
+                            <div>
+                                <div class="contact-label">Почта</div>
+                                <div class="contact-val"><a href="mailto:profroba161@yandex.ru">profroba161@yandex.ru</a></div>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fa fa-clock-o"></i></div>
+                            <div>
+                                <div class="contact-label">Режим работы</div>
+                                <div class="contact-val" style="font-size: 16px;">Пн-Пт: 10:00 – 19:00<br>Сб: 10:00 – 18:00<br>Вс: Выходной</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-wrap reveal reveal-delay-1">
+                        <iframe src="https://yandex.ru/map-widget/v1/?ol=biz&oid=1201692137&z=16" width="100%" height="100%" loading="lazy" allowfullscreen="true" title="Карта"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ПОДВАЛ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-brand-name">Магазин спецодежды «Профессионалы»</div>
+                    <div class="footer-brand-tagline">г. Батайск · с 2013 года</div>
+                    <p class="footer-brand-desc">Спецодежда, обувь и средства индивидуальной защиты для профессионалов. Работаем с юридическими лицами и ИП.</p>
+                </div>
+                <div class="footer-req">
+                    <h4>Реквизиты</h4>
+                    <div class="footer-requisites">
+                        <div class="footer-req-row"><span class="footer-req-label">Наименование:</span><span class="footer-req-value">ИП ВОЛЕГОВА МАРИНА АНАТОЛЬЕВНА</span></div>
+                        <div class="footer-req-row"><span class="footer-req-label">ИНН:</span><span class="footer-req-value">614101537874</span></div>
+                        <div class="footer-req-row"><span class="footer-req-label">ОГРНИП:</span><span class="footer-req-value">313618104200061</span></div>
+                        <div class="footer-req-row"><span class="footer-req-label">Адрес:</span><span class="footer-req-value">346880, Ростовская обл., г. Батайск, ул. Тургенева 95 / Речная 11</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-row">
+                <div class="footer-legal">
+                    <a href="#" id="openPolicy">Политика конфиденциальности</a>
+                    <span class="dot">·</span>
+                    <a href="#" id="openPolicyCookie">Использование cookie</a>
+                    <span class="dot">·</span>
+                    <a href="#" id="openPolicyOferta">Оферта</a>
+                </div>
+                <div class="footer-copy">© <span id="copyYear">2026</span> «Профессионалы Спецодежда». Все права защищены.</div>
+                <div class="footer-author">Разработка: <a href="mailto:energiekost.code@mail.ru">energiekost.code@mail.ru</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= КОНТЕЙНЕР АКЦИИ (МОРФИНГ) ================= -->
+    <div class="promo-container" id="promoContainer">
+        <!-- ПК КАРТОЧКА -->
+        <div class="promo-card-pc" id="promoCardPc">
+           <button type="button" class="promo-card-pc__close" id="minimizePc" aria-label="Свернуть">
+                <i class="fa fa-chevron-down"></i>
+            </button>
+
+            <img src="./img/boots.webp" alt="Зимняя обувь" class="promo-card-pc__img" onerror="imgFallback(this)">
+
+            <div>
+                <div class="promo-card-pc__tag"><i class="fa fa-fire"></i> Акция</div>
+                <div class="promo-card-pc__title">Скидка 10%</div>
+                <div class="promo-card-pc__text">на всю зимнюю обувь!</div>
+            </div>
+
+            <div class="promo-card-pc__btns">
+                <a href="tel:+79889458880" class="pw-btn call"><i class="fa fa-phone"></i> Позвонить</a>
+                <a href="https://wa.me/79889458880?text=Здравствуйте!%20Интересует%20скидка%2010%25%20на%20зимнюю%20обувь." target="_blank" rel="noopener noreferrer" class="pw-btn wa"><i class="fa fa-whatsapp"></i> WhatsApp</a>
+                <a href="https://max.ru/u/f9LHodD0cOLCpM7u_pa_Vx3ul_MFQYvq51uS13gZhT7H8y5cZUYExjlwQ-0" target="_blank" rel="noopener noreferrer" class="pw-btn max"><i class="fa fa-comment"></i> MAX</a>
+            </div>
+        </div>
+
+        <!-- КРУГЛАЯ КНОПКА (ОБЩАЯ) -->
+        <button type="button" class="promo-fab" id="promoFab" aria-label="Открыть акцию">
+            <i class="fa fa-tags"></i>
+        </button>
+    </div>
+
+    <!-- ================= ЛИПКАЯ ПАНЕЛЬ (МОБИЛКИ) ================= -->
+    <div class="mobile-promo-bar" id="mobilePromoBar" role="button" tabindex="0" aria-label="Акция: скидка 10% на зимнюю обувь">
+        <div class="mobile-promo-content">
+            <img src="./img/boots.webp" alt="Зимняя обувь" class="mobile-promo-img" onerror="imgFallback(this)">
+            <div class="mobile-promo-text">
+                Скидка 10%
+                <span>на зимнюю обувь</span>
+            </div>
+        </div>
+        <div class="mobile-promo-btn">Узнать</div>
+
+        <button type="button" class="mobile-promo-close" id="minimizeMobile" aria-label="Свернуть">
+            <i class="fa fa-chevron-down"></i>
+        </button>
+    </div>
+
+    <!-- ================= МОДАЛКА АКЦИИ (МОБИЛКИ) ================= -->
+    <div class="promo-modal" id="promoModal">
+        <div class="promo-modal-window" role="dialog" aria-modal="true" aria-label="Акция: Скидка 10% на зимнюю обувь">
+            <button type="button" class="promo-modal-close" id="closePromoModal" aria-label="Закрыть">
+                <i class="fa fa-times"></i>
+            </button>
+            <img src="./img/boots.webp" alt="Зимняя обувь" class="promo-modal-img" onerror="imgFallback(this)">
+
+            <div class="promo-modal-tag"><i class="fa fa-fire"></i> Акция</div>
+
+            <div class="promo-modal-title">Скидка 10%</div>
+            <div class="promo-modal-subtitle">на всю зимнюю обувь!</div>
+            <div class="promo-modal-text">Успейте подготовиться к сезону. Полный размерный ряд в наличии.</div>
+
+            <div class="promo-modal-buttons">
+                <a href="tel:+79889458880" class="btn-msg call">
+                    <i class="fa fa-phone"></i> Позвонить
+                </a>
+                <a href="https://wa.me/79889458880?text=Здравствуйте!%20Интересует%20скидка%2010%25%20на%20зимнюю%20обувь." target="_blank" rel="noopener noreferrer" class="btn-msg wa">
+                    <i class="fa fa-whatsapp"></i> Написать в WhatsApp
+                </a>
+                <a href="https://max.ru/u/f9LHodD0cOLCpM7u_pa_Vx3ul_MFQYvq51uS13gZhT7H8y5cZUYExjlwQ-0" target="_blank" rel="noopener noreferrer" class="btn-msg max">
+                    <i class="fa fa-comment"></i> Написать в MAX
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ПЛАВАЮЩИЙ ВИДЖЕТ СВЯЗИ -->
+    <div class="widget" id="msgWidget">
+        <div class="widget-menu">
+            <a href="tel:+79889458880" class="widget-btn widget-btn--phone" aria-label="Позвонить"><i class="fa fa-phone"></i></a>
+            <a href="https://max.ru/u/f9LHodD0cOLCpM7u_pa_Vx3ul_MFQYvq51uS13gZhT7H8y5cZUYExjlwQ-0" target="_blank" rel="noopener noreferrer" class="widget-btn widget-btn--max" aria-label="MAX"><i class="fa fa-comment"></i></a>
+            <a href="https://wa.me/79889458880" target="_blank" rel="noopener noreferrer" class="widget-btn widget-btn--wa" aria-label="WhatsApp"><i class="fa fa-whatsapp"></i></a>
+        </div>
+        <button id="widgetTrigger" class="widget-trigger" aria-expanded="false" aria-label="Связаться с нами">
+            <svg class="widget-icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+            <svg class="widget-icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+    </div>
+
+    <!-- COOKIE -->
+    <div class="cookie" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Уведомление об использовании cookie">
+        <div class="container cookie-inner">
+            <p class="cookie-text">Мы используем cookie для корректной работы сайта. Подробнее — в <a href="#" id="openPolicyCookie2">политике cookie</a>.</p>
+            <div class="cookie-actions">
+                <button class="cookie-btn cookie-btn--primary" id="cookieAccept">Принять все</button>
+                <button class="cookie-btn cookie-btn--ghost" id="cookieNecessary">Только необходимые</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ЮРИДИЧЕСКАЯ МОДАЛКА -->
+    <div class="modal" id="popupOverlay" role="dialog" aria-modal="true" aria-label="Правовая информация">
+        <div class="modal-window">
+            <button class="modal-close" id="popupClose" aria-label="Закрыть"><i class="fa fa-times"></i></button>
+            <div class="modal-scroll">
+                <h2 class="modal-title" id="modalTitle">Правовая информация</h2>
+                <div class="modal-tabs" role="tablist">
+                    <button class="modal-tab is-active" data-tab="tab-1" role="tab" aria-selected="true">152-ФЗ</button>
+                    <button class="modal-tab" data-tab="tab-2" role="tab" aria-selected="false">Cookie</button>
+                    <button class="modal-tab" data-tab="tab-3" role="tab" aria-selected="false">Оферта</button>
+                </div>
+                <div class="modal-content is-active" id="tab-1" role="tabpanel">
+                    <h3>Политика в отношении обработки персональных данных</h3>
+                    <p><strong>1. Общие положения.</strong> Настоящая Политика определяет порядок обработки и защиты персональных данных в магазине спецодежды «Профессионалы» (далее — Оператор) в соответствии с Федеральным законом от 27.07.2006 № 152-ФЗ «О персональных данных».</p>
+                    <p><strong>2. Оператор.</strong> Индивидуальный предприниматель Волегова Марина Анатольевна, ИНН 614101537874, ОГРНИП 313618104200061. Адрес: 346880, Ростовская обл., г. Батайск, ул. Тургенева 95 / Речная 11. Телефон: <a href="tel:+79889458880">+7 988 945-8880</a>. E-mail: <a href="mailto:profroba161@yandex.ru">profroba161@yandex.ru</a>.</p>
+                    <p><strong>3. Состав данных.</strong> Сайт не содержит форм сбора персональных данных. Обработка данных возникает только при обращении пользователя по телефону, в мессенджерах (WhatsApp, MAX) или по электронной почте. При обращении могут обрабатываться: имя, номер телефона, адрес электронной почты, наименование организации (для юрлиц) и содержание обращения.</p>
+                    <p><strong>4. Цели обработки.</strong> Консультирование по ассортименту, наличию и ценам; подготовка коммерческого предложения; заключение и исполнение договора поставки; оформление первичных документов (счёт, УПД, ТОРГ-12).</p>
+                    <p><strong>5. Правовые основания.</strong> Согласие субъекта персональных данных, выраженное путём обращения к Оператору; заключение и исполнение договора; требования законодательства РФ.</p>
+                    <p><strong>6. Сроки обработки.</strong> Данные обрабатываются до достижения целей обработки либо до отзыва согласия субъектом. Данные, необходимые для бухгалтерского и налогового учёта, хранятся в сроки, установленные законодательством РФ.</p>
+                    <p><strong>7. Права субъекта.</strong> Вы вправе запросить сведения об обработке ваших данных, требовать их уточнения, блокирования или уничтожения, а также отозвать согласие, направив обращение на e-mail Оператора.</p>
+                    <p><strong>8. Изменения.</strong> Оператор вправе изменять Политику. Актуальная редакция всегда размещена на данной странице. Обновлено: октябрь 2026 г.</p>
+                </div>
+                <div class="modal-content" id="tab-2" role="tabpanel">
+                    <h3>Использование файлов Cookie</h3>
+                    <p><strong>1. Что такое cookie.</strong> Cookie — небольшие текстовые файлы, которые сохраняются в браузере при посещении сайта и позволяют ему корректно работать и запоминать ваши настройки.</p>
+                    <p><strong>2. Какие cookie использует сайт.</strong> Сайт использует только строго необходимые (технические) cookie и данные localStorage: состояние акционного виджета (свёрнут/развёрнут), факт выбора настроек cookie, состояние интерфейса (меню, модальные окна). Аналитические и рекламные cookie не используются, данные третьим лицам не передаются.</p>
+                    <p><strong>3. Cookie не содержат персональных данных</strong> и не позволяют идентифицировать конкретного посетителя.</p>
+                    <p><strong>4. Управление cookie.</strong> Вы можете удалить или заблокировать cookie в настройках своего браузера. Полный запрет cookie может повлиять на работу отдельных элементов интерфейса (например, акционного виджета).</p>
+                    <p>Обновлено: октябрь 2026 г.</p>
+                </div>
+                <div class="modal-content" id="tab-3" role="tabpanel">
+                    <h3>Уведомление об отсутствии публичной оферты</h3>
+                    <p><strong>1.</strong> Вся информация, размещённая на сайте — сведения о товарах (спецодежда, рабочая обувь, СИЗ), их характеристиках и наличии — носит исключительно ознакомительный и справочный характер и не является публичной офертой в смысле статьи 437 Гражданского кодекса РФ.</p>
+                    <p><strong>2.</strong> Цены, указанные устно или в переписке, являются предварительными. Итоговая стоимость, условия оплаты, скидок и поставки фиксируются в договоре поставки либо в счёте.</p>
+                    <p><strong>3.</strong> Изображения товаров могут незначительно отличаться от фактического внешнего вида. Ассортимент, размеры и наличие уточняются по телефону <a href="tel:+79889458880">+7 988 945-8880</a> или в мессенджерах.</p>
+                    <p><strong>4.</strong> Оформление заказа и заключение договора осуществляется при обращении в магазин — по телефону, через мессенджеры или при личном визите. Обновлено: октябрь 2026 г.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- МОДАЛКА КАТАЛОГА -->
+    <div class="catalog-overlay" id="catalogOverlay">
+        <div class="catalog-sheet" role="dialog" aria-modal="true" aria-label="Информация о товаре">
+            <button class="catalog-close" id="catalogClose" aria-label="Закрыть">&times;</button>
+            <div class="c-media" id="mMedia">
+                <button class="p-arrow l" id="mArrL" aria-label="Назад">&#8249;</button>
+                <div class="mwrap" id="mImg"></div>
+                <button class="p-arrow r" id="mArrR" aria-label="Вперёд">&#8250;</button>
+            </div>
+            <div class="c-info">
+                <h3 id="mTitle"></h3>
+                <p>Полный размерный ряд в наличии. Приезжайте на примерку или закажите оптом по договору.</p>
+                <a class="mbtn call" id="mCall" href="tel:+79889458880">Позвонить: +7 988 945-8880</a>
+                <a class="mbtn wa" id="mWa" href="https://wa.me/79889458880" target="_blank" rel="noopener">WhatsApp</a>
+                <button class="mbtn mx" id="mMax">MAX</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast" id="toast"></div>
+    <script src="js/script.js"></script>
+</body>
+</html>
