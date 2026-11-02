@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const unlockBody = () => { if (!anyOverlayOpen()) document.body.style.overflow = ''; };
 
     /* ============================================================
-       1.2 ФОКУС  (БАГ 8d: бургер в trapFocus мобильного меню)
+       1.2 УПРАВЛЕНИЕ ФОКУСОМ — удержание Tab внутри открытых меню и модалок
        ============================================================ */
     const FOCUSABLE = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
     let lastFocused = null;
@@ -57,9 +57,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const container = e.target.closest('.modal.is-open, .catalog-overlay.is-open, .promo-modal.is-open, .nav.active');
         if (!container) return;
 
-        // ИСПРАВЛЕНО (баг 8d): в мобильном меню бургер находится вне <nav>,
-        // поэтому добавляем его в конец списка focusable — иначе до кнопки-крестика
-        // нельзя добраться табом.
+        // Бургер находится вне <nav>, поэтому добавляем его в конец списка
+        // фокусируемых элементов — иначе до кнопки-крестика нельзя добраться табом.
         let items = Array.from(container.querySelectorAll(FOCUSABLE));
         if (container.id === 'nav' && container.classList.contains('active')) {
             const burgerEl = $('burger');
@@ -163,13 +162,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /* ============================================================
-       5. ЛОГОТИП  (БАГ 8c: закрываем мобильное меню при клике по логотипу)
+       5. ЛОГОТИП — при клике закрываем открытое мобильное меню
        ============================================================ */
     const logoLink = $('logoLink');
     if (logoLink) {
         logoLink.addEventListener('click', (e) => {
             e.preventDefault();
-            // ИСПРАВЛЕНО (баг 8c): если открыто мобильное меню — закрываем его
+            // Меню открыто — закрываем перед переходом на главную
             if (nav && nav.classList.contains('active')) {
                 nav.classList.remove('active');
                 if (burger) {
@@ -229,14 +228,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     if (promoFab) {
         promoFab.addEventListener('click', () => {
-            document.documentElement.classList.remove('promo-min');
-            promoFab.classList.remove('is-visible');
             if (window.innerWidth > 1024) {
+                // ПК: все кнопки акции есть прямо в карточке — просто разворачиваем её
+                document.documentElement.classList.remove('promo-min');
+                promoFab.classList.remove('is-visible');
                 if (promoCardPc) promoCardPc.classList.remove('is-minimized');
-            } else if (mobilePromoBar) {
-                mobilePromoBar.classList.remove('is-minimized');
+                store.set('promo_minimized', 'false');
+            } else {
+                // Мобилки/планшеты: 1 тап — сразу модалка акции.
+                // Нижнюю плашку не возвращаем: пользователь свернул её сознательно,
+                // после закрытия модалки доступ к акции остаётся через круглый виджет
+                openPromoModal();
             }
-            store.set('promo_minimized', 'false');
         });
     }
 
@@ -250,7 +253,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (opener && typeof opener.focus === 'function') opener.focus({ preventScroll: true });
     };
 
-    // ИСПРАВЛЕНО (баг 7): вынесено в функцию, чтобы использовать в click и keydown
+    // Открытие модалки акции — общая функция для клика и нажатия клавиши
     const openPromoModal = () => {
         if (!promoModal || promoModal.classList.contains('is-open')) return;
         promoModalOpener = document.activeElement;
@@ -263,7 +266,7 @@ document.addEventListener('DOMContentLoaded', () => {
         mobilePromoBar.addEventListener('click', (e) => {
             if (!e.target.closest('#minimizeMobile')) openPromoModal();
         });
-        // ИСПРАВЛЕНО (баг 7): клавиатурный доступ к плашке акции
+        // Доступ к панели акции с клавиатуры (Enter/Space)
         mobilePromoBar.addEventListener('keydown', (e) => {
             if (e.target.closest('#minimizeMobile')) return;
             if (e.key === 'Enter' || e.key === ' ' || e.key === 'Spacebar') {
@@ -283,8 +286,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const cookieNecessary = $('cookieNecessary');
     if (cookie && cookieAccept && cookieNecessary) {
         const saved = store.get('cookie_consent');
-        if (!saved) setTimeout(() => cookie.classList.add('is-visible'), 1000);
-        const hideCookie = (value) => { cookie.classList.remove('is-visible'); store.set('cookie_consent', value); };
+        if (!saved) {
+            setTimeout(() => {
+                cookie.classList.add('is-visible');
+                // Скрываем плавающие элементы (плашка акции, круглый виджет, виджет связи),
+                // иначе cookie-баннер просто накрывает их и кнопки под ним не работают
+                document.documentElement.classList.add('cookie-shown');
+            }, 1000);
+        }
+        const hideCookie = (value) => {
+            cookie.classList.remove('is-visible');
+            document.documentElement.classList.remove('cookie-shown');
+            store.set('cookie_consent', value);
+        };
         cookieAccept.addEventListener('click', () => hideCookie('all'));
         cookieNecessary.addEventListener('click', () => hideCookie('necessary'));
     }
@@ -389,13 +403,13 @@ document.addEventListener('DOMContentLoaded', () => {
         return '<img src="' + item.img + '" alt="' + item.n + '" loading="lazy" data-ph="' + (cls || '') + '">';
     }
 
-    // ИСПРАВЛЕНО (баг 2): не перетираем картинки со своим onerror (логотип, акция, модалка).
-    // Иначе глобальный ловец срабатывает в capture-фазе РАНЬШЕ инлайнового imgFallback
-    // и вместо аккуратной SVG-иконки вставляет «пунктирный» .ph.
+    // Глобальный обработчик ошибок загрузки картинок. У некоторых картинок (логотип,
+    // акция, модалка) есть свой inline onerror (imgFallback) — их не трогаем: глобальный
+    // обработчик в capture-фазе сработал бы раньше и заменил аккуратную SVG-заглушку.
     document.addEventListener('error', function (e) {
         var img = e.target;
         if (!(img instanceof HTMLImageElement)) return;
-        if (img.hasAttribute('onerror')) return; // пусть отработает imgFallback
+        if (img.hasAttribute('onerror')) return; // у картинки свой обработчик imgFallback
         var d = document.createElement('div');
         d.innerHTML = phHTML(img.dataset.ph || '');
         if (d.firstChild) img.replaceWith(d.firstChild);
@@ -464,9 +478,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     function renderAll() { layout(); syncThumbs(); }
 
-    // ИСПРАВЛЕНО (баг 8e): move() теперь возвращает bool — успел ли сдвиг.
-    // Это позволяет вызывающему коду не дёргать syncCatalogModal(), если move
-    // заблокирован isAnimating (иначе картинка мигает тем же товаром).
+    // move() возвращает true, если слайд реально сменился. Вызывающий код обновляет
+    // модалку только при успешном сдвиге — иначе картинка мигала бы тем же товаром.
     function move(d) {
         if (isAnimating) return false;
         if (!sec || !sec.items || !sec.items.length) return false;
@@ -495,9 +508,31 @@ document.addEventListener('DOMContentLoaded', () => {
     if (tabsEl) tabsEl.addEventListener('click', function (e) {
         if (isAnimating) return;
         var b = e.target.closest('.tab'); if (!b) return;
-        state.sec = +b.dataset.i; state.idx = 0;
-        sec = SECTIONS[state.sec];
-        renderTabs(); buildScene(); buildThumbs(); renderAll();
+        var target = +b.dataset.i;
+        if (target === state.sec) return;
+
+        isAnimating = true;
+        // Подсветку таба делаем на живых кнопках, без пересборки DOM:
+        // пересобранный элемент появляется уже активным и CSS-переход не срабатывает
+        Array.prototype.forEach.call(tabsEl.children, function (t) {
+            t.classList.toggle('on', t === b);
+        });
+
+        // Кроссфейд сцены: плавно гасим текущие картинки, пересобираем, проявляем
+        var stage = $('stage');
+        var swap = function () {
+            state.sec = target; state.idx = 0;
+            sec = SECTIONS[state.sec];
+            buildScene(); buildThumbs(); renderAll();
+            if (stage) stage.classList.remove('fade');
+            isAnimating = false;
+        };
+        if (stage) {
+            stage.classList.add('fade');
+            setTimeout(swap, 180);
+        } else {
+            swap();
+        }
     });
 
     const arrL = $('arrL');
@@ -513,9 +548,14 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isAnimating) return;
         if (window.getSelection().toString() !== '') return;
 
-        // ИСПРАВЛЕНО (баг 8): клики по визуальным .fig.prev/.next идут «сквозь»
-        // них (у них pointer-events:none) на .scene и открывали модалку текущего
-        // товара. Проверяем координаты: попали в боковую фигуру — листаем.
+        // Центральная карточка (.fig.cur) имеет pointer-events:auto — клик по ней
+        // и её содержимому открывает модалку товара. Проверяем в первую очередь.
+        if (e.target.closest('.fig.cur')) { openCatalogModal(); return; }
+
+        // Боковые превью (.fig.prev/.next) имеют pointer-events:none, поэтому клик
+        // доходит до .scene. По координатам определяем: попали в боковую фигуру —
+        // листаем карусель. Фиксированная ширина фигур делает их зоны шире центральной,
+        // поэтому проверка центральной карточки выше обязательна.
         var x = e.clientX, y = e.clientY;
         var prevFig = sceneEl.querySelector('.fig.prev');
         var nextFig = sceneEl.querySelector('.fig.next');
@@ -547,11 +587,28 @@ document.addEventListener('DOMContentLoaded', () => {
     function bindMsg(msg) {
         var wa = $('mWa');
         if (wa) wa.href = WA_BASE + encodeURIComponent(msg);
+        // Почта: предзаполняем тему и текст письма — откроется готовая заявка
+        var mail = $('mMail');
+        if (mail) {
+            var it = sec && sec.items ? sec.items[state.idx] : null;
+            var subject = 'Заявка с сайта' + (it ? ' — ' + it.n : '');
+            mail.href = 'mailto:profroba161@yandex.ru?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(msg);
+        }
         var mx = $('mMax');
         if (mx) mx.onclick = function () {
-            // ИСПРАВЛЕНО (баг 8b): noopener для безопасности
+            // MAX не умеет принимать текст через ссылку (в отличие от WhatsApp ?text=),
+            // поэтому копируем заявку в буфер обмена и сразу открываем чат
+            copyMsg(msg);
+            // Явная обратная связь: меняем надпись на кнопке, чтобы человек точно
+            // понял, что текст скопирован и его осталось вставить в чат
+            var original = mx.textContent;
+            mx.textContent = '✓ Текст скопирован — вставьте в MAX';
+            mx.classList.add('copied');
+            setTimeout(function () {
+                mx.textContent = original;
+                mx.classList.remove('copied');
+            }, 4000);
             if (MAX_LINK) { window.open(MAX_LINK, '_blank', 'noopener'); }
-            else { copyMsg(msg); }
         };
     }
 
@@ -581,19 +638,19 @@ document.addEventListener('DOMContentLoaded', () => {
     function copyMsg(t) {
         if (navigator.clipboard && navigator.clipboard.writeText) {
             navigator.clipboard.writeText(t).then(
-                function () { toast('Текст заявки скопирован'); },
+                function () { toast('Заявка скопирована — вставьте её в чат MAX', 4500); },
                 function () { toast(t); }
             );
         } else { toast(t); }
     }
     var toastT;
-    function toast(t) {
+    function toast(t, ms) {
         var el = $('toast');
         if (!el) { console.log('[toast]', t); return; }
         el.textContent = t;
         el.classList.add('show');
         clearTimeout(toastT);
-        toastT = setTimeout(function () { el.classList.remove('show'); }, 2600);
+        toastT = setTimeout(function () { el.classList.remove('show'); }, ms || 2600);
     }
 
     const ctaBtn = $('ctaBtn');
@@ -605,7 +662,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.target === overlay) closeCatalogModal();
     });
 
-    // ИСПРАВЛЕНО (баг 8e): syncCatalogModal только при успешном move()
+    // Модалка обновляется только при фактической смене слайда
     const mArrL = $('mArrL');
     if (mArrL) mArrL.addEventListener('click', function (e) {
         e.preventDefault(); e.stopPropagation();
@@ -618,7 +675,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function syncCatalogModal() {
-        // ИСПРАВЛЕНО (баг 8e): если модалка закрыта — нечего синхронизировать
+        // Модалка закрыта — синхронизировать нечего
         if (!overlay || !overlay.classList.contains('is-open')) return;
         if (!sec || !sec.items) return;
         var it = sec.items[state.idx];
@@ -698,6 +755,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /* ============================================================
+       9.1 СКРЫТИЕ ПЛАВАЮЩИХ ВИДЖЕТОВ НАД КАТАЛОГОМ
+       (мобилки: промо-плашка, promo-fab и виджет мессенджеров
+       перекрывали карусель/миниатюры/CTA — пока секция каталога
+       занимает экран, плавающие элементы скрываются)
+       ============================================================ */
+    const catalogSection = $('catalog');
+    if (catalogSection && 'IntersectionObserver' in window) {
+        new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                document.documentElement.classList.toggle('floats-hidden', entry.isIntersecting);
+            });
+        }, { threshold: 0.3 }).observe(catalogSection);
+    }
+
+    /* ============================================================
        10. REVEAL
        ============================================================ */
     const revealElements = document.querySelectorAll('.reveal');
@@ -737,7 +809,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
-            // ИСПРАВЛЕНО (баг 5): не листаем карусель под открытой юр./промо-модалкой
+            // Пока открыты юридическая модалка или акция — стрелки страницы
+            // не листают карусель. Модалку каталога не блокируем:
+            // в ней стрелками как раз листают товар
             const anyModalOpen = ($('popupOverlay') && $('popupOverlay').classList.contains('is-open'))
                               || ($('promoModal')   && $('promoModal').classList.contains('is-open'));
             if (anyModalOpen) return;
@@ -749,7 +823,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     return r.top < window.innerHeight && r.bottom > 0;
                 })());
             if (catVisible) {
-                // ИСПРАВЛЕНО (баг 8e): синхронизируем только при успешном сдвиге
+                // Обновляем модалку только если сдвиг реально произошёл
                 if (move(e.key === 'ArrowLeft' ? -1 : 1)) {
                     if (overlay && overlay.classList.contains('is-open')) syncCatalogModal();
                 }
@@ -775,7 +849,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     /* ============================================================
-       13. ГОД + СТРАХОВКА
+       13. ГОД В ПОДВАЛЕ + СТРАХОВКА REVEAL
+       (если IntersectionObserver не сработал, все блоки показываются через 3с)
        ============================================================ */
     const copyYear = $('copyYear');
     if (copyYear) copyYear.textContent = new Date().getFullYear();
