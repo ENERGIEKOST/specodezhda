@@ -1,0 +1,37 @@
+{
+    "name": "Профессионалы — спецодежда и СИЗ",
+    "short_name": "Профессионалы",
+    "description": "Магазин спецодежды, рабочей обуви и СИЗ в Батайске. Опт и розница с 2013 года.",
+    "lang": "ru",
+    "start_url": "/",
+    "scope": "/",
+    "display": "browser",
+    "background_color": "#ffffff",
+    "theme_color": "#0f172a",
+    "icons": [
+        {
+            "src": "/img/icons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "/img/icons/maskable_icon_x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "/img/icons/maskable_icon_x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/img/icons/maskable_icon_x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
